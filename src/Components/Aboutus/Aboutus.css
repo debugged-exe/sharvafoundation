@@ -35,84 +35,36 @@
     }
 }
 
-.db {
-    display: block;
-}
-
-.dt {
+.cf:before, .cf:after {
+    content: " ";
     display: table;
 }
 
-.lh-copy {
-    line-height: 1.5;
+.cf:after {
+    clear: both;
 }
 
-.mw6 {
-    max-width: 32rem;
+.cf {
+    *zoom: 1;
 }
 
-.mw7 {
-    max-width: 48rem;
+.fl {
+    float: left;
+    display: inline;
 }
 
-.w-100 {
-    width: 100%;
+.w-50 {
+    width: 50%;
 }
 
-.pb5 {
-    padding-bottom: 4rem;
+.abs{
+    max-width:100%;
 }
 
-.pt0 {
-    padding-top: 0;
+.ij{
+    padding: 10px;
 }
 
-.ph2 {
-    padding-left: .5rem;
-    padding-right: .5rem;
-}
 
-.center {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.v-mid {
-    vertical-align: middle;
-}
-
-@media screen and (min-width: 30em) {
-    .dtc-ns {
-        display: table-cell;
-    }
-
-    .w5-ns {
-        width: 16rem;
-    }
-
-    .pl3-ns {
-        padding-left: 1rem;
-    }
-
-    .pr0-ns {
-        padding-right: 0;
-    }
-
-    .pv6-ns {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
-    }
-
-    .v-mid-ns {
-        vertical-align: middle;
-    }
-}
-
-@media screen and (min-width: 30em) and (max-width: 60em) {
-    .pv5-m {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
-}
 
 

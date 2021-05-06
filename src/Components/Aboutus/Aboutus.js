@@ -12,15 +12,22 @@ function Aboutus(){
                   who is thought to have scrambled parts of Cicero's De Finibus Bonorum 
                 </p>
             </div>
-            <div class="dt mw6 center pt0 pb5 pv5-m pv6-ns">
-                <div class="db dtc-ns v-mid-ns">
-                    <img src="http://tachyons.io/img/super-wide.jpg" alt="A bright blue sky" class="w-100 mw7 w5-ns" />
+            <div className="cf ">
+                <div className="fl w-50  ">
+                   <img src="https://c.files.bbci.co.uk/12A9B/production/_111434467_gettyimages-1143489763.jpg" className="abs"></img>
                 </div>
-                <div class="db dtc-ns v-mid ph2 pr0-ns pl3-ns">
-                    <p class="lh-copy">
-                    For desktop, this text is vertically aligned middle, no matter what the height of the image is.
-                    On mobile, this is a paragraph below an image.
+                <div className="fl w-50 tex ">
+                    <p className="lh-copy  ">
+                    Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
+                    The passage is attributed to an unknown typesetter in the 15th century<br />
+                    who is thought to have scrambled parts of Cicero's De Finibus Bonorum 
+                    </p> 
+                    <p className="lh-copy  ">
+                    Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
+                    The passage is attributed to an unknown typesetter in the 15th century<br />
+                    who is thought to have scrambled parts of Cicero's De Finibus Bonorum 
                     </p>
+                    <btn className=" link f6 f5-l dib mr3 mr4-l donatebutton">Donate now</btn>
                 </div>
             </div>
         </div>
