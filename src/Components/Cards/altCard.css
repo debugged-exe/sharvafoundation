@@ -1,0 +1,41 @@
+.newcard{
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    padding: 10px;
+    margin:10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.459);
+}
+
+
+.cardImg{
+    
+    max-height: 100px;
+    max-width:100%;
+}
+
+.lastLine{
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+.progressBars {
+    width: 100%; /* Full width */
+    background-color:  rgba(61, 151, 167, 0.781);
+    border-radius: 5px;
+  }
+  
+  .skills {
+       text-align: center;
+       max-height:4px;
+       border-radius: 5px;
+       
+    padding-top: 5px; /* Add top padding */
+    padding-bottom: 5px; /* Add bottom padding */
+   
+  }
+
+  .progressBarStyle {
+      width: 70%; 
+      background-color: #117bd1;
+}
