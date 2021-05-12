@@ -17,12 +17,12 @@ function AltCard(){
                 </div>
                 </div>
                 <div className="lastLine">
-                    <p>100 supporters</p>
+                    <p><b>100</b> supporters</p>
                     <p>Learn More</p>
                 </div>
             </div>
         </div>
-        
+
     )
 }
 
