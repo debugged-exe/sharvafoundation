@@ -1,24 +1,23 @@
 import React from 'react';
 import './Navbar.css';
+import imgUrl from './sharva.png';
 
 function Navbar () {
     return(
-        <div>
-            <nav className="db dt-l w-100 border-box pa3 ph5-l">
-                <a className="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l" href="#" title="Home">
-                    <img src="https://www.sharvafoundation.org/static/images/logo.png" className="dib wi hi br-100" alt="Site Name" />
-                </a>
-                <div className="db dtc-l v-mid w-100 w-75-l tc tr-l">
-                    <a className="link  f6 f5-l dib mr3 mr4-l" href="#" title="Home">Home</a>
-                    <a className="link  f6 f5-l dib mr3 mr4-l" href="#" title="How it Works">Our Initiatives</a>
-                    <a className="link  f6 f5-l dib mr3 mr4-l" href="#" title="Blog">Covid 19</a>
-                    <a className="link  f6 f5-l dib mr3 mr4-l" href="#" title="Press">Join Us</a>
-                    <a className="link  f6 f5-l dib mr3 mr4-l" href="#" title="Contact">Contact Us</a>
-                    <a className="link  f6 f5-l dib mr3 mr4-l" href="#" title="Contact">About Us</a>
-                    <button className="link f6 f5-l dib mr3 mr4-l donatebutton">Donate</button>
-                </div>
-            </nav>
-        </div>
+        <nav class="dt w-100 border-box pa3 ">
+  <a class="dtc v-mid mid-gray link dim w-10" href="#" title="Home">
+    <img src={imgUrl} class="dib w2 h2 br-100" alt="Site Name" />
+  </a>
+  <div class="dtc v-mid w-90 tr">
+    <a class="link dim dark-gray hoverStyle f6 f5-ns dib mr3 mr4-ns" href="#" title="home">Home</a>
+    <a class="link dim dark-gray f6 f5-ns dib  mr4-ns" href="#" title="Events">Events</a>
+    <a class="link dim dark-gray f6 f5-ns dib  mr4-ns" href="#" title="Events">Covid-19</a>
+    <a class="link dim dark-gray f6 f5-ns dib  mr4-ns" href="#" title="Events">About Us</a>
+    <a class="link dim dark-gray f6 f5-ns dib  mr4-ns" href="#" title="Events">Contact Us</a>
+    <button>Donate Now</button>
+  </div>
+</nav>
+        
     );
 }
 

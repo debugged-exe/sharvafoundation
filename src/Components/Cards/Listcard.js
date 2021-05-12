@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from 'react-elastic-carousel';
-import AltCard from './AltCard';
+import AltCard from './AltCard.js';
 
 
 const breakPoints = [

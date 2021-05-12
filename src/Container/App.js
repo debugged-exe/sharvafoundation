@@ -1,16 +1,19 @@
 import React from 'react';
 import Navbar from "../Components/Navbar/Navbar.js";
 import Aboutus from "../Components/Aboutus/Aboutus.js";
-import Cards from "../Components/Cards/Cards.js";
+import Listcard from "../Components/Cards/Listcard.js";
 import Counter from "../Components/Counter/Counter.js";
+import BackgroundCarousel from "../Components/BackgroundCarousel/BackgroundCarousel";
 import './App.css';
+
 
 function App() {
   return (
     <div>
-      <Navbar />
+       <Navbar /> 
+      <BackgroundCarousel />
       <Aboutus />
-      <Cards />
+       <Listcard /> 
       <Counter />
     </div>
   );

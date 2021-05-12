@@ -2,9 +2,6 @@
     line-height: 1.5;
 }
 
-.mw5 {
-    max-width: 16rem;
-}
 
 .pa3 {
     padding: 1rem;
@@ -29,10 +26,6 @@
         max-width: 48rem;
     }
 
-    .ph5-ns {
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
 }
 
 .cf:before, .cf:after {
@@ -46,6 +39,7 @@
 
 .cf {
     *zoom: 1;
+    margin:1rem;
 }
 
 .fl {
@@ -61,10 +55,10 @@
     max-width:100%;
 }
 
-.ij{
-    padding: 10px;
+
+.text{
+    padding-left: 2rem;
+    padding-right:2rem;
 }
-
-
 
 
