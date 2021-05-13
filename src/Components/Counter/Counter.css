@@ -1,62 +1,30 @@
-/* .counter-wrap {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+.counter-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.counter {
-  height: 100%;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 8px 6px 0px;
-} */
-
-.cf:before,
-.cf:after {
-  content: " ";
-  display: table;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.cf:after {
-  clear: both;
+.floatCard {
+  width: 270px;
+  align-items: baseline;
 }
 
-.cf {
-  *zoom: 1;
-}
-
-.fl {
-  float: left;
-  _display: inline;
-}
-
-.w-100 {
-  width: 100%;
-}
-
-.bg-black-20 {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.bg-black-10 {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.bg-black-05 {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-.pv5 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.tc {
+.txt {
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
-@media screen and (min-width: 30em) {
-  .w-20-ns {
-    width: 20%;
-  }
+.num1 {
+  color: #ff9800;
+  font-size: 2em;
+}
+
+.num2 {
+  color: #8bca4e;
+  font-size: 2em;
 }

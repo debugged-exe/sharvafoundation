@@ -5,8 +5,7 @@ import Listcard from "../Components/Cards/Listcard.js";
 import Counter from "../Components/Counter/Counter.js";
 import Contact from "../Components/Contact/Contact.js";
 import Footer from "../Components/Footer/Footer.js";
-
-
+import tachyons from 'tachyons';
 import BackgroundCarousel from "../Components/BackgroundCarousel/BackgroundCarousel";
 import './App.css';
 
@@ -16,9 +15,9 @@ function App() {
     <div>
        <Navbar />
       <BackgroundCarousel />
+      <Counter />
       <Aboutus />
        <Listcard />
-      <Counter />
       <Contact />
       <Footer />
     </div>

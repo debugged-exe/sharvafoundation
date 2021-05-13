@@ -22,9 +22,12 @@ footer{
 .footer > *{
     flex: 1 100%;
 }
+
+
 .footer-left{
     margin-left: 1.25em;
     margin-bottom: 2em;
+    
 }
 .footer-left img{
     width: 20%;
