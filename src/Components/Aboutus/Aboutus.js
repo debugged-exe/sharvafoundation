@@ -9,7 +9,7 @@ function Aboutus(){
                 <p className="lh-copy ">
                 Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
                  The passage is attributed to an unknown typesetter in the 15th century<br />
-                  who is thought to have scrambled parts of Cicero's De Finibus Bonorum 
+                  who is thought to have scrambled parts of Cicero's De Finibus Bonorum
                 </p>
             </div>
             <div className="cf ">
@@ -20,15 +20,17 @@ function Aboutus(){
                     <p className="lh-copy  ">
                     Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
                     The passage is attributed to an unknown typesetter in the 15th century<br />
-                    who is thought to have scrambled parts of Cicero's De Finibus Bonorum 
-                    </p> 
+                    who is thought to have scrambled parts of Cicero's De Finibus Bonorum
+                    </p>
                     <p className="lh-copy  ">
                     Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
                     The passage is attributed to an unknown typesetter in the 15th century<br />
-                    who is thought to have scrambled parts of Cicero's De Finibus Bonorum 
+                    who is thought to have scrambled parts of Cicero's De Finibus Bonorum
                     </p>
-                    <button className=" link f6 f5-l dib mr3 mr4-l donatebutton">Donate now</button>
-                </div>
+                    <div className="inputBox">
+                      <input type="submit" name="" value="Donate Now"></input>
+                    </div>
+                  </div>
             </div>
         </div>
 

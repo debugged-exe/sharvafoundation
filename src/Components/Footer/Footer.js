@@ -24,10 +24,10 @@ function Footer(){
            <li>
                      <h2 className={'h2'}>EVENTS</h2>
                      <ul className="box">
-                         <li>Event 1</li>
-                         <li>Event 2</li>
-                         <li>Event 3</li>
-                         <li>Event 4</li>
+                         <li><a href="">Event 1</a></li>
+                       <li><a href="">Event 2</a></li>
+                       <li><a href="">Event 3</a></li>
+                       <li><a href="">Event 4</a></li>
                      </ul>
                  </li>
              </ul>
@@ -35,26 +35,25 @@ function Footer(){
             <li>
                       <h2 className={'h2'}>BRANCHES</h2>
                       <ul className="box">
-                          <li>Pune </li>
-                          <li>Jammu</li>
-                          <li>Delhi</li>
+                          <li><a href="">Pune</a> </li>
+                        <li><a href="">Jammu</a> </li>
+                      <li><a href="">Delhi</a> </li>
                       </ul>
             </li>
             </ul>
             </footer>
 
-            <footer className="pv4 ph3 ph5-m ph6-l f6 db " style={{backgroundColor: 'black'}}>
-            <div className="socials dim">
-            <a href={"#"}><FiInstagram  color="white"/></a>
-            <a href={"#"}><FiFacebook  color="white"/></a>
-            <a href="#"><SiGmail color="white"/></a>
-            <a href="#"><AiOutlineTwitter  color="white"/></a>
-            <a href="#"><FaWhatsapp  color="white"/></a>
-            <a href="#"><AiFillLinkedin color="white"/></a>
+            <footer className="pv3 ph3 ph5-m ph6-l f6 db" style={{backgroundColor: "black"}}>
+
+            <div className="flex f4 socials">
+                <a style={{outline:'none'}} href='https://www.facebook.com/Sharva-Foundation-571908020152850/?modal=admin_todo_tour' className='pa2 link white dim fb'><FiFacebook  /></a>
+                <a style={{outline:'none'}} href='https://instagram.com/sharvafoundation?igshid=yubeg3h96wn4' className='pa2 link white dim ig'><FiInstagram/></a>
+                <a style={{outline:'none'}} href='https://wa.me/917517502268' className='pa2 link white dim wa'><FaWhatsapp /></a>
+                <a style={{outline:'none'}} href='https://twitter.com/Sharvacharity' className='pa2 link white dim fb'><AiOutlineTwitter /></a>
+                <a style={{outline:'none'}} href="mailto:foundationsharva@gmail.com?subject=Joining a good cause" className='pa2 link white dim gm'><SiGmail /></a>
             </div>
-                <small className="f6 db f1">
-                © 2021  Developed by
-                    <b>Debugged.exe</b> All Rights Reserved</small>
+                <small className="f6 db f1 ttu">
+                © 2021  Developed by <a  href="https://debuggedexe.com/#/">Debugged.exe</a>   All Rights Reserved</small>
 
             </footer>
             </div>

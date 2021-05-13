@@ -107,9 +107,10 @@
   /* color: #666; */
 }
 .contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span
+.contactForm .inputBox input:valid ~ span,
 .contactForm .inputBox textarea:focus ~ span,
 .contactForm .inputBox textarea:valid ~ span
+
 {
   color: #ff8c00;
   font-size: 12px;
@@ -124,6 +125,8 @@
   cursor: pointer;
   padding: 10px;
   font-size: 18px;
+  border-radius: 8px;
+  transition: 0.2s;
 }
 .contact .inputBox input[type="submit"]:hover {
   background-color: #ff8c00;
@@ -148,5 +151,6 @@
   .container .contactInfo,.contactForm{
     width: 100%;
   }
+
 
 }

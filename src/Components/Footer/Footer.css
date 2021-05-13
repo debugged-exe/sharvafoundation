@@ -68,15 +68,42 @@ footer{
 }
 .ttu{
   text-transform: uppercase;
+  text-align: center;
+}
+.ttu a{
+  color: white;
 }
 .f1{
   text-align: center;
 }
 .socials{
-  padding-top: 30px;
-  padding-right: 20px;
-  size:2rem;
-  float: right;
+  /* padding-top: 10px;
+  padding-bottom:  10px; */
+  justify-content: center;
+}
+.f3{
+    font-size: 30px;
+}
+
+.fb:hover{
+    color: #4267B2;
+}
+.ig:hover{
+   color: #DB4437;
+}
+.wa:hover{
+    color: #25D366;
+}
+.gm:hover{
+    color: #DB4437;
+}
+.ttu a:hover{
+  color:#ff8c00;
+}
+.bottom
+{
+	bottom: 0;
+	width: 100%;
 }
 
 @media screen and (min-width:600px){

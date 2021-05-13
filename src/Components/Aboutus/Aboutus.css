@@ -21,6 +21,19 @@
     margin-left: auto;
 }
 
+ .inputBox input[type="submit"]
+{
+  width: 120px;
+  background-color:  #ff8c00;
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
 @media screen and (min-width: 30em) {
     .mw7-ns {
         max-width: 48rem;
@@ -60,5 +73,3 @@
     padding-left: 2rem;
     padding-right:2rem;
 }
-
-

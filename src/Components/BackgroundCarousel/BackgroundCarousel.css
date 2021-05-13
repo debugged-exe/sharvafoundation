@@ -73,8 +73,8 @@
     margin-left: 30px;
     z-index: 3;
   }
-  
-  
+
+
   .link1
   {
     text-decoration: none;
@@ -85,6 +85,7 @@
     color: #357EDD;
   }
 
+  
   @media only screen and (max-width: 700px) {
     .side-nav {
       display: none;
@@ -100,13 +101,13 @@
     }
   }
 
-  @media only screen and (max-width: 700px) 
+  @media only screen and (max-width: 700px)
   {
       .center-logo{
           left:35% ;
       }
   }
-  @media only screen and (max-width: 420px) 
+  @media only screen and (max-width: 420px)
   {
       .center-logo{
           left:24% ;

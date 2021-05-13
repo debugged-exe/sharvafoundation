@@ -14,10 +14,11 @@ function Navbar () {
     <a class="link dim dark-gray f6 f5-ns dib  mr4-ns" href="#" title="Events">Covid-19</a>
     <a class="link dim dark-gray f6 f5-ns dib  mr4-ns" href="#" title="Events">About Us</a>
     <a class="link dim dark-gray f6 f5-ns dib  mr4-ns" href="#" title="Events">Contact Us</a>
-    <button>Donate Now</button>
-  </div>
+    <div className="inputBox">
+      <input type="submit" name="" value="Donate Now"></input>
+    </div>  </div>
 </nav>
-        
+
     );
 }
 
