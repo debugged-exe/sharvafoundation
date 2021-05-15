@@ -69,6 +69,31 @@
 
 
 .text{
+    
     padding-left: 2rem;
     padding-right:2rem;
 }
+
+.abouttext{
+     display: flex;
+     flex-direction: row;
+}
+
+
+@media screen and (max-width: 800px) {
+    .abouttext{
+        display:flex;
+        flex-direction: column;
+    }
+    .text{
+        padding-top: 1rem;
+    }
+
+    .aboutButton{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    }
+} 
+

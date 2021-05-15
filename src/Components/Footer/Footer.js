@@ -43,17 +43,17 @@ function Footer(){
             </ul>
             </footer>
 
-            <footer className="pv3 ph3 ph5-m ph6-l f6 db" style={{backgroundColor: "black"}}>
+            <footer className="pv3 ph3 ph5-m footerContents ph6-l f6 db" style={{backgroundColor: "black"}}>
 
             <div className="flex f4 socials">
-                <a style={{outline:'none'}} href='https://www.facebook.com/Sharva-Foundation-571908020152850/?modal=admin_todo_tour' className='pa2 link white dim fb'><FiFacebook  /></a>
+                <a style={{outline:'none'}} href='https://www.facebook.com/Sharva-Foundation-571908020152850/?modal=admin_todo_tour' className='pa2 link socialIcon white dim fb'><FiFacebook  /></a>
                 <a style={{outline:'none'}} href='https://instagram.com/sharvafoundation?igshid=yubeg3h96wn4' className='pa2 link white dim ig'><FiInstagram/></a>
                 <a style={{outline:'none'}} href='https://wa.me/917517502268' className='pa2 link white dim wa'><FaWhatsapp /></a>
                 <a style={{outline:'none'}} href='https://twitter.com/Sharvacharity' className='pa2 link white dim fb'><AiOutlineTwitter /></a>
                 <a style={{outline:'none'}} href="mailto:foundationsharva@gmail.com?subject=Joining a good cause" className='pa2 link white dim gm'><SiGmail /></a>
             </div>
                 <small className="f6 db f1 ttu">
-                © 2021  Developed by <a  href="https://debuggedexe.com/#/">Debugged.exe</a>   All Rights Reserved</small>
+                developed by <b><a  href="https://debuggedexe.com/#/">debugged.exe</a></b></small>
 
             </footer>
             </div>

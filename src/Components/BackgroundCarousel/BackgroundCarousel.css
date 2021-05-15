@@ -2,7 +2,12 @@
     font-size: 2.5rem;
 }
 
-.center-logo{
+.tagline{
+    font-size: 2.5rem;
+    color:white;
+    margin-bottom: 20px;
+}
+/* .center-logo{
     display: flex;
     flex-wrap: wrap;
     align-content: flex-wrap;
@@ -26,11 +31,8 @@
 .stroke{
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
-}
+} */
 
-/* .rec-arrow{
-    display: none;
-}*/
 
 .rec-dot{
     display: none;
@@ -39,7 +41,7 @@
 .slide1{
     background:rgba(0, 0, 0, 0.4) url('pic1.jpeg') no-repeat center center/cover;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0;
     background-blend-mode: darken;
@@ -47,7 +49,7 @@
 .slide2{
     background:rgba(0, 0, 0, 0.4) url('pic2.jpeg') no-repeat center center/cover;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0;
     background-blend-mode: darken;
@@ -55,62 +57,32 @@
 .slide3{
     background:rgba(0, 0, 0, 0.4) url('pic3.jpeg') no-repeat center center/cover;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0;
     background-blend-mode: darken;
 }
 
-.left-side {
-    width: 50%;
-    height: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-wrap;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%) rotate(-90deg);
-    margin-left: 30px;
-    z-index: 3;
-  }
 
-
-  .link1
-  {
-    text-decoration: none;
-    transition: all 0.5s ease-out;
-  }
-
-  .link1:hover{
-    color: #357EDD;
-  }
 
   
   @media only screen and (max-width: 700px) {
-    .side-nav {
-      display: none;
-    }
+   
     .font-size{
         font-size: 2.5rem;
     }
-    .center-logo{
-        left: 43%;
-    }
-    .center-tagline{
-        display: none;
-    }
   }
 
-  @media only screen and (max-width: 700px)
-  {
-      .center-logo{
-          left:35% ;
-      }
-  }
-  @media only screen and (max-width: 420px)
-  {
-      .center-logo{
-          left:24% ;
-      }
-  }
+
+.caroButton input[type="carobtn"]{
+    width: 120px;
+    color:white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: .875rem;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+

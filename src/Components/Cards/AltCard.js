@@ -16,12 +16,14 @@ function Altcard(){
                     <div class="skill-per" per="90"></div>
                 </div>
                 </div>
-                <div className="lastLine flex justify-center items-center">
-                  {/* <span style={{ padding: "0px 10px 3px 10px", width:"20%"}}>
+                <div className="lastLine ">
+                   {/* <span style={{ padding: "0px 10px 3px 10px", width:"20%"}}>
                       <img src={"https://www.pinclipart.com/picdir/big/538-5384597_support-icon-png-clipart.png"} alt=""/>
-                  </span> */}
-                    <p><b>100</b> Supporters</p>
-                    <b>Learn More</b>
+                  </span>  */}
+                    <p><b>100 Supporters</b></p>
+                    <a href="sharvafoundation.org" className="">
+                        <b>Learn More</b>
+                    </a>
                 </div>
             </div>
         </div>

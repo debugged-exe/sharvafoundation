@@ -13,6 +13,7 @@ footer{
     display: flex;
     flex-flow: row wrap;
     padding-left: 5%;
+    line-height: 2em;
     padding-right: 5%;
     padding-top: 3%;
     padding-bottom: 2%;
@@ -82,7 +83,8 @@ footer{
 .socials{
   /* padding-top: 10px;
   padding-bottom:  10px; */
-  justify-content: center;
+  float: right;
+    
 }
 .f3{
     font-size: 30px;
@@ -121,3 +123,9 @@ footer{
     }
 
 }
+
+.footerContents{
+    display: flex;
+    align-items: baseline;
+}
+
