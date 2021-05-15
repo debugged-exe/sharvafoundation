@@ -1,45 +1,3 @@
-.dt {
-    display: table;
-}
-
-.dtc {
-    display: table-cell;
-}
-
-.dib {
-    display: inline-block;
-}
-
-.h2 {
-    height: 2rem;
-}
-
-.link {
-    text-decoration: none;
-    transition: color .15s ease-in;
-}
-
-.link:link, .link:visited {
-    transition: color .15s ease-in;
-}
-
-.link:hover {
-    transition: color .15s ease-in;
-}
-
-.link:active {
-    transition: color .15s ease-in;
-}
-
-.link:focus {
-    transition: color .15s ease-in;
-    outline: 1px dotted currentColor;
-}
-
-.w2 {
-    width: 3rem;
-    height:3rem;
-}
 
 .w-10 {
     width: 10%;
@@ -53,20 +11,10 @@
     width: 100%;
 }
 
-.dark-gray {
-    color: #4d4d4f;
-}
-
-.mid-gray {
-    color: #555;
-}
-
 .pa3 {
     padding-top: 1rem;
     padding-bottom:1rem;
 }
-
-
 
 .tr {
     text-align: right;
@@ -79,23 +27,10 @@
 .v-mid {
     vertical-align: middle;
 }
-
-.dim:hover{
-    color:orangered;
+.navButton{
+    color:black;
+    background-color: orange;
 }
-.inputBox input[type="submit"]
-{
- width: 120px;
- background-color:  #ff8c00;
- color: black;
- border: none;
- cursor: pointer;
- padding: 10px;
- font-size: .875rem;
- border-radius: 8px;
- transition: 0.2s;
-}
-
 @media screen and (min-width: 30em) {
 
 

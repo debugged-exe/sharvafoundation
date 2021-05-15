@@ -13,22 +13,18 @@ footer{
     display: flex;
     flex-flow: row wrap;
     padding-left: 5%;
-    line-height: 2em;
     padding-right: 5%;
-    padding-top: 3%;
-    padding-bottom: 2%;
+    padding-top: 8px;
+    padding-bottom: 8px;
     color: #fff;
     background-color:#323232;
 }
 .footer > *{
     flex: 1 100%;
 }
-
-
 .footer-left{
     margin-left: 1.25em;
     margin-bottom: 2em;
-    
 }
 .footer-left img{
     width: 20%;
@@ -70,9 +66,10 @@ footer{
     padding-right: 20%;
     color: #ffffff;
 }
-.ttu{
-  text-transform: uppercase;
-  text-align: center;
+
+.listStylingNone{
+  text-decoration: none;
+list-style: none;
 }
 .ttu a{
   color: white;
@@ -80,31 +77,11 @@ footer{
 .f1{
   text-align: center;
 }
-.socials{
-  /* padding-top: 10px;
-  padding-bottom:  10px; */
-  float: right;
-    
-}
+
 .f3{
     font-size: 30px;
 }
 
-.fb:hover{
-    color: #4267B2;
-}
-.ig:hover{
-   color: #DB4437;
-}
-.wa:hover{
-    color: #25D366;
-}
-.gm:hover{
-    color: #DB4437;
-}
-.ttu a:hover{
-  color:#ff8c00;
-}
 .bottom
 {
 	bottom: 0;
@@ -124,8 +101,20 @@ footer{
 
 }
 
-.footerContents{
-    display: flex;
-    align-items: baseline;
+@media only screen and (max-width:950px){
+  .flexwrapmedia{
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width:640px){
+  .flexwrapmedia{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
+.dimIcon:hover{
+    opacity:0.5;
+}

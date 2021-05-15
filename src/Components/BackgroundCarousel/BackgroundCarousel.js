@@ -18,9 +18,7 @@ const BackgroundCarousel = () => {
                     <h3 className="tagline">लोका: समस्ता: सुखिनो भवन्तु ।</h3>
                     </div>
                     <div data-aos="fade-up" data-aos-duration={"1000"} >
-                    <div className="caroButton">
-                        <input type="carobtn" name="" value="Donate Now"></input>
-                    </div>
+                    <a className="f4  link  br2 ba ph3 pv2 mb2 dib near-white caroButton" href="#0">Donate Now</a>
                     </div>
                 </div>
                 <div className='slide2 flex justify-center items-center font-size flex-column'>
@@ -28,9 +26,7 @@ const BackgroundCarousel = () => {
                 <h3 className="tagline">लोका: समस्ता: सुखिनो भवन्तु ।</h3>
                     </div>
                     <div data-aos="fade-up" data-aos-duration={"1000"} >
-                    <div className="caroButton">
-                        <input  type="carobtn" name="" value="Donate Now"></input>
-                    </div>
+                    <a className="f4 link  br2 ba ph3 pv2 mb2 dib near-white caroButton" href="#0">Donate Now</a>
                     </div>
                 </div>
                 <div className='slide3 flex justify-center items-center font-size flex-column'>
@@ -38,9 +34,7 @@ const BackgroundCarousel = () => {
                 <h3 className="tagline">लोका: समस्ता: सुखिनो भवन्तु ।</h3>
                     </div>
                     <div data-aos="fade-up" data-aos-duration={"1000"} >
-                    <div className="caroButton">
-                        <input type="submit" name="" value="Donate Now"></input>
-                    </div>
+                    <a className="f4 link  br2 ba ph3 pv2 mb2 dib near-white caroButton" href="#0">Donate Now</a>
                     </div>
                 </div>
                 <div className='slide1 flex justify-center items-center font-size flex-column'>
@@ -48,9 +42,7 @@ const BackgroundCarousel = () => {
                 <h3 className="tagline">लोका: समस्ता: सुखिनो भवन्तु ।</h3>
                     </div>
                     <div data-aos="fade-up" data-aos-duration={"1000"} >
-                    <div className="caroButton">
-                        <input type="submit" name="" value="Donate Now"></input>
-                    </div>
+                    <a className="f4 link  br2 ba ph3 pv2 mb2 dib near-white caroButton" href="#0">Donate Now</a>
                     </div>
                 </div>
                 <div className='slide2 flex justify-center items-center font-size flex-column'>
@@ -58,9 +50,7 @@ const BackgroundCarousel = () => {
                 <h3 className="tagline">लोका: समस्ता: सुखिनो भवन्तु ।</h3>
                     </div>
                     <div data-aos="fade-up" data-aos-duration={"1000"} >
-                    <div className="caroButton">
-                        <input type="submit" name="" value="Donate Now"></input>
-                    </div>
+                    <a className="f4 link  br2 ba ph3 pv2 mb2 dib near-white caroButton" href="#0">Donate Now</a>
                     </div>
                 </div>
                 <div className='slide3 flex justify-center items-center font-size flex-column'>
@@ -68,9 +58,7 @@ const BackgroundCarousel = () => {
                 <h3 className="tagline">लोका: समस्ता: सुखिनो भवन्तु ।</h3>
                     </div>
                     <div data-aos="fade-up" data-aos-duration={"1000"} >
-                    <div className="caroButton">
-                        <input type="submit" name="" value="Donate Now"></input>
-                    </div>
+                    <a className="f4 link  br2 ba ph3 pv2 mb2 dib near-white caroButton" href="#0">Donate Now</a>
                     </div>
                 </div>
                 <div className='slide1 flex justify-center items-center font-size flex-column'>
@@ -78,9 +66,7 @@ const BackgroundCarousel = () => {
                 <h3 className="tagline">लोका: समस्ता: सुखिनो भवन्तु ।</h3>
                     </div>
                     <div data-aos="fade-up" data-aos-duration={"1000"} >
-                    <div className="caroButton">
-                        <input type="submit" name="" value="Donate Now"></input>
-                    </div>
+                    <a className="f4 link   br2 ba ph3 pv2 mb2 dib near-white caroButton" href="#0">Donate Now</a>
                     </div>
                 </div>
                 <div className='slide2 flex justify-center items-center font-size flex-column'>
@@ -88,9 +74,7 @@ const BackgroundCarousel = () => {
                 <h3 className="tagline">लोका: समस्ता: सुखिनो भवन्तु ।</h3>
                     </div>
                     <div data-aos="fade-up" data-aos-duration={"1000"} >
-                    <div className="caroButton">
-                        <input type="submit" name="" value="Donate Now"></input>
-                    </div>
+                    <a className="f4 link  br2 ba ph3 pv2 mb2 dib near-white caroButton" href="#0">Donate Now</a>
                     </div>
                 </div>
                 <div className='slide3 flex justify-center items-center font-size flex-column'>
@@ -98,9 +82,7 @@ const BackgroundCarousel = () => {
                 <h3 className="tagline">लोका: समस्ता: सुखिनो भवन्तु ।</h3>
                     </div>
                     <div data-aos="fade-up" data-aos-duration={"1000"} >
-                    <div className="caroButton">
-                        <input type="submit" name="" value="Donate Now"></input>
-                    </div>
+                    <a className="f4 link  br2 ba ph3 pv2 mb2 dib near-white caroButton" href="#0">Donate Now</a>
                     </div>
                 </div>
             </Carousel>
