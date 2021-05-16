@@ -7,32 +7,6 @@
     color:white;
     margin-bottom: 20px;
 }
-/* .center-logo{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-wrap;
-    position: absolute;
-    left: 43%;
-    top: 30px;
-    z-index: 3;
-}
-
-.center-tagline{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-wrap;
-    position: absolute;
-    right: 5%;
-    
-    top: 60px;
-    z-index: 3;
-}
-
-.stroke{
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-} */
-
 
 .rec-dot{
     display: none;

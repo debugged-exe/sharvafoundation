@@ -1,8 +1,8 @@
 import React from 'react';
-import './altCard.css';
+import './Card.css';
 import one from './one.jpeg';
 
-function Altcard(){
+function Card(){
     return(
         <div className="newcard">
             <div className="cardTop">
@@ -33,4 +33,4 @@ function Altcard(){
     )
 }
 
-export default Altcard;
+export default Card;

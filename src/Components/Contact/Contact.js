@@ -1,16 +1,11 @@
 import React from 'react';
 import './Contact.css';
 import {FaPhoneAlt} from "react-icons/fa";
-import {MdEmail} from "react-icons/md";
-import {ImLocation} from "react-icons/im";
-
-
-
 
 function Contact(){
   return(
         <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.872948638045!2d73.87827994990795!3d18.534642687339023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0f855581855%3A0x9bfc35605df36ec5!2sModern%20Education%20Society&#39;s%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1620808743519!5m2!1sen!2sin" style={{ width:"100%" ,height:"50vh", border:0, allowfullscreen:"",loading:"lazy"}}></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13425.808366924324!2d74.8207416968506!3d32.72718415917507!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53673d0d8afc078c!2sSharva%20Foundation!5e0!3m2!1sen!2sin!4v1621161103362!5m2!1sen!2sin" style={{ width:"100%" ,height:"50vh", border:0, allowfullscreen:"",loading:"lazy"}}></iframe>
 
       <section className="contact">
 

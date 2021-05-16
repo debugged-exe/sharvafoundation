@@ -90,4 +90,4 @@ const BackgroundCarousel = () => {
     );
 }
 
-export default BackgroundCarousel
+export default BackgroundCarousel;

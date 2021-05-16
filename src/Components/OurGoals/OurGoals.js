@@ -1,7 +1,7 @@
-import React,{useState} from 'react';
-import './Listcard.css';
+import React, {useState} from 'react';
+import './OurGoals.css';
 import Carousel from 'react-elastic-carousel';
-import Altcard from './Altcard.js';
+import Card from './Card.js';
 
 
 const breakPoints = [
@@ -12,7 +12,7 @@ const breakPoints = [
     {showArrows:true},
 ]
 
-function Listcard(){
+function OurGoals(){
     const [hover1, toggleHover1] = useState(false);
     const [hover2, toggleHover2] = useState(false);
 
@@ -34,10 +34,10 @@ function Listcard(){
             </div>
             </div>
             <Carousel breakPoints={breakPoints}>
-            <Altcard />
-            <Altcard />
-            <Altcard />
-            <Altcard />
+            <Card />
+            <Card/>
+            <Card />
+            <Card />
             </Carousel>
             <div data-aos='fade-up' className='w-100 ourButtons mt4 mb4 flex justify-center'>
             	<div style={hover1?{color: 'white', fontWeight: 'bold', border:'2px solid #e88f0a'}:{color: '#e88f0a', fontWeight: 'bold', border:'1.5px solid #e88f0a'}} onMouseEnter = {() => toggleHandler1()} onMouseLeave = {() => toggleHandler1()} className = "mh2 br2 mt2 mb4 ba btn ph4 pv3 ">MAKE DONATION</div>
@@ -47,4 +47,4 @@ function Listcard(){
     )
 }
 
-export default Listcard;
+export default OurGoals;

@@ -1,32 +1,24 @@
-
-.w-10 {
-    width: 10%;
+.navbarIcon{
+    float: left;
 }
-
-.w-90 {
-    width: 90%;
-}
-
 .w-100 {
     width: 100%;
 }
 
+.iconStyling{
+    width: 56px;
+    height:48px;
+}
 .pa3 {
-    padding-top: 1rem;
-    padding-bottom:1rem;
+    padding-top: 8px;
+    padding-bottom:8px;
 }
 
-.tr {
-    text-align: right;
+.navbarContents{
+    display:block;
+    float:right;
 }
 
-.f6 {
-    font-size: .875rem;
-}
-
-.v-mid {
-    vertical-align: middle;
-}
 .navButton{
     color:black;
     background-color: orange;
@@ -43,6 +35,3 @@
     }
 }
 
-.navbarContents{
-    display: inline-block;
-}
