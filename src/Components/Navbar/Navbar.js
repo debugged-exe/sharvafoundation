@@ -1,24 +1,36 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './Navbar.css';
 import imgUrl from './sharva.png';
 
 function Navbar () {
+
+  const [navbarContents,setNavbarContents]=useState(true);
+
     return(
-      
-        <nav className="dt w-100 border-box pa3 ">
-  <a className="dtc v-mid mid-gray link navbarIcon  " href="#" title="Home">
-    <img src={imgUrl} class="dib br-100 iconStyling" alt="Site Name" />
-  </a>
-  
-  <div className="dtc navbarContents v-mid ">
-    <a className="link dim dark-gray hoverStyle f5 f5-ns dib mr3 mr4-ns" href="#" title="home">Home</a>
-    <a className="link dim dark-gray f5 f5-ns dib  mr4-ns" href="#" title="Our Initiatives">Our Initiatives</a>
-    <a className="link dim dark-gray f5 f5-ns dib  mr4-ns" href="#" title="Covid 19">Covid-19</a>
-    <a className="link dim dark-gray f5 f5-ns dib  mr4-ns" href="#" title="About Us">About Us</a>
-    <a className="link dim dark-gray f5 f5-ns dib  mr4-ns" href="#" title="Events">Contact Us</a>  
-    <a className="f5  link  br2  ph3 pv2 mb2 dib navButton" href="#0">Donate Now</a>
-    </div>
-</nav>
+      <nav className="flex justify-even items-center ">
+        <div className="mr2">
+          <img src={imgUrl} alt="Logo" style={{height:"60px",width:"60px"}}></img>
+        </div>
+        <div className= {`hide-contents ${navbarContents?'show':'hide'}`}  >
+          <ul className="list-style-none flex justify-center mr2 items-center ">
+            <li className="mh2 f5 "><a href="" >Home</a></li>
+            <li className="mh2 f5"><a href="">Our Initiatives</a></li>
+            <li className="mh f5"><a href="">Covid 19</a></li>
+            <li className="mh2 f5"><a href="">About Us</a></li>
+            <li className="mh2 f5"><a href="">Contact Us</a></li>
+            {/* <li><a href=""></a>Button</li> */}
+          </ul>
+        </div>
+        <div className= {` ml2 hide-contents ${navbarContents?'show':'hide'}`} >
+        <a class="f6 link dim br2 ph3 pv2 white bg-black" href="#0">Donate Now</a>
+        </div>
+        <div className="burger " onClick={()=>setNavbarContents(true)}>
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
+        </div>
+        
+      </nav>
     );
 }
 

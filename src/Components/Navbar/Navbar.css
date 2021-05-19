@@ -1,37 +1,31 @@
-.navbarIcon{
-    float: left;
+.list-style-none{
+     text-decoration: none;
+     list-style: none;
+ }
+
+ .burger{
+    cursor: pointer;
+    position:absolute;
+    right: 30px;
+    top: 15px;
 }
-.w-100 {
-    width: 100%;
+.line{
+    width: 33px;
+    background-color: rgb(0, 0, 0);
+    height: 4px;
+    margin: 5px 3px;
 }
 
-.iconStyling{
-    width: 56px;
-    height:48px;
-}
-.pa3 {
-    padding-top: 8px;
-    padding-bottom:8px;
-}
-
-.navbarContents{
+.show{
     display:block;
-    float:right;
+}
+.hide{
+    display:none;
 }
 
-.navButton{
-    color:black;
-    background-color: orange;
-}
-@media screen and (min-width: 30em) {
 
-
-    .mr4-ns {
-        margin-right: 2rem;
+ @media screen and (max-width:650px){
+    .hide-contents{
+        display: none;
     }
-
-    .f5-ns {
-        font-size: 1rem;
-    }
-}
-
+ }

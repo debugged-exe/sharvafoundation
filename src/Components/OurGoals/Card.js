@@ -12,16 +12,14 @@ function Card(){
                 <div className="Detail">
                 <h4> Event Heading which here is used as a sample template Heading </h4>
               <p><b>₹42,000</b> raised out of  ₹60,000</p>
-            <div class="skill-bar">
-                    <div class="skill-per" per="90"></div>
+                    <div class="skill-bar">
+                         <div class="skill-per" per="90"></div>
+                    </div>
                 </div>
                 <div className="flex justify-center items-center">
-                <a className="f5  link br2 ph3 pv2 mb2 mt2  dib cardButton" href="#0">Donate Now</a>
-                </div>
-                
-                </div>
+                        <a className="f5  link br2 ph3 pv2 mb2  dib cardButton" href="#0">Donate Now</a>
+                    </div>
                 <div className="lastLine ">
-                   
                     <p><b>100 Supporters</b></p>
                     <a href="sharvafoundation.org" className="">
                         <b>Learn More</b>
