@@ -27,7 +27,7 @@ function OurGoals(){
         <div>
             <div className="ourGoals mt4 pa3">
             <div className="mw5 mw7-ns center topText pa3 ">
-                <h2 className="center" style={{paddingBottom:'10px'}}>OUR GOALS</h2>
+                <h2 className="center" style={{paddingBottom:'10px',textDecoration:'underline',textDecorationColor:'#ff8c00'}}>OUR GOALS</h2>
                 <p className="lh-copy ">
                 The optimus goal of Sharva Foundation is to be completely equipped and primed with relief funds so as to be ready with an optimum amount for any event or uncalled situation.
                 </p>

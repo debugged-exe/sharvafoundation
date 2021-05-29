@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from "../Components/Navbar/Navbar.js";
+import Events from "../Components/Events/Events.js";
 import Aboutus from "../Components/Aboutus/Aboutus.js";
 import OurGoals from "../Components/OurGoals/OurGoals";
 import Counter from "../Components/Counter/Counter.js";
@@ -12,13 +13,14 @@ import './App.css';
 function App() {
   return (
     <div>
-       <Navbar />
+        <Navbar />
       <BackgroundCarousel />
       <Counter />
       <Aboutus />
        <OurGoals />
       <Contact />
-      <Footer />
+      <Footer /> 
+      <Events />
     </div>
   );
 }

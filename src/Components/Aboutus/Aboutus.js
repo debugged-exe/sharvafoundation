@@ -5,7 +5,7 @@ function Aboutus(){
     return(
         <div className="aboutUs mb3">
             <div className="mw5 mw7-ns center topText pa3 ">
-                <h2 className="center" style={{paddingBottom:'1em'}}>ABOUT SHARVA</h2>
+                <h2 className="center" style={{paddingBottom:'1em',textDecoration:'underline',textDecorationColor:'#ff8c00'}}>ABOUT SHARVA</h2>
                 <p className="lh-copy ">
                 Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
                  The passage is attributed to an unknown typesetter in the 15th century<br />

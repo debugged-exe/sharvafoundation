@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+}
+
+.event-text {
+  line-height: 2rem;
+}
+
+.event-text-image {
+  width: 50%;
+  object-fit:inherit;
+  
+}
+
+@media screen and (max-width: 800px) {
+  .event-text-image {
+    width: 100%;
+  }
+}
+/*Css code for having image first and text second on the events page*/
+/* .event-text {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 800px) {
+  .event-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+} */
+
+.img-area {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+
+.img-text {
+  width: 100%;
+}
+
+.img-card{
+  width:25%;
+  padding:10px;
+  margin: 5px;
+}
+
+.img-card,p{
+  text-align: right;
+}
+@media screen and (max-width:600px){
+  .img-card{
+    width:100%;
+  }
+}
+
+.event-heading{
+  border-bottom:10px orange;
+  width:300px;
+}
