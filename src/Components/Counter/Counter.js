@@ -10,7 +10,7 @@ function Counter() {
         <div className="counter-container bg-white">
             <div className="floatCard grow pointer flex-column justify-center bg-white shadow-2 mb2 br3 tc mh4 pv4 ph4">
                 <GiMeal color="#FF9800" size="3em" />
-                <div className="pv2"><span className="txt num1">100</span></div>
+            <div className="pv2"><span className="txt num1">100</span></div>
                 <div className="pv2"><span className="txt">Food Kits</span></div>
             </div>
             <div className="floatCard grow pointer flex-column justify-center bg-white shadow-2 mb2 br3 tc mh4 pv4 ph4">

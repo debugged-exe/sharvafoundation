@@ -10,6 +10,7 @@ import pic7 from './7.jpeg';
 import pic11 from './11.jpeg';
 import pic12 from './12.jpeg';
 import pic13 from './13.jpeg';
+import {FaChevronCircleDown} from 'react-icons/fa';
 
 function Events() {
     return (
@@ -17,10 +18,10 @@ function Events() {
             <div className="pa2">
                 <img src={pic4} className="event-image" style={{ width: "100%", height: "500px" }} />
             </div>
-            <div className="event-text mb3" style={{maxHeight:"20vh"}}>
-                <div className="fl event-text-image pa2" style={{textAlign:"center"}}>
+            <div className="event-text mb3" style={{ maxHeight: "20vh" }}>
+                <div className="fl event-text-image pa2" style={{ textAlign: "center" }}>
                     <h1>Heading</h1>
-                    <p style={{textAlign:"left"}}>Lorem ipsum, or lipsum as it is sometimes known,
+                    <p style={{ textAlign: "left" }}>Lorem ipsum, or lipsum as it is sometimes known,
                     is dummy text used in laying out print, graphic or web designs.
                     The passage is attributed to an unknown typesetter in the
                     15th century who is thought to have scrambled parts of Cicero's
@@ -32,7 +33,7 @@ function Events() {
                     15th century who is thought to have scrambled parts of Cicero's
                     De Finibus Bonorum et Malorum for use in a
                     type specimen book. <br />
-                    
+                    <FaChevronCircleDown/>
                     </p>
                 </div>
                 <div className="fl event-text-image pa3" id="image">
@@ -41,61 +42,62 @@ function Events() {
             </div>
             <div className="image-grid pa5 " >
                 <div className="level-one mt2">
-                    <div className="event-heading" style={{textAlign:"left"}}>
-                        <h2 style={{textDecoration:'underline',textDecorationColor:'orange'}}>RECENT EVENTS</h2>
+                    <div className="event-heading">
+                        <h2 style={{ fontSize:"2rem", padding: "1rem" }}>RECENT EVENTS</h2>
+                        <hr style={{ border: "1px solid orange", flex: "1", height:"2px",backgroundColor: "orange"}} />
                     </div>
-                <div className="  w-100  flex justify-between">
-                    <div className="pa3 mb4 mr4" >
-                        <img src={pic11} alt="gridImage" style={{borderRadius:"8px",height:"200px",width:"300px",objectFit:"cover"}} />
-                        <p>22 May,2021</p>
-                    </div>
-                    <div className="pa3 mb4 mr4">
-                        <img src={pic12} alt="gridImage" style={{borderRadius:"8px",height:"200px",width:"300px",objectFit:"cover"}} />
-                        <p>22 May,2021</p>
-                    </div>
-                    <div className="pa3  mb4 mr4">
-                        <img src={pic13} alt="gridImage" style={{borderRadius:"8px",height:"200px",width:"300px",objectFit:"cover"}} />
-                        <p>22 May,2021</p>
-                    </div>
-                </div>
-            </div>
-            <div className="level-two">
-                    <div style={{textAlign:"left"}}>
-                        <h2 style={{textDecoration:'underline',textDecorationColor:'#ff8c00'}}>PAST EVENTS</h2>
-                    </div>
-                <div className="  w-100  flex justify-between">
-                    <div className="pa3 mb4 mr4" >
-                        <img src={pic7} alt="gridImage" style={{borderRadius:"8px",height:"200px",width:"300px",objectFit:"cover"}} />
-                        <p>22 May,2021</p>
-                    </div>
-                    <div className="pa3 mb4 mr4">
-                        <img src={pic2} alt="gridImage" style={{borderRadius:"8px",height:"200px",width:"300px",objectFit:"cover"}}/>
-                        <p>22 May,2021</p>
-                    </div>
-                    <div className="pa3  mb4 mr4">
-                        <img src={pic3} alt="gridImage" style={{borderRadius:"8px",height:"200px",width:"300px",objectFit:"cover"}}/>
-                        <p>22 May,2021</p>
+                    <div className="w-100 flex justify-around">
+                        <div className="pa3 mb4 mr4" >
+                            <img src={pic11} alt="gridImage" style={{ borderRadius: "8px", height: "220px", width: "320px", objectFit: "cover" }} />
+                            <p>22 May,2021</p>
+                        </div>
+                        <div className="pa3 mb4 mr4">
+                            <img src={pic12} alt="gridImage" style={{ borderRadius: "8px", height: "220px", width: "320px", objectFit: "cover" }} />
+                            <p>22 May,2021</p>
+                        </div>
+                        <div className="pa3  mb4 mr4">
+                            <img src={pic13} alt="gridImage" style={{ borderRadius: "8px", height: "220px", width: "320px", objectFit: "cover" }} />
+                            <p>22 May,2021</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="level-one">
-                    
-                <div className="  w-100  flex justify-between">
-                    <div className="pa3 mb4 mr4" >
-                        <img src={pic4} alt="gridImage" style={{borderRadius:"8px",height:"200px",width:"300px",objectFit:"cover"}} />
-                        <p>22 May,2021</p>
+                <div className="level-two">
+                    <div style={{ textAlign: "left", margin: "1rem", display: "flex", flexFlow: "row", justifyContent: "center", alignItems: "center" }}>
+                        <h2 style={{fontSize:"2rem", padding: "1rem" }}>PAST EVENTS</h2>
+                        <hr style={{ border: "1px solid orange", flex: "1", height:"2px",backgroundColor: "orange" }} />
                     </div>
-                    <div className="pa3 mb4 mr4">
-                        <img src={pic5} alt="gridImage" style={{borderRadius:"8px",height:"200px",width:"300px",objectFit:"cover"}}/>
-                        <p>22 May,2021</p>
-                    </div>
-                    <div className="pa3  mb4 mr4">
-                        <img src={pic6} alt="gridImage" style={{borderRadius:"8px",height:"200px",width:"300px",objectFit:"cover"}}/>
-                        <p>22 May,2021</p>
+                    <div className="  w-100  flex justify-between">
+                        <div className="pa3 mb4 mr4" >
+                            <img src={pic7} alt="gridImage" style={{ borderRadius: "8px", height: "200px", width: "300px", objectFit: "cover" }} />
+                            <p>22 May,2021</p>
+                        </div>
+                        <div className="pa3 mb4 mr4">
+                            <img src={pic2} alt="gridImage" style={{ borderRadius: "8px", height: "200px", width: "300px", objectFit: "cover" }} />
+                            <p>22 May,2021</p>
+                        </div>
+                        <div className="pa3  mb4 mr4">
+                            <img src={pic3} alt="gridImage" style={{ borderRadius: "8px", height: "200px", width: "300px", objectFit: "cover" }} />
+                            <p>22 May,2021</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-                
+                <div className="level-one">
+                    <div className="  w-100  flex justify-between">
+                        <div className="pa3 mb4 mr4" >
+                            <img src={pic4} alt="gridImage" style={{ borderRadius: "8px", height: "200px", width: "300px", objectFit: "cover" }} />
+                            <p>22 May,2021</p>
+                        </div>
+                        <div className="pa3 mb4 mr4">
+                            <img src={pic5} alt="gridImage" style={{ borderRadius: "8px", height: "200px", width: "300px", objectFit: "cover" }} />
+                            <p>22 May,2021</p>
+                        </div>
+                        <div className="pa3  mb4 mr4">
+                            <img src={pic6} alt="gridImage" style={{ borderRadius: "8px", height: "200px", width: "300px", objectFit: "cover" }} />
+                            <p>22 May,2021</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     )

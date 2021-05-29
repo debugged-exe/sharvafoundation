@@ -8,8 +8,7 @@
 
 .event-text-image {
   width: 50%;
-  object-fit:inherit;
-  
+  object-fit: inherit;
 }
 
 @media screen and (max-width: 800px) {
@@ -40,27 +39,37 @@
   border-radius: 8px;
 }
 
-
 .img-text {
   width: 100%;
 }
 
-.img-card{
-  width:25%;
-  padding:10px;
+.img-card {
+  width: 25%;
+  padding: 10px;
   margin: 5px;
 }
 
-.img-card,p{
+.img-card,
+p {
   text-align: right;
 }
-@media screen and (max-width:600px){
-  .img-card{
-    width:100%;
+@media screen and (max-width: 600px) {
+  .img-card {
+    width: 100%;
   }
 }
 
-.event-heading{
-  border-bottom:10px orange;
-  width:300px;
+.event-heading {
+  border-bottom: 10px orange;
+  width: 100%;
+  margin: 1rem;
+}
+
+.event-heading {
+  text-align: left;
+  margin: 1rem;
+  display: flex;
+  flex-flow: "row";
+  justify-content: center;
+  align-items: center;
 }

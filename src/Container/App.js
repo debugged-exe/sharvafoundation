@@ -13,14 +13,14 @@ import './App.css';
 function App() {
   return (
     <div>
-        <Navbar />
+      <Navbar />
       <BackgroundCarousel />
       <Counter />
       <Aboutus />
-       <OurGoals />
-      <Contact />
-      <Footer /> 
+      <OurGoals />
       <Events />
+      <Contact />
+      <Footer />
     </div>
   );
 }
