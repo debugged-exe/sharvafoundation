@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './Events.css';
 import pic1 from './1.jpeg';
 import pic2 from './2.jpeg';
@@ -12,9 +12,46 @@ import pic12 from './12.jpeg';
 import pic13 from './13.jpeg';
 
 function Events() {
+
+    const [showR,setShowRecent]=useState(true)
+    const [showP,setShowPast]=useState(true)
+
+    const recentEvents=
+        <div className="  w-100  flex justify-between">
+                    <div className="pa3 mb4 mr4" >
+                        <img src={pic11} alt="gridImage" style={{borderRadius:"8px",height:"200px",width:"300px",objectFit:"cover"}} />
+                        <p>22 May,2021</p>
+                    </div>
+                    <div className="pa3 mb4 mr4">
+                        <img src={pic12} alt="gridImage" style={{borderRadius:"8px",height:"200px",width:"300px",objectFit:"cover"}} />
+                        <p>22 May,2021</p>
+                    </div>
+                    <div className="pa3  mb4 mr4">
+                        <img src={pic13} alt="gridImage" style={{borderRadius:"8px",height:"200px",width:"300px",objectFit:"cover"}} />
+                        <p>22 May,2021</p>
+                    </div>
+                </div>
+        
+ const pastEvents=
+    <div className="  w-100  flex justify-between">
+        <div className="pa3 mb4 mr4" >
+            <img src={pic11} alt="gridImage" style={{borderRadius:"8px",height:"200px",width:"300px",objectFit:"cover"}} />
+            <p>22 May,2021</p>
+        </div>
+        <div className="pa3 mb4 mr4">
+            <img src={pic12} alt="gridImage" style={{borderRadius:"8px",height:"200px",width:"300px",objectFit:"cover"}} />
+            <p>22 May,2021</p>
+        </div>
+        <div className="pa3  mb4 mr4">
+            <img src={pic13} alt="gridImage" style={{borderRadius:"8px",height:"200px",width:"300px",objectFit:"cover"}} />
+            <p>22 May,2021</p>
+        </div>
+    </div>
+    
+
     return (
         <div className="">
-            <div className="pa2">
+             <div className="pa2">
                 <img src={pic4} className="event-image" style={{ width: "100%", height: "500px" }} />
             </div>
             <div className="event-text mb3" style={{maxHeight:"20vh"}}>
@@ -58,6 +95,14 @@ function Events() {
                         <p>22 May,2021</p>
                     </div>
                 </div>
+                <div className="show-more justify-center">
+                {
+                    showR?recentEvents:null
+                 }
+             <button onClick={()=>setShowRecent(true)}>Show More</button>
+            <button onClick={()=>setShowRecent(false)}>Show Less</button> 
+                </div>
+                
             </div>
             <div className="level-two">
                     <div style={{textAlign:"left"}}>
@@ -95,8 +140,15 @@ function Events() {
                     </div>
                 </div>
             </div>
+            <div className="show-more justify-center">
+                {
+                    showP?pastEvents:null
+                 }
+             <button onClick={()=>setShowPast(true)}>Show More</button>
+            <button onClick={()=>setShowPast(false)}>Show Less</button> 
+                </div>
                 
-            </div>
+            </div> 
         </div>
     )
 }
