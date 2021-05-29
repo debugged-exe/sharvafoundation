@@ -16,7 +16,6 @@ function App() {
       <Navbar />
       <BackgroundCarousel />
       <Counter />
-      <Aboutus />
       <OurGoals />
       <Events />
       <Contact />
