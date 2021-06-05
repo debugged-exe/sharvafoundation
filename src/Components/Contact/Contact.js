@@ -30,10 +30,9 @@ function Contact(){
            </div>
             </div>
             <div className="box">
-             <div className="icon"><FaPhoneAlt />
-             </div>
+             <div className="icon"><FaPhoneAlt /> </div>
            <div className="text">
-             <h3>ABCDEFG</h3>
+             <h3>Ankita Zadoo</h3>
            <p>1234567890</p>
            </div>
             </div>
