@@ -15,15 +15,14 @@ function Footer(){
     <div className="body" style={{display: 'inline-block', width: "100%"}}>
         <footer className="footer">
             <div className="footer-left">
-                <span style={{ padding: "30px 10px 3px 10px", borderRadius: "50%"}}>
                     <img src={"https://www.sharvafoundation.org/static/images/logo.png"} alt=""/>
-                </span>
+
                 <p> Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
 
             </div>
             <ul className="footer-right">
-           <li>
+           <li className="EventsBranches">
                      <h2 className={'h2'}>EVENTS</h2>
                      <ul className="box">
                          <li><a href="">Event 1</a></li>
@@ -34,7 +33,7 @@ function Footer(){
                  </li>
              </ul>
              <ul className="footer-right">
-            <li>
+            <li className="EventsBranches">
                       <h2 className={'h2'}>BRANCHES</h2>
                       <ul className="box">
                           <li><a href="">Pune</a> </li>

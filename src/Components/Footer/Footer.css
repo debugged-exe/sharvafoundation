@@ -25,6 +25,7 @@ footer{
 .footer-left{
     margin-left: 1.25em;
     margin-bottom: 2em;
+    padding-top: 25px;
 }
 .footer-left img{
     width: 20%;
@@ -86,6 +87,9 @@ list-style: none;
 {
 	bottom: 0;
 	width: 100%;
+}
+.EventsBranches{
+  padding-top: 25px;
 }
 
 @media screen and (min-width:600px){

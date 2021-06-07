@@ -17,12 +17,12 @@ function Card(){
                     </div>
                 </div>
                 <div className="flex justify-center items-center">
-                        <a className="f5  link br2 ph3 pv2 mb2  dib cardButton" href="#0">Donate Now</a>
+                        <a className="f5  link br2 ph3 pv2 mb2 tc  dib cardButton" href="#0">Donate Now</a>
                     </div>
                 <div className="lastLine ">
                     <p><b>100 Supporters</b></p>
                     <a href="sharvafoundation.org" className="">
-                        <b>Learn More</b>
+                        <b className="LearnColor">Learn More</b>
                     </a>
                 </div>
             </div>

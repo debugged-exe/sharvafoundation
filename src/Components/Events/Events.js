@@ -11,15 +11,15 @@ function Events() {
         <div className="grid">
             <div className="pa3 ma3" >
                 <img src={pic4} className="gridImage pointer grow shadow-5"/>
-                <p>22 May,2021</p>
+                <p className="onrightDate">22 May,2021</p>
             </div>
             <div className="pa3 ma3">
                 <img src={pic4} className="gridImage pointer grow shadow-5" />
-                <p>22 May,2021</p>
+                <p className="onrightDate">22 May,2021</p>
             </div>
             <div className="pa3 ma3">
                 <img src={pic4} className="gridImage pointer grow shadow-5" />
-                <p>22 May,2021</p>
+                <p className="onrightDate">22 May,2021</p>
             </div>
         </div>
 
@@ -27,8 +27,8 @@ function Events() {
         <div className="events-1 ba">
             {/* The 100% width image */}
             <div className="events-top-image">
-                <h3 className="events-tagline">#HungerFreeIndia</h3>  
-              
+                <h3 className="events-tagline">#HungerFreeIndia</h3>
+
             </div>
 
             {/* 50% text and 50% image responsive div */}
@@ -47,7 +47,7 @@ function Events() {
                     15th century who is thought to have scrambled parts of Cicero's
                     De Finibus Bonorum et Malorum for use in a
                     type specimen book. <br />
-                        
+
                     </p>
                 </div>
                 <div className="event-img">
@@ -66,15 +66,15 @@ function Events() {
                     <div className="grid">
                         <div className="pa3 ma3" >
                             <img src={pic4} className="gridImage pointer grow shadow-5" />
-                            <p>22 May,2021</p>
+                            <p className="onrightDate">22 May,2021</p>
                         </div>
                         <div className="pa3 ma3">
                             <img src={pic4} className="gridImage pointer grow shadow-5" />
-                            <p>22 May,2021</p>
+                            <p className="onrightDate">22 May,2021</p>
                         </div>
                         <div className="pa3 ma3">
                             <img src={pic4} className="gridImage pointer grow shadow-5" />
-                            <p>22 May,2021</p>
+                            <p className="onrightDate">22 May,2021</p>
                         </div>
                     </div>
                 </div>
@@ -87,15 +87,15 @@ function Events() {
                     <div className="grid">
                         <div className="pa3 ma3" >
                             <img src={pic4} className="gridImage pointer grow shadow-5" />
-                            <p>22 May,2021</p>
+                            <p className="onrightDate">22 May,2021</p>
                         </div>
                         <div className="pa3 ma3">
                             <img src={pic4} className="gridImage pointer grow shadow-5" />
-                            <p>22 May,2021</p>
+                            <p className="onrightDate">22 May,2021</p>
                         </div>
                         <div className="pa3 ma3">
                             <img src={pic4} className="gridImage pointer grow shadow-5" />
-                            <p>22 May,2021</p>
+                          <p className="onrightDate">22 May,2021</p>
                         </div>
                     </div>
                 </div>

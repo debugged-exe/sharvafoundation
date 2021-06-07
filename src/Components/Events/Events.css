@@ -78,7 +78,10 @@
   width: 320px;
   object-fit: fill;
 }
-
+.onrightDate{
+  display: flex;
+  justify-content: flex-end;
+}
 /* "Show Less" and "Show More" */
 .showButtons {
   display: flex;

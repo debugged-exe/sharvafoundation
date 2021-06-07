@@ -2,6 +2,8 @@ import pic11 from './11.jpeg';
 import pic12 from './12.jpeg';
 import pic13 from './13.jpeg';
 
+
+
 function showContent() {
     const recentEvents =
         <div className="  w-100  flex justify-between">
