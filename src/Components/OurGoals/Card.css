@@ -75,3 +75,8 @@
 .LearnColor{
   color: #ff8c00;
 }
+@media only screen and (max-width: 390px) {
+  .cardButton{
+    display: flex;
+  }
+}
