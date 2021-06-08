@@ -43,21 +43,21 @@ const Navbar = ()  => {
           <ul className={` ${navbarContents} list-style-none flex justify-around pa2 mr2 items-center ${dropDown} `}>
 
             <Link to="/">
-                <li className="mh2  nav-item">Home</li></Link>
+                <li className="mh2 black nav-item">Home</li></Link>
             <Link to="/">
-                <li className="mh2  nav-item pr2 ">Our Initiatives</li></Link>
+                <li className="mh2 black nav-item pr2 ">Our Initiatives</li></Link>
             <Link to="/">
-                <li className="mh  nav-item pl1">Covid 19</li></Link>
+                <li className="mh black nav-item pl1">Covid 19</li></Link>
             <Link to="/" >
-                <li className="mh2  nav-item pr1 pl1">About Us</li></Link>
-            <Link to="/">
-            <li className="mh2  nav-item">Join Us</li></Link>
+                <li className="mh2 black nav-item pr1 pl1">About Us</li></Link>
+              <Link to="/joinus">
+            <li className="mh2  black nav-item">Join Us</li></Link>
             <Link to="/contactus">
-                <li className="mh2  nav-item pr1">Contact Us</li></Link>
+                <li className="mh2 black nav-item pr1">Contact Us</li></Link>
                 <div className="pt2 pb3">
               <a class="f5 link dim br2 ph3 pv2 white nav-donate " href="" style={{backgroundColor:"#e88f0a"}}>Donate Now</a></div>
 
-              <p className='tc'><Link className={`f6 link dim ph3 pv1 mb2 dib white  cross flex justify-center items-center`} href='#0'
+            <p className='tc'><Link className={`f6 link dim ph3 pv1 mb2 dib white crossNavbar flex justify-center items-center`} href='#0'
                 onClick={()=>hamburger()}
                 >
                 X

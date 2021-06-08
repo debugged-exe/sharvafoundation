@@ -6,7 +6,7 @@ import Eventspage from '../Pages/Eventspage.js';
 import Contactpage from '../Pages/Contactpage';
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
-
+import JoinUs from "../Components/JoinUs/JoinUs";
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Homepage} />
             <Route exact path="/events" component={Eventspage} />
+            <Route exact path="/joinus" component={JoinUs} />
             <Route exact path="/contactus" component={Contactpage} />
           </Switch>
           <Footer />
