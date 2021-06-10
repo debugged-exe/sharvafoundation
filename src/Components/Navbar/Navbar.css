@@ -33,6 +33,7 @@
 .sub-menu {
   border-radius: 5px;
   list-style: none;
+
   display: none;
   position: absolute;
   background-color: #f1f1f1;
@@ -58,6 +59,7 @@
 .sub-menu-item {
   border-radius: 3px;
   color: black;
+  list-style-type: none;
 }
 
 .sub-menu-item:hover {

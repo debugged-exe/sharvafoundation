@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
 import pic4 from './4.jpeg';
+import {giveherwings,giveherwingspics} from "../../Database/giveherwings";
+import {strivewithpride,strivewithpridepics} from "../../Database/strivewithpride";
+import {projectruya,projectruyapics} from "../../Database/projectruya";
+import {hungerfreeindia,hungerfreeindiapics} from "../../Database/hungerfreeindia";
+import {asfreeasabird,asfreeasabirdpics} from "../../Database/asfreeasabird";
 import eventImage from './2.jpeg';
 import './Events.css';
 
-function Events() {
+function Events({event,pics}) {
 
     const [showP, setShowPast] = useState(false)
 

@@ -47,7 +47,7 @@ const Navbar = () => {
           <Link to="/">
             <li className="list-style-none mh2 black menu">Our Initiatives
             <ul className="sub-menu black align-center">
-                <li className="sub-menu-item"><a>HungerFreeIndia</a></li>
+              <Link to="/events"><li className="sub-menu-item"> HungerFreeIndia</li></Link>
                 <li className="sub-menu-item"><a>StriveWithPride</a></li>
                 <li className="sub-menu-item"><a>ProjectRuya</a></li>
                 <li className="sub-menu-item"><a>AsFreeAsBird</a></li>
@@ -56,7 +56,7 @@ const Navbar = () => {
             </li></Link>
           <Link to="/">
             <li className="list-style-none mh2 black menu">Covid 19</li></Link>
-          <Link to="/" >
+          <Link to="/aboutus" >
             <li className="list-style-none mh2 black menu">About Us</li></Link>
           <Link to="/joinus">
             <li className="list-style-none mh2 black menu">Join Us</li></Link>

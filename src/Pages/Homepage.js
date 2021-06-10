@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 import BackgroundCarousel from "../Components/BackgroundCarousel/BackgroundCarousel";
 import Counter from "../Components/Counter/Counter";
  import Aboutus from "../Components/Aboutus/Aboutus";
@@ -11,7 +12,7 @@ function Homepage(){
             
             <BackgroundCarousel />
             <Counter />
-            <Aboutus /> 
+            <Link to  path="/aboutus" component={Aboutus} /> 
             <OurGoals />
             
         </div>
