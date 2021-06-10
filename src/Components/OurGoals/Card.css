@@ -1,82 +1,94 @@
-.newcard{
-    display: flex;
-    flex-direction: column;
-    width: 85%;
-    height:450px;
-    padding:0px;
-    margin:10px;
+.newcard {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 500px;
+  padding: 0px;
+  margin: 10px;
   background-color: #fff;
-  box-shadow: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 );
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.2);
   border-radius: 16px;
-
 }
-.newcard:hover{
-  box-shadow: 9px 10px 21px -10px rgba(0,0,0,0.83);
--webkit-box-shadow: 9px 10px 21px -10px rgba(0,0,0,0.83);
--moz-box-shadow: 9px 10px 21px -10px rgba(0,0,0,0.83);
-
+.newcard:hover {
+  box-shadow: 9px 10px 21px -10px rgba(0, 0, 0, 0.83);
+  -webkit-box-shadow: 9px 10px 21px -10px rgba(0, 0, 0, 0.83);
+  -moz-box-shadow: 9px 10px 21px -10px rgba(0, 0, 0, 0.83);
 }
 
-.cardImg{
-    height:30vh;
-    width:100%;
-
+.cardImg {
+  height: 30vh;
+  width: 100%;
 }
 
-.lastLine{
-    display: flex;
-    padding-top: 25px;
-    justify-content: space-between;
+.lastLine {
+  display: flex;
+  padding-top: 25px;
+  justify-content: space-between;
 }
-.skill-bar{
+.skill-bar {
   height: 10px;
   background-color: #cacaca;
   border-radius: 8px;
 }
-.skill-per{
+.skill-per {
   height: 10px;
   background-color: #e88f0a;
   border-radius: 8px;
   width: 50%;
 }
-.cardBottom p{
- color: #666;
+.cardBottom p {
+  color: #666;
 }
-.cardBottom p b{
- color: black;
+.cardBottom p b {
+  color: black;
 }
-.Detail{
+.Detail {
   padding-top: 10px;
 }
-.Detail p{
-  padding-bottom:  10px;
+.Detail p {
+  padding-bottom: 10px;
   padding-top: 30px;
 }
 
-.cardBottom{
+.cardBottom {
   padding: 16px;
 }
 
-.lastLine{
+.lastLine {
   display: flex;
   justify-content: space-around;
 }
 
-.cardImg{
+.cardImg {
   border-radius: 10px;
 }
 
-.cardButton{
-    color:white;
-    width:40%;
-    margin-top:25px;
-    background-color: #ff8c00;
+.cardButton {
+  color: white;
+  width: 40%;
+  margin-top: 25px;
+  background-color: #ff8c00;
 }
-.LearnColor{
+.LearnColor {
   color: #ff8c00;
 }
 @media only screen and (max-width: 390px) {
-  .cardButton{
+  .cardButton {
     display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .newcard {
+    width: 100%;
+    height: 50%;
+  }
+
+  .lastLine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
