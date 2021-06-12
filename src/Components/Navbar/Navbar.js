@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import { Link } from "react-router-dom";
+import giveherwings from "../../Database/giveherwings";
+import strivewithpride from "../../Database/strivewithpride";
+import projectruya from "../../Database/projectruya";
+import hungerfreeindia from "../../Database/hungerfreeindia";
+import asfreeasabird from "../../Database/asfreeasabird";
 import imgUrl from './sharva.png';
-import Aboutus from '../Aboutus/Aboutus';
 
-const Navbar = () => {
+
+const Navbar = ({setInitiative}) => {
 
   const [navbarContents, setNavbarContents] = useState('navbarContents');
   const [dropDown, setDropDown] = useState('hidden');
@@ -21,6 +26,8 @@ const Navbar = () => {
       setLine('show')
     }
   }
+
+
 
   return (
 
@@ -47,16 +54,16 @@ const Navbar = () => {
           <Link to="/">
             <li className="list-style-none mh2 black menu">Our Initiatives
             <ul className="sub-menu black align-center">
-              <Link to="/events"><li className="sub-menu-item"> HungerFreeIndia</li></Link>
-                <li className="sub-menu-item"><a>StriveWithPride</a></li>
-                <li className="sub-menu-item"><a>ProjectRuya</a></li>
-                <li className="sub-menu-item"><a>AsFreeAsBird</a></li>
-                <li className="sub-menu-item"><a>GiveHerWingsToFly</a></li>
+              <Link to="/events"><li className="sub-menu-item" onClick={()=>setInitiative(hungerfreeindia)}> Hunger Free India</li></Link>
+              <Link to="/events"><li className="sub-menu-item" onClick={()=>setInitiative(strivewithpride)}> Strive With Pride</li></Link>
+              <Link to="/events"><li className="sub-menu-item" onClick={()=>setInitiative(projectruya)}> Project Ruya</li></Link>
+              <Link to="/events"><li className="sub-menu-item" onClick={()=>setInitiative(asfreeasabird)}> As Free As a Bird</li></Link>
+              <Link to="/events"><li className="sub-menu-item" onClick={()=>setInitiative(giveherwings)}> Give Her Wings</li></Link>
               </ul>
             </li></Link>
           <Link to="/">
             <li className="list-style-none mh2 black menu">Covid 19</li></Link>
-          <Link to="/aboutus" >
+          <Link to="/#aboutus" >
             <li className="list-style-none mh2 black menu">About Us</li></Link>
           <Link to="/joinus">
             <li className="list-style-none mh2 black menu">Join Us</li></Link>

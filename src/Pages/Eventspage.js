@@ -1,10 +1,11 @@
 import React from 'react';
 import Events from "../Components/Events/Events";
 
-function Eventspage(){
+function Eventspage({Initiative}){
     return(
         <div>
-            <Events />
+            <Events  Initiative={Initiative} />
+
         </div>
 
     )

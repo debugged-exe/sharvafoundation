@@ -12,7 +12,7 @@ function Homepage(){
             
             <BackgroundCarousel />
             <Counter />
-            <Link to  path="/aboutus" component={Aboutus} /> 
+            <Aboutus id="#aboutus"/> 
             <OurGoals />
             
         </div>

@@ -405,7 +405,11 @@ function Joinus() {
   }
 
   return (
-    <div className="backgroundjoinus mt6">
+    <div className="backgroundjoinus mt2 ">
+      <div className="flex justify-center">
+      <img src="sharva.png" className="join-logo"/>
+      </div>
+      
       <h1 className="f1 fw6">Join Us</h1>
       <div className="form-base" id="form">
         <h2>Personal Information</h2>

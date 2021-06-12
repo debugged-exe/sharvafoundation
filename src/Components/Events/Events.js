@@ -1,66 +1,60 @@
 import React, { useState } from 'react';
 import pic4 from './4.jpeg';
-import {giveherwings,giveherwingspics} from "../../Database/giveherwings";
-import {strivewithpride,strivewithpridepics} from "../../Database/strivewithpride";
-import {projectruya,projectruyapics} from "../../Database/projectruya";
-import {hungerfreeindia,hungerfreeindiapics} from "../../Database/hungerfreeindia";
-import {asfreeasabird,asfreeasabirdpics} from "../../Database/asfreeasabird";
 import eventImage from './2.jpeg';
 import './Events.css';
 
-function Events({event,pics}) {
+function Events({Initiative}) {
 
+    
+    
     const [showP, setShowPast] = useState(false)
 
     const pastEvents =
         <div className="grid">
             <div className="pa3 ma3" >
-                <img src={pic4} className="gridImage pointer grow shadow-5"/>
-                <p className="onrightDate">22 May,2021</p>
+                <img src={Initiative.posts[6].past4} className="gridImage pointer grow shadow-5"/>
+                <p className="onrightDate">{Initiative.posts[6].pastdate4}</p>
             </div>
             <div className="pa3 ma3">
-                <img src={pic4} className="gridImage pointer grow shadow-5" />
-                <p className="onrightDate">22 May,2021</p>
+                <img src={Initiative.posts[7].past5} className="gridImage pointer grow shadow-5" />
+                <p className="onrightDate">{Initiative.posts[7].pastdate5}</p>
             </div>
             <div className="pa3 ma3">
-                <img src={pic4} className="gridImage pointer grow shadow-5" />
-                <p className="onrightDate">22 May,2021</p>
+                <img src={Initiative.posts[8].past6} className="gridImage pointer grow shadow-5" />
+                <p className="onrightDate">{Initiative.posts[8].pastdate6}</p>
             </div>
         </div>
-
+console.log(Initiative);
     return (
         <div className="events-1 ba">
             {/* The 100% width image */}
             <div className="events-top-image">
-                <h3 className="events-tagline">#HungerFreeIndia</h3>
-
+                <h3 className="events-tagline">{Initiative.description.tagline}</h3>
+                <a href="#event-img">
+                <div className="eventscrollDown pointer"><a href="#"></a>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                </div>
+            </a>
             </div>
+            
 
             {/* 50% text and 50% image responsive div */}
             <div className="event-txt-img">
                 <div className="event-txt">
-                    <h1>Event Text Image</h1>
-                    <p style={{ textAlign: "left" }}>Lorem ipsum, or lipsum as it is sometimes known,
-                    is dummy text used in laying out print, graphic or web designs.
-                    The passage is attributed to an unknown typesetter in the <br />
-                    15th century who is thought to have scrambled parts of Cicero's
-                    De Finibus Bonorum et Malorum for use in a
-                    type specimen book. <br />
-                    Lorem ipsum, or lipsum as it is sometimes known,
-                    is dummy text used in laying out print, graphic or web designs.
-                    The passage is attributed to an unknown typesetter in the <br />
-                    15th century who is thought to have scrambled parts of Cicero's
-                    De Finibus Bonorum et Malorum for use in a
-                    type specimen book. <br />
-
+                    <h1>{Initiative.description.tagline}</h1>
+                    <p style={{ textAlign: "left" }}>
+                        {Initiative.description.text1}<br />
+                        {Initiative.description.text2}
                     </p>
                 </div>
-                <div className="event-img">
-                    <img src={eventImage} className="image" />
+                <div id="event-img" >
+                    <img src={Initiative.description.img} className="image" />
                 </div>
             </div>
 
-            <div className="past-recent-events">
+            <div className="past-recent-events" >
 
                 <div className="recent-events">
                     <div className="heading">
@@ -70,16 +64,16 @@ function Events({event,pics}) {
                     {/* Recent Events grid */}
                     <div className="grid">
                         <div className="pa3 ma3" >
-                            <img src={pic4} className="gridImage pointer grow shadow-5" />
-                            <p className="onrightDate">22 May,2021</p>
+                            <img src={Initiative.posts[0].recent1} className="gridImage pointer grow shadow-5" />
+                            <p className="onrightDate">{Initiative.posts[0].recentdate1}</p>
                         </div>
                         <div className="pa3 ma3">
-                            <img src={pic4} className="gridImage pointer grow shadow-5" />
-                            <p className="onrightDate">22 May,2021</p>
+                            <img src={Initiative.posts[1].recent2} className="gridImage pointer grow shadow-5" />
+                            <p className="onrightDate">{Initiative.posts[1].recentdate2}</p>
                         </div>
                         <div className="pa3 ma3">
-                            <img src={pic4} className="gridImage pointer grow shadow-5" />
-                            <p className="onrightDate">22 May,2021</p>
+                            <img src={Initiative.posts[2].recent3} className="gridImage pointer grow shadow-5" />
+                            <p className="onrightDate">{Initiative.posts[2].recentdate3}</p>
                         </div>
                     </div>
                 </div>
@@ -91,16 +85,16 @@ function Events({event,pics}) {
                     {/* Past Events grid */}
                     <div className="grid">
                         <div className="pa3 ma3" >
-                            <img src={pic4} className="gridImage pointer grow shadow-5" />
-                            <p className="onrightDate">22 May,2021</p>
+                            <img src={Initiative.posts[3].past1} className="gridImage pointer grow shadow-5" />
+                            <p className="onrightDate">{Initiative.posts[3].pastdate1}</p>
                         </div>
                         <div className="pa3 ma3">
-                            <img src={pic4} className="gridImage pointer grow shadow-5" />
-                            <p className="onrightDate">22 May,2021</p>
+                            <img src={Initiative.posts[4].past2} className="gridImage pointer grow shadow-5" />
+                            <p className="onrightDate">{Initiative.posts[4].pastdate2}</p>
                         </div>
                         <div className="pa3 ma3">
-                            <img src={pic4} className="gridImage pointer grow shadow-5" />
-                          <p className="onrightDate">22 May,2021</p>
+                            <img src={Initiative.posts[5].past3} className="gridImage pointer grow shadow-5" />
+                          <p className="onrightDate">{Initiative.posts[5].pastdate3}</p>
                         </div>
                     </div>
                 </div>
