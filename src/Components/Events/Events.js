@@ -5,8 +5,8 @@ import './Events.css';
 
 function Events({Initiative}) {
 
-    
-    
+
+
     const [showP, setShowPast] = useState(false)
 
     const pastEvents =
@@ -38,7 +38,7 @@ console.log(Initiative);
                 </div>
             </a>
             </div>
-            
+
 
             {/* 50% text and 50% image responsive div */}
             <div className="event-txt-img">

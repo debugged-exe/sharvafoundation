@@ -8,6 +8,7 @@ import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
 import JoinUs from "../Components/JoinUs/JoinUs";
 import hungerfreeindia from '../Database/hungerfreeindia';
+import DonateUs from "../Components/DonateUs/DonateUs";
 
 function App() {
   const [Initiative,setInitiative]=useState(hungerfreeindia);
@@ -24,9 +25,13 @@ function App() {
             <Route exact path="/contactus" component={Contactpage} />
           </Switch>
           <Footer />
+
+
           </div>
       </Router>
+      <DonateUs />
     </div>
+
   );
 }
 

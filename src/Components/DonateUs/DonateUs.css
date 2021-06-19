@@ -1,0 +1,84 @@
+.donationConatainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.donationImages {
+  width: 50%;
+  padding: 40px;
+}
+
+.textBox {
+  position: relative;
+  bottom: 150px;
+  left: 35%;
+  background: rgba(240, 152, 46, 0.7);
+  color: white;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  width: 70%;
+}
+.donationContents{
+  flex-direction: row;
+}
+
+.projectsStyling {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.donationAmount {
+  padding: 50px;
+}
+
+.donationAmountList {
+  padding: 20px;
+  list-style: none;
+}
+
+.donateTextbox {
+  border-width: 8px;
+  border-style: solid;
+  border-color: #f0982e;
+  outline: none;
+}
+
+.projectsUnderline {
+  text-decoration: none;
+  padding: 4px;
+  color: black;
+  font-size: 20px;
+}
+
+.projectsUnderline:after {
+  content: "";
+  display: flex;
+  position: absolute;
+  background-color: #f0982e;
+  height: 3px;
+  width: 0;
+  transition: 0.3s;
+}
+
+.projectsUnderline:hover:after {
+  width: 7%;
+}
+@media screen and (max-width: 1204px) {
+  .textBox{
+    width: 90%;
+    left:15%;
+  }
+  .donationImages{
+    width: 100%;
+    padding: 5px;
+  }
+  .projectsUnderline{
+  }
+
+}
