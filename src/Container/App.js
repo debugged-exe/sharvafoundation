@@ -8,7 +8,7 @@ import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
 import JoinUs from "../Components/JoinUs/JoinUs";
 import hungerfreeindia from '../Database/hungerfreeindia';
-import DonateUs from "../Components/DonateUs/DonateUs";
+import Donatepage  from "../Pages/Donatepage";
 
 function App() {
   const [Initiative,setInitiative]=useState(hungerfreeindia);
@@ -23,13 +23,14 @@ function App() {
             <Route exact path="/events"  component={()=><Eventspage Initiative={Initiative}/>}  />
             <Route exact path="/joinus" component={JoinUs} />
             <Route exact path="/contactus" component={Contactpage} />
+            <Route exact path="/donatenow" component={Donatepage} />
           </Switch>
           <Footer />
 
 
           </div>
       </Router>
-      <DonateUs />
+      
     </div>
 
   );

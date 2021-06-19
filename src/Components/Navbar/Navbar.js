@@ -69,9 +69,9 @@ const Navbar = ({setInitiative}) => {
             <li className="list-style-none mh2 black menu">Join Us</li></Link>
           <Link to="/contactus">
             <li className="list-style-none mh2 black menu">Contact Us</li></Link>
-          <div className="pv2">
-            <a class="f5 link dim br2 ph3 pv2 white nav-donate" href="" style={{ backgroundColor: "#e88f0a" }}>Donate Now</a></div>
-
+          <Link to ="/donatenow" className="pv2">
+            <a class="f5 link dim br2 ph3 pv2 white nav-donate" href="" style={{ backgroundColor: "#e88f0a" }}>Donate Now</a>
+          </Link>
           <p className='tc'><Link className={`f6 link dim ph3 pv1 mb2 dib white crossNavbar flex justify-center items-center`} href='#0'
             onClick={() => hamburger()}
           >
