@@ -1,28 +1,57 @@
-import React from 'react';
+import React,{useState} from 'react';
 import "./Donate.css";
-import pic1 from "./pic1.jpeg";
+import pic1 from "../../Database/1.jpeg";
+import pic2 from "../../Database/2.jpeg";
+import pic3 from "../../Database/3.jpeg";
+import pic4 from "../../Database/4.jpeg";
+import pic5 from "../../Database/5.jpeg";
 
 
 function Donate(){
+    const [i,seti]=useState(0);
+
+    var list=[
+        {
+            img:pic1,
+            tagline:'1st title tagline-Give Her Wings Kun fayakun Kun fayakun fayakun Fayakun fayakun fayakun Kun fayakun Kun fayakun fayakun Fayakun fayakun fayakun'
+        },
+        {
+            img:pic2,
+            tagline:'2nd title tagline-Project Ruya  Kun fayakun Kun fayakun fayakun Fayakun fayakun fayakun Kun fayakun Kun fayakun fayakun Fayakun fayakun fayakun',
+        },
+        {
+            img:pic3,
+            tagline:'3rd title tagline-Hunger Free India  Kun fayakun Kun fayakun fayakun Fayakun fayakun fayakun Kun fayakun Kun fayakun fayakun Fayakun fayakun fayakun',
+        },
+        {
+            img:pic4,
+            tagline:'4th title tagline-Strive with Pride  Kun fayakun Kun fayakun fayakun Fayakun fayakun fayakun Kun fayakun Kun fayakun fayakun Fayakun fayakun fayakun',
+        },
+        {
+            img:pic5,
+            tagline:'5th title tagline-As free as a bird  Kun fayakun Kun fayakun fayakun Fayakun fayakun fayakun Kun fayakun Kun fayakun fayakun Fayakun fayakun fayakun',
+        }
+    ]
 return(
+
     <div className="donation-Container">
         
         <div className="titles-bar">
             <ul className="project-titles pt2 pb2 ">
                 <li className="mh3">
-                    <a className="projectsUnderline" href="#">Give Her Wings</a>
+                    <a className="projectsUnderline" href="#" onClick={()=>seti(0)}>Give Her Wings</a>
                 </li>
                 <li className="mh3">
-                    <a className="projectsUnderline" href="#">Project Ruya</a>
+                    <a className="projectsUnderline" href="#" onClick={()=>seti(1)}>Project Ruya</a>
                 </li>
                 <li className="mh3">
-                    <a className="projectsUnderline" href="#">Hunger Free India</a>
+                    <a className="projectsUnderline" href="#" onClick={()=>seti(2)}>Hunger Free India</a>
                 </li>
                 <li className="mh3">
-                    <a className="projectsUnderline" href="#">Strive With Pride</a>
+                    <a className="projectsUnderline" href="#" onClick={()=>seti(3)}>Strive With Pride</a>
                 </li>
                 <li className="mh3">
-                    <a className="projectsUnderline" href="#">As Free As a Bird</a>
+                    <a className="projectsUnderline" href="#" onClick={()=>seti(4)}>As Free As a Bird</a>
                 </li>
             </ul>
         </div>
@@ -31,11 +60,11 @@ return(
 
         <div className="donation-Images">
 
-            <div className="donateImages">
-                    <img src={pic1}/>
+            <div className="donateImages" >
+                    <img src={list[i].img} style={{height:'400px',width:'100%',objectFit:'fill'}}/>
             </div>
             <div className="donate-text">
-            <p>  lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatlorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p> {list[i].tagline} </p>
             </div>
 
         </div>
@@ -64,6 +93,7 @@ return(
 
 
     </div>
+    
 )
 }
 
