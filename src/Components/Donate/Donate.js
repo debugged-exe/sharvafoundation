@@ -1,13 +1,15 @@
 import React,{useState} from 'react';
 import "./Donate.css";
+import Modal from 'react-modal';
 import pic1 from "../../Database/1.jpeg";
 import pic2 from "../../Database/2.jpeg";
 import pic3 from "../../Database/3.jpeg";
 import pic4 from "../../Database/4.jpeg";
 import pic5 from "../../Database/5.jpeg";
 
-
+Modal.setAppElement('#root')
 function Donate(){
+  const [modalIsOpen,setmodalIsOpen]=useState(false)
     const [i,seti]=useState(0);
 
     var list=[
@@ -34,12 +36,13 @@ function Donate(){
     ]
 return(
 
+<div>
     <div className="donation-Container">
-        
+    <img  src={pic2} classname="donation-head-image" style={{height:"40vh",width:"100%",objectFit:"contain"}}></img>
         <div className="titles-bar">
             <ul className="project-titles pt2 pb2 ">
                 <li className="mh3">
-                    <a className="projectsUnderline" href="#" onClick={()=>seti(0)}>Give Her Wings</a>
+                    <a className="projectsUnderline"  href="#" onClick={()=>seti(0)}>Give Her Wings</a>
                 </li>
                 <li className="mh3">
                     <a className="projectsUnderline" href="#" onClick={()=>seti(1)}>Project Ruya</a>
@@ -55,6 +58,7 @@ return(
                 </li>
             </ul>
         </div>
+
 
     <div className="donationBox flex justify-center">
 
@@ -72,29 +76,63 @@ return(
         <div className="donationAmount">
               <h3>I wish To Give</h3>
               <ul className="donationAmountList">
-                <li><input type="radio" id="1000" name="INR" value="1000"/>
+                <li><input type="radio" id="1000" name="INR" value="1000" />
                   INR 1000</li>
-                <li><input type="radio" id="2000" name="INR" value="2000"/>
+                <li><input type="radio" id="2000" name="INR" value="2000" />
                   INR 2000</li>
-                <li><input type="radio" id="3000" name="INR" value="3000"/>
+                <li><input type="radio" id="3000" name="INR" value="3000" />
                   INR 3000</li>
-                <li><input type="radio" id="4000" name="INR" value="4000"/>
+                <li><input type="radio" id="4000" name="INR" value="4000" />
                   INR 4000</li>
               </ul>
               <input className="donateTextbox mr5" type="text" name="donate" placeholder="Enter Amount"/>
-              <a class="f5 link dim br2 ph3 pv2  white" href="" style={{
-                  backgroundColor: "#e88f0a"
-                }}>Donate Now</a>
+            <button class="f5 link br2 ph3 pv2  white donationModalButton" href=""  onClick={() => setmodalIsOpen(true)} >Donate Now</button>
         </div>
-    </div>   
-
-
+    </div>
 
 
 
     </div>
-    
-)
+    <Modal  isOpen={modalIsOpen} onRequestClose={() => setmodalIsOpen(false)}>
+      <div className="flex justify-center tc">
+    <div className="donationForm">
+      <form>
+      <div className="modalHeader">
+        <h2>Donation</h2>
+        <span className="modalcloseButton" onClick={()=>setmodalIsOpen(false)}>X</span>
+        </div>
+      <div className="inputBox">
+        <input type="text" name="" required="required"></input>
+          <span> Full Name</span>
+      </div>
+      <div className="inputBox">
+        <input type="text" name="" required="required"></input>
+      <span> Email</span>
+      </div>
+      <div className="inputBox">
+      <input type="number" name="" required="required"></input>
+      <span> Phone No.</span>
+      </div>
+      <div className="inputBox">
+      <input type="number" name="" required="required"></input>
+      <span> Donate Amount.</span>
+      </div>
+      <div className="inputBox">
+      <input type="text" name="" required="required"></input>
+      <span>City</span>
+      </div>
+      <div className="inputBox">
+        <input type="submit" name="" value="Send"></input>
+      </div>
+      </form>
+    </div>
+    </div>
+    </Modal>
+
+  </div>
+
+
+);
 }
 
 export default Donate;

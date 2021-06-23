@@ -3,7 +3,7 @@ import  pic2 from "./11.jpeg";
 import  pic3 from "./12.jpeg";
 import  pic4 from "./13.jpeg";
 import  pic5 from "./5.jpeg";
-
+import  pic6 from "./6.jpeg";
 const projectruya={
     
    description: { tagline: "#ProjectRuya",
@@ -51,6 +51,72 @@ const projectruya={
                 pastdate6:"13-02-2021"
             }
         
+        ],
+        modalpics:
+        [
+            {
+                recentA1:pic1,
+                recentA2:pic2,
+                recentA3:pic3,
+                recentA4:pic4,
+                tagline:"Donation drive in pune"
+            },
+            {
+                recentB1:pic1,
+                recentB2:pic2,
+                recentB3:pic3,
+                recentB4:pic4,
+                tagline:"Donation drive in pune"
+            },
+            {
+                recentC1:pic1,
+                recentC2:pic2,
+                recentC3:pic3,
+                recentC4:pic4,
+                tagline:"Donation drive in pune"
+            },
+            {
+                pastA1:pic1,
+                pastA2:pic6,
+                pastA3:pic3,
+                pastA4:pic5,
+                tagline:"Donation drive in pune"
+            },
+            {
+                pastB1:pic4,
+                pastB2:pic5,
+                pastB3:pic6,
+                pastB4:pic1,
+                tagline:"Donation drive in pune"
+            },
+            {
+                pastC1:pic1,
+                pastC2:pic4,
+                pastC3:pic5,
+                pastC4:pic6,
+                tagline:"Donation drive in pune"
+            },
+            {
+                pastD1:pic3,
+                pastD2:pic2,
+                pastD3:pic5,
+                pastD4:pic1,
+                tagline:"Donation drive in pune"
+            },
+            {
+                pastE1:pic1,
+                pastE2:pic3,
+                pastE3:pic5,
+                pastE4:pic6,
+                tagline:"Donation drive in pune"
+            },
+            {
+                pastF1:pic1,
+                pastF2:pic4,
+                pastF3:pic5,
+                pastF4:pic4,
+                tagline:"Do6nation drive in pune"
+            },
         ]
 
 }

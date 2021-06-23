@@ -5,6 +5,7 @@ import giveherwings from "../../Database/giveherwings";
 import strivewithpride from "../../Database/strivewithpride";
 import projectruya from "../../Database/projectruya";
 import hungerfreeindia from "../../Database/hungerfreeindia";
+import covid19 from "../../Database/covid19";
 import asfreeasabird from "../../Database/asfreeasabird";
 import imgUrl from './sharva.png';
 
@@ -31,7 +32,7 @@ const Navbar = ({setInitiative}) => {
 
   return (
 
-    <nav className={`flex justify-between items-center ${navbarContents}`}>
+    <nav className={`flex justify-between items-center shadow-5 ${navbarContents}`}>
       <div className="mr2">
         <img src={imgUrl} alt="Logo" style={{ height: "60px", width: "60px" }}></img>
       </div>
@@ -61,8 +62,8 @@ const Navbar = ({setInitiative}) => {
               <Link to="/events"><li className="sub-menu-item" onClick={()=>setInitiative(giveherwings)}> Give Her Wings</li></Link>
               </ul>
             </li></Link>
-          <Link to="/">
-            <li className="list-style-none mh2 black menu">Covid 19</li></Link>
+          <Link to="/events">
+            <li className="list-style-none mh2 black menu" onClick={()=>setInitiative(covid19)}>Covid 19</li></Link>
           <Link to="/#aboutus" >
             <li className="list-style-none mh2 black menu">About Us</li></Link>
           <Link to="/joinus">

@@ -164,3 +164,11 @@
   display: none;
 }
 }
+
+.modalcloseButton{
+  font-size: 1.5rem;
+}
+.modalcloseButton:hover{
+  color: #ff8c00;
+  cursor: pointer;
+}
