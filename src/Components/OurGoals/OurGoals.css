@@ -1,32 +1,63 @@
-.btn
-{
-	text-decoration: none;
-	background-color: white;
-	color: #e88f0a;
-	text-align: center;
-	border-color: #e88f0a;
-	font-size: 1.2rem;
-	font-weight: bold;
-	transition: 0.5s;
+.btn {
+  text-decoration: none;
+  background-color: white;
+  color: #e88f0a;
+  text-align: center;
+  border-color: #e88f0a;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: 0.5s;
 }
 
-.btn:hover
-{
-	background-color: #e88f0a;
-	color: white;
+.btn:hover {
+  background-color: #e88f0a;
+  color: white;
 }
 
-.ourButtons{
-	display: flex;
-	flex-direction: row;
+.ourButtons {
+  display: flex;
+  flex-direction: row;
 }
 
-@media screen and (max-width:600px)
-{
-	.ourButtons{
-		display: flex;
-		flex-direction: column;
-		
-	}
+@media screen and (max-width: 600px) {
+  .ourButtons {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
+/* Join Us */
+.join-box {
+  width: 100%;
+  height: 25vh;
+  background: url("JOIN_US.png") no-repeat center center/cover;
+  color: white;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-head {
+  margin-left: 20%;
+}
+
+@media only screen and (max-width: 426px) {
+  .join-box {
+    grid-template-columns: 100%;
+    height: auto;
+  }
+  .button-div {
+    padding-left: 26%;
+    padding-bottom: 4%;
+  }
+  .join-head {
+    padding: 2%;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .join-box {
+    height: auto;
+  }
+}

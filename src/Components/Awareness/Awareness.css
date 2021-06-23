@@ -1,0 +1,56 @@
+.awareness-body {
+  width: 100%;
+}
+
+/* Awareness events */
+.awareness-card {
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.awareness-card-img {
+  margin-right: 40px;
+  width: 30%;
+}
+
+.awareness-card-img img {
+  height: 360px;
+  width: 360px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.awareness-card-text {
+  margin-left: 40px;
+  width: 40%;
+}
+
+.description {
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+/* Media queries */
+@media (max-width: 800px) {
+  .awareness-card {
+    display: block;
+  }
+  .awareness-card-text {
+    width: auto;
+  }
+  .awareness-card-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: auto;
+  }
+}

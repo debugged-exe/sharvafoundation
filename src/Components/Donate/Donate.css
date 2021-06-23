@@ -65,7 +65,7 @@
   height: 8%;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .project-titles {
     list-style: none;
     text-decoration: none;
@@ -112,7 +112,8 @@
 }
 
 .donationModalButton:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
   opacity: 0.6;
 }
 
@@ -151,10 +152,10 @@
   /* color: #666; */
 }
 
-.donationForm .inputBox input:focus~span,
-.donationForm .inputBox input:valid~span,
-.donationForm .inputBox input:focus~span,
-.donationForm .inputBox input:valid~span {
+.donationForm .inputBox input:focus ~ span,
+.donationForm .inputBox input:valid ~ span,
+.donationForm .inputBox input:focus ~ span,
+.donationForm .inputBox input:valid ~ span {
   color: #ff8c00;
   font-size: 12px;
   transform: translateY(-20px);
@@ -216,9 +217,14 @@
   transition: 0.2s;
 }
 
+@media screen and (min-width: 720px) {
+  .donationForm {
+    width: 40%;
+    padding: 10px;
+  }
+}
 
-
-@media screen and (max-width:320px) {
+@media screen and (max-width: 720px) {
   .donationForm {
     width: 100%;
     padding: 10px;

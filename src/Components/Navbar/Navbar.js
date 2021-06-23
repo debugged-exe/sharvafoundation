@@ -10,7 +10,7 @@ import asfreeasabird from "../../Database/asfreeasabird";
 import imgUrl from './sharva.png';
 
 
-const Navbar = ({setInitiative}) => {
+const Navbar = ({ setInitiative }) => {
 
   const [navbarContents, setNavbarContents] = useState('navbarContents');
   const [dropDown, setDropDown] = useState('hidden');
@@ -54,30 +54,32 @@ const Navbar = ({setInitiative}) => {
             <li className="list-style-none mh2 black menu">Home</li></Link>
           <Link to="/">
             <li className="list-style-none mh2 black menu">Our Initiatives
-            <ul className="sub-menu black align-center">
-              <Link to="/events"><li className="sub-menu-item" onClick={()=>setInitiative(hungerfreeindia)}> Hunger Free India</li></Link>
-              <Link to="/events"><li className="sub-menu-item" onClick={()=>setInitiative(strivewithpride)}> Strive With Pride</li></Link>
-              <Link to="/events"><li className="sub-menu-item" onClick={()=>setInitiative(projectruya)}> Project Ruya</li></Link>
-              <Link to="/events"><li className="sub-menu-item" onClick={()=>setInitiative(asfreeasabird)}> As Free As a Bird</li></Link>
-              <Link to="/events"><li className="sub-menu-item" onClick={()=>setInitiative(giveherwings)}> Give Her Wings</li></Link>
+              <ul className="sub-menu black align-center">
+                <Link to="/events"><li className="sub-menu-item" onClick={() => setInitiative(hungerfreeindia)}> Hunger Free India</li></Link>
+                <Link to="/events"><li className="sub-menu-item" onClick={() => setInitiative(strivewithpride)}> Strive With Pride</li></Link>
+                <Link to="/events"><li className="sub-menu-item" onClick={() => setInitiative(projectruya)}> Project Ruya</li></Link>
+                <Link to="/events"><li className="sub-menu-item" onClick={() => setInitiative(asfreeasabird)}> As Free As a Bird</li></Link>
+                <Link to="/events"><li className="sub-menu-item" onClick={() => setInitiative(giveherwings)}> Give Her Wings</li></Link>
               </ul>
             </li></Link>
           <Link to="/events">
-            <li className="list-style-none mh2 black menu" onClick={()=>setInitiative(covid19)}>Covid 19</li></Link>
+            <li className="list-style-none mh2 black menu" onClick={() => setInitiative(covid19)}>Covid 19</li></Link>
+          <Link to="/awareness" >
+            <li className="list-style-none mh2 black menu">Awareness</li></Link>
           <Link to="/#aboutus" >
             <li className="list-style-none mh2 black menu">About Us</li></Link>
           <Link to="/joinus">
             <li className="list-style-none mh2 black menu">Join Us</li></Link>
           <Link to="/contactus">
             <li className="list-style-none mh2 black menu">Contact Us</li></Link>
-          <Link to ="/donatenow" className="pv2">
+          <Link to="/donatenow" className="pv2">
             <a class="f5 link dim br2 ph3 pv2 white nav-donate" href="" style={{ backgroundColor: "#e88f0a" }}>Donate Now</a>
           </Link>
           <p className='tc'><Link className={`f6 link dim ph3 pv1 mb2 dib white crossNavbar flex justify-center items-center`} href='#0'
             onClick={() => hamburger()}
           >
             X
-               </Link>
+          </Link>
           </p>
 
 
