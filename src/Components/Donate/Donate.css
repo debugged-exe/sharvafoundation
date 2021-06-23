@@ -27,25 +27,25 @@
   line-height: 1.5;
 }
 
-.projectsUnderline {
+ .projectsUnderline {
   text-decoration: none;
   padding: 4px;
   color: black;
   font-size: 20px;
+
+}
+.projectsUnderlineColor {
+ text-decoration: none;
+ padding: 4px;
+ font-size: 20px;
+ cursor: pointer;
 }
 
-.project-titles a:after {
-  content: "";
-  display: flex;
-  position: absolute;
-  background-color: #f0982e;
-  height: 3px;
-  width: 0;
-  transition: 0.3s;
-}
-
-.project-titles a:hover:after {
-  width: 9%;
+.active{
+  text-decoration: none;
+  padding: 4px;
+  font-size: 20px;
+  color:#f0982e;
 }
 
 .donationAmount {
@@ -65,7 +65,7 @@
   height: 8%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
   .project-titles {
     list-style: none;
     text-decoration: none;
@@ -112,8 +112,7 @@
 }
 
 .donationModalButton:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   opacity: 0.6;
 }
 
@@ -152,10 +151,10 @@
   /* color: #666; */
 }
 
-.donationForm .inputBox input:focus ~ span,
-.donationForm .inputBox input:valid ~ span,
-.donationForm .inputBox input:focus ~ span,
-.donationForm .inputBox input:valid ~ span {
+.donationForm .inputBox input:focus~span,
+.donationForm .inputBox input:valid~span,
+.donationForm .inputBox input:focus~span,
+.donationForm .inputBox input:valid~span {
   color: #ff8c00;
   font-size: 12px;
   transform: translateY(-20px);
@@ -199,7 +198,10 @@
   border-color: #ff8c00;
 }
 
-.donation-head-image {
+.donation-top-image {
+  height: 35vh;
+  width: 100%;
+  object-fit: fill;
   background-blend-mode: darken;
   margin: 0;
   padding: 0;
@@ -217,14 +219,9 @@
   transition: 0.2s;
 }
 
-@media screen and (min-width: 720px) {
-  .donationForm {
-    width: 40%;
-    padding: 10px;
-  }
-}
 
-@media screen and (max-width: 720px) {
+
+@media screen and (max-width:320px) {
   .donationForm {
     width: 100%;
     padding: 10px;
