@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import './OurGoals.css';
 import Carousel from 'react-elastic-carousel';
-import Card from './Card.js';
 
 
 const breakPoints = [
@@ -13,6 +12,20 @@ const breakPoints = [
 ]
 
 function OurGoals() {
+
+  const [goal, setGoal] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:3000/goals").then(response => response.json()).then(res => {
+      if (res[0].head) {
+        setGoal(res);
+        console.log(res.length);
+      }
+    }).catch(error => {
+      console.log(error);
+    })
+
+  }, [])
+
     const [hover1, toggleHover1] = useState(false);
     const [hover2, toggleHover2] = useState(false);
     const [show, setShow] = useState(false);
@@ -35,10 +48,43 @@ function OurGoals() {
                 </div>
             </div>
             <Carousel breakPoints={breakPoints}>
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+              {
+              goal.map((item, index) => {
+                return (<div className="newcard">
+                  <div className="cardTop">
+                    <img src={item.image} className="cardImg"/>
+                  </div>
+                  <div className="cardBottom flex-column justify-center items-center h-100">
+                    <div className="Detail">
+                      <h4>
+                        {item.head}
+                      </h4>
+                      <p>
+                        <b>₹42,000</b>
+                        raised out of ₹60,000</p>
+                      <div class="skill-bar">
+                        <div class="skill-per" per="90"></div>
+                      </div>
+                    </div>
+                    <div className="flex justify-center items-center">
+                      <a className="f5  link br2 ph3 pv2 mb2 tc  dib cardButton" href="#0">Donate Now</a>
+                    </div>
+                    <div className="lastLine">
+                      <div className="supporters">
+                        <p>
+                          <b>Supporters {item.supporters}</b>
+                        </p>
+                      </div>
+                      <div>
+                        <a href="sharvafoundation.org" className="">
+                          <b className="LearnColor">Learn More</b>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>)
+              })
+            }
             </Carousel>
             <div className="join-box">
                 <p className="join-head fw6" style={{ fontSize: '35px' }}>Join Us Now!!</p>
