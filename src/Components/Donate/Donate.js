@@ -91,8 +91,8 @@ return(
                 <li><input type="radio" id="4000" name="INR" value="4000" onClick={()=>setAmount(4000)}/>
                   INR 4000</li>
               </ul>
-              <input className="donateTextbox mr5" type="number" name="donate" placeholder="Enter Amount" onInput={()=>setAmount()} />
-            <button class="f5 link br2 ph3 pv2  white donationModalButton" href=""  onClick={() => setmodalIsOpen(true)} value={Amount} >Donate Now</button>
+              <input className="donateTextbox mr5"  type="number" name="donate" placeholder="Enter Amount" onChange={(event)=>setAmount(event.target.value)} />
+            <button class="f5 link br2 ph3 pv2  white donationModalButton" href=""  onClick={() => setmodalIsOpen(true)} value={Amount}  >Donate Now</button>
         </div>
     </div>
 

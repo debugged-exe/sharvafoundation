@@ -1,0 +1,57 @@
+.RecentEvents-container{
+  display: grid;
+  grid-template-columns:auto auto auto;
+
+}
+
+.item, .item1 ,.item2{
+  height:43vh;
+  width:26vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  background:white;
+  margin:5%;
+  color: black;
+}
+.item:hover{
+     background:url('https://i.imgur.com/WLibEf0.jpg') no-repeat center center/cover;
+     color:white;
+     background-color: rgba(0,0,0,0.5);
+     background-blend-mode: darken;
+     opacity:0.9;
+}
+.item1:hover{
+     background:url('https://i.imgur.com/OxHORZY.jpg') no-repeat center center/cover;
+     color:white;
+     background-color: rgba(0,0,0,0.5);
+     background-blend-mode: darken;
+     opacity:0.9;
+}
+.item2:hover{
+     background:url('https://i.imgur.com/fV8t11A.jpg') no-repeat center center/cover;
+     color:white;
+     background-color: rgba(0,0,0,0.5);
+     background-blend-mode: darken;
+     opacity:0.9;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .item, .item1 ,.item2{
+      width:30vw;
+      height:40vh;
+      margin:0;
+    }
+}
+@media only screen and (max-width: 426px) {
+    .RecentEvents-container{
+        grid-template-columns: 100%;
+    }
+    .item, .item1 ,.item2{
+      width:80vw;
+      height:45vh;
+      margin:0;
+    }
+}

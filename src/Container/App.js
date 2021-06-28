@@ -10,9 +10,8 @@ import JoinUs from "../Components/JoinUs/JoinUs";
 import hungerfreeindia from '../Database/hungerfreeindia';
 import Donatepage from "../Pages/Donatepage";
 import Awarenesspage from "../Pages/Awarenesspage";
-
 function App() {
-  const [initiative, setInitiative] = useState("hungerfreeindia");
+  const [initiative, setInitiative] = useState(hungerfreeindia);
 
   return (
     <div>
@@ -21,11 +20,12 @@ function App() {
           <Navbar setInitiative={setInitiative} />
           <Switch>
             <Route exact path="/" component={Homepage} />
-            <Route exact path="/events" component={() => <Eventspage initiative={initiative} />} />
+          <Route exact path="/events" component={() => <Eventspage initiative={initiative} />} />
             <Route exact path="/joinus" component={JoinUs} />
             <Route exact path="/contactus" component={Contactpage} />
             <Route exact path="/donatenow" component={Donatepage} />
             <Route exact path="/awareness" component={Awarenesspage} />
+
           </Switch>
           <Footer />
 

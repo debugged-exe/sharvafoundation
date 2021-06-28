@@ -3,8 +3,8 @@ import Modal from 'react-modal';
 import Carousel from 'react-elastic-carousel';
 import './Events.css';
 
-function Events({initiative}) {
 
+function Events({initiative}) {
   const [drive,setDrive]=useState([]);
   useEffect(() => {
     if(initiative==="hungerfreeindia"){
@@ -32,11 +32,60 @@ function Events({initiative}) {
 
 
     }
+    else if (initiative==="projectruya") {
+      fetch("http://localhost:3000/ruya")
+      .then(response => response.json())
+      .then(res => {
+        if (res[0].tagline) {
+          setDrive(res);
+        }
+      }).catch(error => {
+        console.log(error);
+      })
+
+
+    }
+    else if (initiative==="asfreeasabird") {
+      fetch("http://localhost:3000/bird")
+      .then(response => response.json())
+      .then(res => {
+        if (res[0].tagline) {
+          setDrive(res);
+        }
+      }).catch(error => {
+        console.log(error);
+      })
+
+
+    }
+    else if (initiative==="giveherwings") {
+      fetch("http://localhost:3000/wings")
+      .then(response => response.json())
+      .then(res => {
+        if (res[0].tagline) {
+          setDrive(res);
+        }
+      }).catch(error => {
+        console.log(error);
+      })
+
+
+    }
   }, [])
 
-    const [showP, setShowPast] = useState(false);
+  const [visible, setVisible] = useState(3);
+
+  	const showMoreItems = () => {
+  		setVisible( visible + 3);
+  	}
+    const showLessItems =() =>{
+      setVisible(3);
+    }
+
+    const[showP,setShowPast]=useState(false);
     const[recentA,setrecentA]=useState(false);
     const[pastA,setpastA]=useState(false);
+    console.log(visible);
 
     return (
       <div>
@@ -78,7 +127,7 @@ function Events({initiative}) {
                               <hr id="recent-hr" />
                           </div>
                           {/* Recent Events grid */}
-                          <div className="grid">{
+                          <div className="grid ">{
                               item.events.map((i,index)=>{
                                 if(i.recent==='1'){
                                   return(
@@ -118,42 +167,33 @@ function Events({initiative}) {
                           </div>
                           {/* Past Events grid */}
                           <div className="grid">{
-                              item.events.map((i,index)=>{
-                                if(i.recent==='0'){
-                                  return(
-                                    <div>
+                              item.events.filter(i=>i.recent==='0').slice(0,visible).map((i,index)=>{
 
-                                    <div className="pa3 ma3" >
-                                        <img src={i.image[0]} onClick={()=>setrecentA(true)} className="gridImage pointer grow shadow-5" />
-                                          <p className="onrightDate">{i.place}</p>
+                                return(
+                                  <div className="">
 
-                                        <p className="onrightDate">{i.date}</p>
-                                        <Modal isOpen={recentA} onRequestClose={() => setrecentA(false)}>
-                                        <span className="modalcloseButton" onClick={()=>setrecentA(false)}>X</span>
-                                            <Carousel itemstoShow={4} style={{height:"500px",objectFit:"cover"}}>
-                                              {
-                                                i.image.map((photo,index)=>{
-                                                  return(
-                                                    <img src={photo} height="250%" width="75%" ></img>
-                                                  )
-                                                })
-                                              }
+                                  <div className="pa3 ma3" >
+                                      <img src={i.image[0]} onClick={()=>setrecentA(true)} className="gridImage pointer grow shadow-5" />
+                                        <p className="onrightDate">{i.place}</p>
 
-                                            </Carousel>
-                                        </Modal>
-                                    </div>
-                                    <div>
-                                        {
-                                            showP ? events : null
-                                        }
-                                        <div className="showButtons mt2 mb2 flex justify-center">
-                                            <div className="mh2 br2 mt2 mb4 ba btn ph3 pv2 pointer" onClick={() => setShowPast(true)}>Show More</div>
-                                            <div className=" mh2 br2 mt2 mb4 ba btn ph3 pv2 pointer" onClick={() => setShowPast(false)}>Show Less</div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                  )
-                                }
+                                      <p className="onrightDate">{i.date}</p>
+                                      <Modal isOpen={recentA} onRequestClose={() => setrecentA(false)}>
+                                      <span className="modalcloseButton" onClick={()=>setrecentA(false)}>X</span>
+                                          <Carousel itemstoShow={4} style={{height:"500px",objectFit:"cover"}}>
+                                            {
+                                              i.image.map((photo,index)=>{
+                                                return(
+                                                  <img src={photo} height="250%" width="75%" ></img>
+                                                )
+                                              })
+                                            }
+
+                                          </Carousel>
+                                      </Modal>
+                                  </div>
+
+                                  </div>
+                                )
 
                               })
                             }
@@ -162,6 +202,15 @@ function Events({initiative}) {
                       </div>
 
 
+                  </div>
+                  <div>
+                      {
+                          showP ? drive : null
+                      }
+                      <div className="showButtons mt2 mb2 flex justify-center">
+                          <div className="mh2 br2 mt2 mb4 ba btn ph3 pv2 pointer" onClick={() => showMoreItems()}>Show More</div>
+                        <div className=" mh2 br2 mt2 mb4 ba btn ph3 pv2 pointer" onClick={() => showLessItems()}>Show Less</div>
+                      </div>
                   </div>
               </div >
 
