@@ -1,14 +1,13 @@
 import React from 'react';
 import Events from "../Components/Events/Events";
 
-function Eventspage({Initiative}){
+function Eventspage({initiative}){
     return(
         <div>
-            <Events  Initiative={Initiative} />
-
+            <Events  initiative={initiative} />
         </div>
 
     )
 }
-        
+
 export default Eventspage;

@@ -55,11 +55,11 @@ const Navbar = ({ setInitiative }) => {
           <Link to="/">
             <li className="list-style-none mh2 black menu">Our Initiatives
               <ul className="sub-menu black align-center">
-                <Link to="/events"><li className="sub-menu-item" onClick={() => setInitiative(hungerfreeindia)}> Hunger Free India</li></Link>
-                <Link to="/events"><li className="sub-menu-item" onClick={() => setInitiative(strivewithpride)}> Strive With Pride</li></Link>
-                <Link to="/events"><li className="sub-menu-item" onClick={() => setInitiative(projectruya)}> Project Ruya</li></Link>
-                <Link to="/events"><li className="sub-menu-item" onClick={() => setInitiative(asfreeasabird)}> As Free As a Bird</li></Link>
-                <Link to="/events"><li className="sub-menu-item" onClick={() => setInitiative(giveherwings)}> Give Her Wings</li></Link>
+                <Link to="/events"><li className="sub-menu-item" onClick={() => setInitiative("hungerfreeindia")}> Hunger Free India</li></Link>
+                <Link to="/events"><li className="sub-menu-item" onClick={() => setInitiative("strivewithpride")}> Strive With Pride</li></Link>
+                <Link to="/events"><li className="sub-menu-item" onClick={() => setInitiative("projectruya")}> Project Ruya</li></Link>
+                <Link to="/events"><li className="sub-menu-item" onClick={() => setInitiative("asfreeasabird")}> As Free As a Bird</li></Link>
+                <Link to="/events"><li className="sub-menu-item" onClick={() => setInitiative("giveherwings")}> Give Her Wings</li></Link>
               </ul>
             </li></Link>
           <Link to="/events">

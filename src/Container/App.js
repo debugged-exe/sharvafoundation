@@ -12,7 +12,8 @@ import Donatepage from "../Pages/Donatepage";
 import Awarenesspage from "../Pages/Awarenesspage";
 
 function App() {
-  const [Initiative, setInitiative] = useState(hungerfreeindia);
+  const [initiative, setInitiative] = useState("");
+  console.log("app "+initiative+" why");
 
   return (
     <div>
@@ -21,7 +22,7 @@ function App() {
           <Navbar setInitiative={setInitiative} />
           <Switch>
             <Route exact path="/" component={Homepage} />
-            <Route exact path="/events" component={() => <Eventspage Initiative={Initiative} />} />
+            <Route exact path="/events" component={() => <Eventspage initiative={initiative} />} />
             <Route exact path="/joinus" component={JoinUs} />
             <Route exact path="/contactus" component={Contactpage} />
             <Route exact path="/donatenow" component={Donatepage} />

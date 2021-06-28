@@ -1,90 +1,48 @@
 import React, { useState,useEffect } from 'react';
-import pic1 from './1.jpeg';
-import pic2 from './2.jpeg';
-import pic3 from './3.jpeg';
-import pic4 from './4.jpeg';
-import eventImage from './2.jpeg';
 import Modal from 'react-modal';
-
 import Carousel from 'react-elastic-carousel';
 import './Events.css';
 
-function Events({Initiative}) {
+function Events({initiative}) {
 
   const [events, setEvents] = useState([]);
+  const [drive,setDrive]=useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/events")
-    .then(response => response.json())
-    .then(res => {
-      if (res[0].tagline) {
-        setEvents(res);
-        console.log(res[0].tagline);
-      }
-    }).catch(error => {
-      console.log(error);
-    })
+    if(initiative==="hungerfreeindia"){
+      fetch("http://localhost:3000/events")
+      .then(response => response.json())
+      .then(res => {
+        if (res[0].tagline) {
+          setDrive(res);
+        }
+      }).catch(error => {
+        console.log(error);
+      })
 
+    }
+    else if (initiative==="strivewithpride") {
+      fetch("http://localhost:3000/strive")
+      .then(response => response.json())
+      .then(res => {
+        if (res[0].tagline) {
+          setDrive(res);
+        }
+      }).catch(error => {
+        console.log(error);
+      })
+
+
+    }
   }, [])
-
 
     const [showP, setShowPast] = useState(false);
     const[recentA,setrecentA]=useState(false);
-    const[recentB,setrecentB]=useState(false);
-    const[recentC,setrecentC]=useState(false);
     const[pastA,setpastA]=useState(false);
-    const[pastB,setpastB]=useState(false);
-    const[pastC,setpastC]=useState(false);
-    const[pastD,setpastD]=useState(false);
-    const[pastE,setpastE]=useState(false);
-    const[pastF,setpastF]=useState(false);
 
-    const pastEvents =
-        <div className="grid">
-            <div className="pa3 ma3" >
-                <img src={Initiative.posts[6].past4} onClick={()=>setpastD(true)} className="gridImage pointer grow shadow-5"/>
-                <p className="onrightDate">{Initiative.posts[6].pastdate4}</p>
-                <Modal isOpen={pastD} onRequestClose={()=>setpastD(false)} >
-                <span className="modalcloseButton" onClick={()=>setpastD(false)}>X</span>
-                                <Carousel itemstoShow={4} style={{height:"500px",objectFit:"cover"}}>
-                                   <img src={Initiative.modalpics[6].pastD1}></img>
-                                   <img src={Initiative.modalpics[6].pastD2}></img>
-                                   <img src={Initiative.modalpics[6].pastD3}></img>
-                                   <img src={Initiative.modalpics[6].pastD4}></img>
-                                </Carousel>
-                            </Modal>
-            </div>
-            <div className="pa3 ma3">
-                <img src={Initiative.posts[7].past5} onClick={()=>setpastE(true)} className="gridImage pointer grow shadow-5" />
-                <p className="onrightDate">{Initiative.posts[7].pastdate5}</p>
-                <Modal isOpen={pastE} onRequestClose={()=>setpastE(false)}>
-                <span className="modalcloseButton" onClick={()=>setpastE(false)}>X</span>
-                                <Carousel itemstoShow={4} style={{height:"500px",objectFit:"cover"}}>
-                                   <img src={Initiative.modalpics[7].pastE1}></img>
-                                   <img src={Initiative.modalpics[7].pastE2}></img>
-                                   <img src={Initiative.modalpics[7].pastE3}></img>
-                                   <img src={Initiative.modalpics[7].pastE4}></img>
-                                </Carousel>
-                            </Modal>
-            </div>
-            <div className="pa3 ma3">
-                <img src={Initiative.posts[8].past6} onClick={()=>setpastF(true)} className="gridImage pointer grow shadow-5" />
-                <p className="onrightDate">{Initiative.posts[8].pastdate6}</p>
-                <Modal isOpen={pastF} onRequestClose={()=>setpastF(false)}>
-                <span className="modalcloseButton" onClick={()=>setpastF(false)}>X</span>
-                                <Carousel itemstoShow={4} style={{height:"500px",objectFit:"cover"}}>
-                                   <img src={Initiative.modalpics[8].pastF1}></img>
-                                   <img src={Initiative.modalpics[8].pastF2}></img>
-                                   <img src={Initiative.modalpics[8].pastF3}></img>
-                                   <img src={Initiative.modalpics[8].pastF4}></img>
-                                </Carousel>
-                            </Modal>
-            </div>
-        </div>
-console.log(Initiative);
     return (
       <div>
         {
-          events.map((item,index)=>{
+          drive.map((item,index)=>{
             return(
               <div className="events-1 ba">
                   {/* The 100% width image */}
@@ -187,7 +145,7 @@ console.log(Initiative);
                                     </div>
                                     <div>
                                         {
-                                            showP ? pastEvents : null
+                                            showP ? events : null
                                         }
                                         <div className="showButtons mt2 mb2 flex justify-center">
                                             <div className="mh2 br2 mt2 mb4 ba btn ph3 pv2 pointer" onClick={() => setShowPast(true)}>Show More</div>
