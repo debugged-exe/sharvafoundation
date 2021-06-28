@@ -12,8 +12,7 @@ import Donatepage from "../Pages/Donatepage";
 import Awarenesspage from "../Pages/Awarenesspage";
 
 function App() {
-  const [initiative, setInitiative] = useState("");
-  console.log("app "+initiative+" why");
+  const [initiative, setInitiative] = useState("hungerfreeindia");
 
   return (
     <div>

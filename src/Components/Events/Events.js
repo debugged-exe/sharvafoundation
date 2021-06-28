@@ -5,7 +5,6 @@ import './Events.css';
 
 function Events({initiative}) {
 
-  const [events, setEvents] = useState([]);
   const [drive,setDrive]=useState([]);
   useEffect(() => {
     if(initiative==="hungerfreeindia"){
