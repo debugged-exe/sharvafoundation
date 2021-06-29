@@ -1,0 +1,57 @@
+
+
+.font-size{
+    font-size: 2.5rem;
+}
+
+.tagline{
+    font-size: 2.5rem;
+    color:white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.rec-dot{
+    display: none;
+}
+
+.slide1{
+    background:rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-blend-mode: darken;
+}
+.slide2{
+    background:rgba(0, 0, 0, 0.4) ;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-blend-mode: darken;
+}
+.slide3{
+    background:rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-blend-mode: darken;
+}
+
+
+
+
+  @media only screen and (max-width: 700px) {
+
+    .font-size{
+        font-size: 2.5rem;
+    }
+  }
+
+
+.caroButton:hover{
+    color:black;
+    background-color: #ff8c00;
+}

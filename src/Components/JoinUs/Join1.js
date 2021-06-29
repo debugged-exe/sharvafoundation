@@ -5,25 +5,17 @@ import 'tachyons';
 const initialState = {
 	name: '',
 	email: '',
-	age: '',
+	dob: '',
 	gender: '',
 	phone: '',
-	education: '',
-	occupation: '',
-	location: '',
-	income: '',
-	savings: '',
-	short_term_invest: '',
-	invest: [],
-	trust: '',
-	delay: '',
-	return3: '',
-	risk: '',
-	shortterm: '',
-	shorttermplan: '',
-	view_365: '',
-	know: '',
-	communication: ''
+	address: '',
+	city:'',
+	state:'',
+	bloodgroup:'',
+	currentcity: '',
+	category: [],
+	whyjoin:''
+
 }
 
 class Join1 extends React.PureComponent {
@@ -38,53 +30,36 @@ class Join1 extends React.PureComponent {
 		const {
 			name,
 			email,
-			age,
+			dob,
 			gender,
 			phone,
-			education,
-			occupation,
-			location,
-			income,
-			savings,
-			short_term_invest,
-			invest,
-			trust,
-			delay,
-			return3,
-			risk,
-			shortterm,
-			shorttermplan,
-			view_365,
-			know,
-			communication
+			permanentaddress,
+			city,
+			state,
+			bloodgroup,
+			currentcity,
+			category,
+			whyjoin
+
+
 		} = this.state;
 
 		event.preventDefault();
-		fetch('https://stormy-escarpment-39477.herokuapp.com/surveyform', {
+		fetch('http://localhost:3000/join', {
 			method: 'post',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({
 				name: name,
 				email: email,
-				age: age,
+				dob: dob,
 				gender: gender,
 				phone: phone,
-				education: education,
-				occupation: occupation,
-				location: location,
-				income: income,
-				savings: savings,
-				short_term_invest: short_term_invest,
-				invest: invest,
-				trust: trust,
-				delay: delay,
-				return: return3,
-				risk: risk,
-				shortterm: shortterm,
-				shorttermplan: shorttermplan,
-				view_365: view_365,
-				know: know,
-				communication: communication
+				city: city,
+				state:state,
+				bloodgroup:bloodgroup,
+				currentcity:currentcity,
+				category:category,
+				whyjoin:whyjoin
 			})
 		})
 		.then(response => response.json())
@@ -119,17 +94,17 @@ class Join1 extends React.PureComponent {
   	const check1 = document.getElementById(id);
   	if(check1.checked)
   	{
-  		const invest = this.state.invest;
-  		invest.push(value);
-  		this.setState({invest: invest}, () => {
+  		const category = this.state.category;
+  		category.push(value);
+  		this.setState({category: category}, () => {
   			console.log('');
   		});
   	}
   	else
   	{
-  		const invest = this.state.invest;
-  		const filtered = invest.filter(item => item!==value);
-  		this.setState({invest: filtered}, () => {
+  		const category = this.state.category;
+  		const filtered = category.filter(item => item!==value);
+  		this.setState({category: filtered}, () => {
   			console.log('');
   		})
   	}
@@ -145,7 +120,7 @@ class Join1 extends React.PureComponent {
        </div>
 
 					<h1 className="JoinUs-header"> Join Us	</h1>
-      
+
 					<form className="JoinUs-form-container" onSubmit={this.handleSubmit}>
 						<div className="input-div">
 								<label htmlFor="name" className="label">Full Name<span className="red f3">*</span></label>
@@ -165,6 +140,17 @@ class Join1 extends React.PureComponent {
 								placeholder="Email Id"
 								name="email"
 								type="email"
+								onChange={this.handleChange}
+								required
+								/>
+						</div>
+						<div className="input-div">
+								<label htmlFor="name" className="label">Date of Birth<span className="red f3">*</span></label>
+								<input
+								className="inputform"
+								placeholder="DOB"
+								name="dob"
+								type="date"
 								onChange={this.handleChange}
 								required
 								/>
@@ -221,7 +207,7 @@ class Join1 extends React.PureComponent {
 									</label>
 						</div>
 						<div className="input-div">
-								<label htmlFor="phone" className="label">Phone Number<span className="red f3">*</span></label>
+								<label htmlFor="phone" className="label">PhoneNumber<span className="red f3">*</span></label>
 								<input
 								className="inputform"
 								placeholder="Phone no."
@@ -236,6 +222,7 @@ class Join1 extends React.PureComponent {
 								<label for="edu" value={this.state.phone} className="label">
 								Permanent Address<span className="red f3">*</span></label>
 								<input
+									name="address"
                 className="inputform"
                 placeholder="Address" />
 						</div>
@@ -243,69 +230,98 @@ class Join1 extends React.PureComponent {
                 <label for="edu" value={this.state.phone} className="label">
                 City<span className="red f3">*</span></label>
                 <input
+								name="city"
                 className="inputform"
                 placeholder="Address" />
             </div>
 						<div className="input-div">
 								<label htmlFor="occupation" className="label">State<span className="red f3">*</span></label>
 								<input
-								name="occupation"
+								name="state"
 								className="inputform"
-								placeholder="Occupation"
+								placeholder="State"
 								type="text"
 								onChange={this.handleChange}
 								required
 								/>
 						</div>
 						<div className="input-div">
-								<label htmlFor="location" className="label">Location<span className="red f3">*</span></label>
+								<label for="edu"  value={this.state.phone} className="label">
+								Blood Group<span className="red f3">*</span></label>
+							<select className="select-boom" id="edu" onChange={this.handleChange} name="bloodgroup">
+									<option value=" ">Please select one option</option>
+									<option value="A+">A+</option>
+									<option value="A-">A-</option>
+									<option value="B+">B+</option>
+									<option value="B-">B-</option>
+									<option value="AB+">AB+</option>
+									<option value="AB-">AB-</option>
+									<option value="O+">O+</option>
+									<option value="O-">O-</option>
+								</select>
+						</div>
+						<div className="input-div">
+								<label htmlFor="location" className="label">Current City<span className="red f3">*</span></label>
 								<input
-								name="location"
+								name="currentcity"
 								className="inputform"
-								placeholder="Location"
+								placeholder="Current City"
 								type="text"
 								onChange={this.handleChange}
 								required
 								/>
 						</div>
+
 
 
 						<div className="input-div">
 								<label htmlFor="invest" className="label">Individual's Category<span className="red f3">*</span></label><br/>
-								<input type="checkbox" id="bank" name="invest" value="Bank FD/RD"
+
+								<input type="checkbox" id="bank" name="category" value="fieldwork"
 								onClick={this.handleCheck}/>
 								<label for="bank">Field Work</label><br/>
 
-								<input type="checkbox" id="mutual" name="invest" value="mutualFunds"
+								<input type="checkbox" id="mutual" name="category" value="photography"
 								onClick={this.handleCheck}/>
 								<label for="mutual">Photography</label><br/>
 
-								<input type="checkbox" id="bonds" name="invest" value="bonds"
+								<input type="checkbox" id="bonds" name="category" value="videoeditor"
 								onClick={this.handleCheck}/>
 								<label for="bonds">Video Editor</label><br/>
 
-								<input type="checkbox" id="post" name="invest" value="postOfficeDeposits"
+								<input type="checkbox" id="post" name="category" value="contentwriting"
 								onClick={this.handleCheck}/>
 								<label for="post">Content Writing</label><br/>
 
-								<input type="checkbox" id="money_market" name="invest" value="money_market"
+								<input type="checkbox" id="money_market" name="category" value="fundraising"
 								onClick={this.handleCheck}/>
 								<label for="money_market">Fund Raising</label><br/>
 
-								<input type="checkbox" id="debt" name="invest" value="debt"
+								<input type="checkbox" id="debt" name="category" value="creatives"
 								onClick={this.handleCheck}/>
 								<label for="debt">Creatives</label><br/>
 
-								<input type="checkbox" id="none" name="invest" value="none"
+								<input type="checkbox" id="none" name="category" value="awareness"
 								onClick={this.handleCheck}/>
 								<label for="none">Awareness Sessions</label><br/>
 
-                <input type="checkbox" id="none" name="invest" value="none"
+                <input type="checkbox" id="none" name="category" value="marketing"
 								onClick={this.handleCheck}/>
 								<label for="none">Marketing</label><br/>
-                <input type="checkbox" id="none" name="invest" value="none"
+                <input type="checkbox" id="none" name="category" value="strategies"
 								onClick={this.handleCheck}/>
 								<label for="none">Strategies Buildup</label><br/>
+						</div>
+						<div className="input-div">
+							<label for="edu" value={this.state.phone} className="label">
+							Why do you want to Join Us?<span className="red f3">*</span></label>
+							<input
+								name="why"
+							className="inputform"
+							placeholder=""  />
+						</div>
+						<div className="inputBoxJoinUs">
+							<input type="submit" name="" value="Submit"></input>
 						</div>
 					</form>
 			</div>

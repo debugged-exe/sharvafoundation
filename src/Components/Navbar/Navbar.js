@@ -51,7 +51,7 @@ const Navbar = ({ setInitiative }) => {
         <ul className={` ${navbarContents} list-style-none flex justify-around pa2 mr2 items-center ${dropDown} `}>
 
           <Link to="/">
-            <li className="list-style-none mh2 black menu">Home</li></Link>
+            <li className="list-style-none mh2 black menu ">Home</li></Link>
           <Link to="/">
             <li className="list-style-none mh2 black menu">Our Initiatives
               <ul className="sub-menu black align-center">

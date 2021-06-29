@@ -67,7 +67,7 @@
 	color: $main-color;
 }
 
-.inputform{
+.inputform {
 	color: $sub-color;
 	font-size: 18px;
 	padding: 10px 10px 10px 5px;
@@ -79,10 +79,11 @@
 	margin:3%;
 	transition: all 0.3s ease-out;
 
-	&:focus{
-		outline: none;
-		transform: scale(1.1);
-	}
+
+}
+.inputform:focus{
+	outline: none;
+	transform: scale(1.1);
 }
 .select-boom, .shortterm {
 		font-size: 18px;
@@ -131,6 +132,23 @@
 	select, .shortterm{
 		width: 100%;
 	}
+}
+.inputBoxJoinUs input[type="submit"]
+{
+	width: 100px;
+	color: white;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 8px;
+	transition: 0.2s;
+	background-color: #ff8c00;
+
+}
+.inputBoxJoinUs input[type="submit"]:hover {
+  background-color: #ddd;
+  color: black;
 }
 
 @media only screen and (max-width: 426px) {

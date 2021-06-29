@@ -1,14 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import './Awareness.css';
 import Carousel from 'react-elastic-carousel';
-import BackgroundCarousel from '../BackgroundCarousel/BackgroundCarousel';
 import pic1 from "../../Database/1.jpeg";
+import AwarenessCarousel from "./AwarenessCarousel.js"
 
-const breakPoints = [
-  {
-    showArrows: false
-  }
-]
 function Awareness() {
 
   const [aware, setAware] = useState([]);
@@ -18,7 +13,6 @@ function Awareness() {
     .then(res => {
       if (res[0].heading) {
         setAware(res);
-        console.log(res[0].heading);
       }
     }).catch(error => {
       console.log(error);
@@ -29,56 +23,9 @@ function Awareness() {
   return (
 
     <div className="awareness-body">
-
-    <Carousel enableAutoPlay={true} autoPlaySpeed={2000} breakPoints={breakPoints}>
-      <div className='slide1 flex justify-center items-center font-size flex-column'>
-        <div data-aos="fade-up" data-aos-duration={"1000"}>
-          <h3 className="tagline">लोका: समस्ता: सुखिनो भवन्तु ।</h3>
-        </div>
-      </div>
-      <div className='slide2 flex justify-center items-center font-size flex-column'>
-        <div data-aos="fade-up" data-aos-duration={"1000"}>
-          <h3 className="tagline">लोका: समस्ता: सुखिनो भवन्तु ।</h3>
-        </div>
-      </div>
-      <div className='slide3 flex justify-center items-center font-size flex-column'>
-        <div data-aos="fade-up" data-aos-duration={"1000"}>
-          <h3 className="tagline">लोका: समस्ता: सुखिनो भवन्तु ।</h3>
-        </div>
-      </div>
-      <div className='slide1 flex justify-center items-center font-size flex-column'>
-        <div data-aos="fade-up" data-aos-duration={"1000"}>
-          <h3 className="tagline">लोका: समस्ता: सुखिनो भवन्तु ।</h3>
-        </div>
-      </div>
-      <div className='slide2 flex justify-center items-center font-size flex-column'>
-        <div data-aos="fade-up" data-aos-duration={"1000"}>
-          <h3 className="tagline">लोका: समस्ता: सुखिनो भवन्तु ।</h3>
-        </div>
-      </div>
-      <div className='slide3 flex justify-center items-center font-size flex-column'>
-        <div data-aos="fade-up" data-aos-duration={"1000"}>
-          <h3 className="tagline">लोका: समस्ता: सुखिनो भवन्तु ।</h3>
-        </div>
-      </div>
-      <div className='slide1 flex justify-center items-center font-size flex-column'>
-        <div data-aos="fade-up" data-aos-duration={"1000"}>
-          <h3 className="tagline">लोका: समस्ता: सुखिनो भवन्तु ।</h3>
-        </div>
-      </div>
-      <div className='slide2 flex justify-center items-center font-size flex-column'>
-        <div data-aos="fade-up" data-aos-duration={"1000"}>
-          <h3 className="tagline">लोका: समस्ता: सुखिनो भवन्तु ।</h3>
-        </div>
-      </div>
-      <div className='slide3 flex justify-center items-center font-size flex-column'>
-        <div data-aos="fade-up" data-aos-duration={"1000"}>
-          <h3 className="tagline">लोका: समस्ता: सुखिनो भवन्तु ।</h3>
-        </div>
-      </div>
-    </Carousel>
-
+      <AwarenessCarousel />
     <div>
+
       {
         aware.map((item, index) =>
         {

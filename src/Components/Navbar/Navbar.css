@@ -65,7 +65,12 @@
 .sub-menu-item:hover {
   background-color: #e88f0a;
 }
-
+/* .active{
+  text-decoration: none;
+  padding: 4px;
+  font-size: 20px;
+  color:#f0982e;
+} */
 .menu:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
