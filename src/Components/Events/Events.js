@@ -187,7 +187,6 @@ function Events({initiative}) {
                                                 )
                                               })
                                             }
-
                                           </Carousel>
                                       </Modal>
                                   </div>

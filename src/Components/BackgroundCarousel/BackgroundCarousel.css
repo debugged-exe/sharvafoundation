@@ -16,7 +16,7 @@
 }
 
 .slide1{
-    background:rgba(0, 0, 0, 0.4) url('pic1.jpeg') no-repeat center center/cover;
+    background:rgba(0, 0, 0, 0.4);
     height: 100vh;
     width: 100%;
     margin: 0;
@@ -24,7 +24,7 @@
     background-blend-mode: darken;
 }
 .slide2{
-    background:rgba(0, 0, 0, 0.4) url('pic2.jpeg') no-repeat center center/cover;
+    background:rgba(0, 0, 0, 0.4) ;
     height: 100vh;
     width: 100%;
     margin: 0;
@@ -32,7 +32,7 @@
     background-blend-mode: darken;
 }
 .slide3{
-    background:rgba(0, 0, 0, 0.4) url('pic3.jpeg') no-repeat center center/cover;
+    background:rgba(0, 0, 0, 0.4);
     height: 100vh;
     width: 100%;
     margin: 0;
