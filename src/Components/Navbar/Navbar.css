@@ -33,7 +33,6 @@
 .sub-menu {
   border-radius: 5px;
   list-style: none;
-
   display: none;
   position: absolute;
   background-color: #f1f1f1;
@@ -42,6 +41,11 @@
   z-index: 1;
   left: 0;
   margin-top: 10px;
+}
+
+.linkInitiatives{
+  list-style: none;
+  text-decoration: none;
 }
 
 .menu {
@@ -65,14 +69,17 @@
 .sub-menu-item:hover {
   background-color: #e88f0a;
 }
-/* .active{
-  text-decoration: none;
-  padding: 4px;
-  font-size: 20px;
-  color:#f0982e;
-} */
+
 .menu:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+color:#e88f0a;
+}
+.acName{
+  font-weight:bold;
+  color:#e88f0a;
+}
+.nav-donate{
+  text-decoration: none;
+
 }
 
 .menu:hover .sub-menu {

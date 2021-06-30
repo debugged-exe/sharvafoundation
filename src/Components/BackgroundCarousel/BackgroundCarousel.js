@@ -1,9 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import Carousel from 'react-elastic-carousel'
 import './BackgroundCarousel.css';
-import pic1 from './pic1.jpeg';
-import pic2 from './pic2.jpeg';
-import pic3 from './pic3.jpeg';
 
 import Logo from './sharva.png';
 

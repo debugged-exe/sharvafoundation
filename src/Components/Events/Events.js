@@ -71,6 +71,20 @@ function Events({initiative}) {
 
 
     }
+
+    else if (initiative==="covid19") {
+      fetch("http://localhost:3000/covid19")
+      .then(response => response.json())
+      .then(res => {
+        if (res[0].tagline) {
+          setDrive(res);
+        }
+      }).catch(error => {
+        console.log(error);
+      })
+
+
+    }
   }, [])
 
   const [visible, setVisible] = useState(3);

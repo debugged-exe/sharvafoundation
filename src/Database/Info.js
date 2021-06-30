@@ -1,4 +1,3 @@
-import pic1 from "./1.jpeg";
 const Info=[
   {
     img:pic1,

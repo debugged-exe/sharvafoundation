@@ -1,8 +1,12 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 import './Footer.css';
 import {FiInstagram} from "react-icons/fi";
 import {FiFacebook} from "react-icons/fi";
 import {SiGmail} from "react-icons/si";
+import {SiYoutube} from "react-icons/si";
+
 import {AiOutlineLinkedin} from "react-icons/ai";
 
 import {AiOutlineTwitter} from "react-icons/ai";
@@ -25,10 +29,16 @@ function Footer(){
            <li className="EventsBranches">
                      <h2 className={'h2'}>EVENTS</h2>
                      <ul className="box">
-                         <li><a href="">Event 1</a></li>
-                       <li><a href="">Event 2</a></li>
-                       <li><a href="">Event 3</a></li>
-                       <li><a href="">Event 4</a></li>
+                         <Link to="/hungerfreeindia">
+                           <li>#hungerfreeindia</li></Link>
+                         <Link to="">
+                           <li>#strivewithpride</li></Link>
+                         <Link to="">
+                           <li>#projectruya</li></Link>
+                         <Link to="">
+                           <li>#asfreeasabird</li></Link>
+                 <li>#giveherwings</li>
+
                      </ul>
                  </li>
              </ul>
@@ -60,6 +70,7 @@ function Footer(){
                   <li className="mh2">  <a style={{outline:'none'}} href='https://twitter.com/Sharvacharity' className='  white  dimIcon'><AiOutlineTwitter size="1.8rem" /></a></li>
                   <li className="mh2"><a style={{outline:'none'}} href='https://www.linkedin.com/company/sharva-foundation' className='  white dimIcon '><AiOutlineLinkedin size="1.8rem"/></a></li>
                   <li className="mh2"><a style={{outline:'none'}} href='mailto:foundationsharva@gmail.com?subject=Joining a good cause' className='  white dimIcon'><SiGmail size="1.8rem" /></a></li>
+                <li className="mh2"><a style={{outline:'none'}} href='https://www.youtube.com/channel/UCZT6olVE-2v_LWqXmrbqPug' className='  white dimIcon'><SiYoutube size="1.8rem" /></a></li>
                 </ul>
 
             </div>

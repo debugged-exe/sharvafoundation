@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './Awareness.css';
 import Carousel from 'react-elastic-carousel';
-import pic1 from "../../Database/1.jpeg";
 import AwarenessCarousel from "./AwarenessCarousel.js"
 
 function Awareness() {

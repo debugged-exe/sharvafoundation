@@ -3,7 +3,7 @@
   text-decoration: none;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   line-height: 1.5;
 }
 

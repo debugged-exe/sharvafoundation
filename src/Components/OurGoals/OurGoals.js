@@ -76,7 +76,7 @@ function OurGoals() {
                         </p>
                       </div>
                       <div>
-                        <a href="sharvafoundation.org" className="">
+                        <a href="sharvafoundation.org" className="no-underline">
                           <b className="LearnColor">Learn More</b>
                         </a>
                       </div>

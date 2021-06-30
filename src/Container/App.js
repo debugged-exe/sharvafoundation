@@ -6,12 +6,11 @@ import Eventspage from '../Pages/Eventspage.js';
 import Contactpage from '../Pages/Contactpage';
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
-import Join1 from "../Components/JoinUs/Join1";
-import hungerfreeindia from '../Database/hungerfreeindia';
+import Joinus from "../Components/JoinUs/Joinus";
 import Donatepage from "../Pages/Donatepage";
 import Awarenesspage from "../Pages/Awarenesspage";
 function App() {
-  const [initiative, setInitiative] = useState(hungerfreeindia);
+  const [initiative, setInitiative] = useState("hungerfreeindia");
 
   return (
     <div>
@@ -19,9 +18,9 @@ function App() {
         <div>
           <Navbar setInitiative={setInitiative} />
           <Switch>
-            <Route exact path="/" component={Homepage} />
+            <Route exact path="/home" component={Homepage} />
           <Route exact path="/events" component={() => <Eventspage initiative={initiative} />} />
-        <Route exact path="/joinus" component={Join1} />
+        <Route exact path="/joinus" component={Joinus} />
             <Route exact path="/contactus" component={Contactpage} />
             <Route exact path="/donatenow" component={Donatepage} />
             <Route exact path="/awareness" component={Awarenesspage} />
