@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import './OurGoals.css';
 import Carousel from 'react-elastic-carousel';
-
+import {Link} from 'react-router-dom';
 
 const breakPoints = [
     { width: 1, itemsToShow: 1, itemsToScroll: 1 },
@@ -15,7 +15,7 @@ function OurGoals() {
 
   const [goal, setGoal] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/goals").then(response => response.json()).then(res => {
+    fetch("https://cloud.mongodb.com/v2/60d4bf4c7094643c3ca7510b#metrics/replicaSet/60d4c24cf7c98e0c4314b1c5/explorer/sharvafrontend/counter/goals").then(response => response.json()).then(res => {
       if (res[0].head) {
         setGoal(res);
         console.log(res.length);
@@ -89,9 +89,9 @@ function OurGoals() {
             <div className="join-box mv5">
                 <p className="join-head fw6 " style={{ fontSize: '35px' }}>Join Us Now!!</p>
                 <div className="button-div">
-                    <button onClick={() => setShow(true)} className=" fw6 bg-white black pa3 ph4 f4 grow pointer" style={{ borderRadius: '8px', border: 'none' }}>
+                    <Link to="/joinus"><button onClick={() => setShow(true)} className=" fw6 bg-white black pa3 ph4 f4 grow pointer" style={{ borderRadius: '8px', border: 'none' }}>
                         Join Us
-                    </button>
+                    </button></Link>
                 </div>
             </div>
         </div>

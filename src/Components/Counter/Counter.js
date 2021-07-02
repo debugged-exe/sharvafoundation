@@ -10,7 +10,7 @@ import CountUp from 'react-countup';
 function Counter() {
   const [count, setCount] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/home").then(response => response.json()).then(res => {
+    fetch("https://cloud.mongodb.com/v2/60d4bf4c7094643c3ca7510b#metrics/replicaSet/60d4c24cf7c98e0c4314b1c5/explorer/sharvafrontend/counter/home").then(response => response.json()).then(res => {
       if (res[0].name) {
         setCount(res);
         console.log(res[0].name);
