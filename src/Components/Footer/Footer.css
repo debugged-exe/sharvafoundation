@@ -92,6 +92,9 @@ list-style: none;
 .EventsBranches{
   padding-top: 25px;
 }
+.eventsHover:hover{
+  color:#e88f0a;
+}
 
 
 @media screen and (min-width:600px){

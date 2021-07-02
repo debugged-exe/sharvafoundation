@@ -1,6 +1,15 @@
 import React,{Component} from 'react';
 import './Contact.css';
+import {FaUserAlt} from "react-icons/fa";
 import {FaPhoneAlt} from "react-icons/fa";
+import {RiTeamFill} from "react-icons/ri";
+import {IoMdMail} from "react-icons/io";
+import {RiUserSearchFill} from "react-icons/ri";
+import {FaHandshake} from "react-icons/fa";
+
+
+
+
 
 const initialState = {
 	email: '',
@@ -55,26 +64,41 @@ render(){
         <div className="container">
           <div className="contactInfo">
             <div className="box">
-             <div className="icon"><FaPhoneAlt /></div>
+             <div className="icon"><FaUserAlt /></div>
            <div className="text">
-             <h3>Ankita Zadoo</h3>
-           <p>ankitazadoo@gmail.com</p>
+             <h3>Admin</h3>
+           <p>admin@sharvafoundation.org</p>
            </div>
             </div>
             <div className="box">
-             <div className="icon"><FaPhoneAlt/></div>
+             <div className="icon"><IoMdMail/></div>
            <div className="text">
-             <h3>Tanmay Jagtap</h3>
-           <p>1234567890</p>
+             <h3>General</h3>
+           <p>foundationsharva@gmail.com</p>
            </div>
             </div>
             <div className="box">
-             <div className="icon"><FaPhoneAlt /> </div>
+             <div className="icon"><RiTeamFill /> </div>
            <div className="text">
-             <h3>Ankita Zadoo</h3>
-           <p>1234567890</p>
+             <h3>Team</h3>
+           <p>team.sharvafoundation@gmail.com</p>
            </div>
             </div>
+						<div className="box">
+             <div className="icon"><FaHandshake/></div>
+           <div className="text">
+             <h3>Manager</h3>
+           <p>managersharvafoundation@gmail.com</p>
+           </div>
+            </div>
+						<div className="box">
+             <div className="icon"><RiUserSearchFill/></div>
+           <div className="text">
+             <h3>HR</h3>
+           <p>hr.foundationsharva@gmail.com</p>
+           </div>
+            </div>
+
           </div>
 
           <div className="contactForm">

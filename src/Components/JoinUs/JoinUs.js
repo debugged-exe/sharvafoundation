@@ -1,7 +1,7 @@
 import React from 'react';
 import './Joinus.css';
 import 'tachyons';
-
+import sharvalogo from './sharva.png';
 const initialState = {
 	name: '',
 	email: '',
@@ -115,7 +115,7 @@ class Join1 extends React.PureComponent {
 			<div className="JoinUs-div pt0" id="survey">
       <div className="backgroundjoinus mt2 ">
        <div className="flex justify-center">
-          <img src="sharva.png"  className="join-logo"/>
+          <img src={sharvalogo}  className="join-logo"/>
        </div>
        </div>
 

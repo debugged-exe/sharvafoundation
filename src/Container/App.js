@@ -18,6 +18,7 @@ function App() {
         <div>
           <Navbar setInitiative={setInitiative} />
           <Switch>
+            <Route exact path="/" component={Homepage} />
             <Route exact path="/home" component={Homepage} />
           <Route exact path="/events" component={() => <Eventspage initiative={initiative} />} />
         <Route exact path="/joinus" component={Joinus} />

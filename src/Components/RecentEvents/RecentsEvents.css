@@ -1,6 +1,8 @@
 .RecentEvents-container{
   display: grid;
   grid-template-columns:auto auto auto;
+  align-items: center;
+  justify-content: center;
 
 }
 
@@ -15,21 +17,21 @@
   margin:5%;
   color: black;
 }
-.item:hover{
+.item{
      background:url('https://i.imgur.com/WLibEf0.jpg') no-repeat center center/cover;
      color:white;
      background-color: rgba(0,0,0,0.5);
      background-blend-mode: darken;
      opacity:0.9;
 }
-.item1:hover{
+.item1{
      background:url('https://i.imgur.com/OxHORZY.jpg') no-repeat center center/cover;
      color:white;
      background-color: rgba(0,0,0,0.5);
      background-blend-mode: darken;
      opacity:0.9;
 }
-.item2:hover{
+.item2{
      background:url('https://i.imgur.com/fV8t11A.jpg') no-repeat center center/cover;
      color:white;
      background-color: rgba(0,0,0,0.5);

@@ -3,7 +3,7 @@ import './Aboutus.css';
 
 function Aboutus(){
     return(
-        <div className="aboutUs mb3">
+        <div className="aboutUs mb3" id="aboutus">
             <div className="mw5 mw7-ns center  pa3 ">
                 <h2 className="center" style={{paddingBottom:'1em',textDecoration:'underline',textAlign:"center",textDecorationColor:'#ff8c00'}}>ABOUT SHARVA</h2>
                 <p className="lh-copy " style={{textAlign:"center"}} >

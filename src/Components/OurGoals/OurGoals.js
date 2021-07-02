@@ -86,8 +86,8 @@ function OurGoals() {
               })
             }
             </Carousel>
-            <div className="join-box">
-                <p className="join-head fw6" style={{ fontSize: '35px' }}>Join Us Now!!</p>
+            <div className="join-box mv5">
+                <p className="join-head fw6 " style={{ fontSize: '35px' }}>Join Us Now!!</p>
                 <div className="button-div">
                     <button onClick={() => setShow(true)} className=" fw6 bg-white black pa3 ph4 f4 grow pointer" style={{ borderRadius: '8px', border: 'none' }}>
                         Join Us

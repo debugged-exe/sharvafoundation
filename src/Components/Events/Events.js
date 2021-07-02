@@ -151,7 +151,7 @@ function Events({initiative}) {
                                         <img src={i.image[0]} onClick={()=>setrecentA(true)} className="gridImage pointer grow shadow-5" />
                                           <p className="onrightDate">{i.place}</p>
                                         <p className="onrightDate">{i.date}</p>
-                                        <Modal isOpen={recentA} onRequestClose={() => setrecentA(false)}>
+                                        <Modal isOpen={recentA} onRequestClose={() => setrecentA(false)} style={{content:{background:"#ddd"}}}>
                                         <span className="modalcloseButton" onClick={()=>setrecentA(false)}>X</span>
                                             <Carousel itemstoShow={4} style={{height:"500px",objectFit:"cover"}}>
                                               {

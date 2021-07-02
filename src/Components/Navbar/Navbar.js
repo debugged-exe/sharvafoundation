@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import { Link, useLocation } from "react-router-dom";
-
+import { useLocation } from "react-router-dom";
+import {HashLink as Link} from 'react-router-hash-link';
 import imgUrl from './sharva.png';
 
 
@@ -61,8 +61,8 @@ const Navbar = ({ setInitiative }) => {
             <li className="list-style-none mh2 black menu" onClick={() => setInitiative("covid19")}><span className={` ${location.pathname==='/events'?'acName':''}`}>Covid 19</span></li></Link>
           <Link to="/awareness">
           <li className="list-style-none mh2 black menu"><span className={` ${location.pathname==='/awareness'?'acName':''}`}>Awareness</span></li></Link>
-        <Link to="/home/#aboutus" >
-            <li className="list-style-none mh2 black menu"><span className={` ${location.pathname==='/home/#aboutus'?'acName':''}`}>About Us</span></li></Link>
+        <Link to="/home#aboutus" >
+            <li className="list-style-none mh2 black menu"><span className={` ${location.pathname==='/home#aboutus'?'acName':''}`}>About Us</span></li></Link>
           <Link to="/joinus">
             <li className="list-style-none mh2 black menu"><span className={` ${location.pathname==='/joinus'?'acName':''}`}>Join Us</span></li></Link>
           <Link to="/contactus">
