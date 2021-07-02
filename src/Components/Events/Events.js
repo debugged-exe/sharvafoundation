@@ -121,8 +121,8 @@ function Events({initiative}) {
 
 
                   {/* 50% text and 50% image responsive div */}
-                  <div className="event-txt-img">
-                      <div className="event-txt">
+                  <div className="event-txt-img w-100">
+                      <div className="event-txt w-100">
                           <h1>{item.tagline}</h1>
                           <p style={{ textAlign: "left" }}>
                             {item.description}

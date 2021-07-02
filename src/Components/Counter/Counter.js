@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './Counter.css';
+import Carousel from 'react-elastic-carousel';
 import {GiMeal} from 'react-icons/gi';
 import {FaHandsHelping} from 'react-icons/fa';
 import {GiAngelWings} from 'react-icons/gi';
@@ -9,7 +10,7 @@ import CountUp from 'react-countup';
 function Counter() {
   const [count, setCount] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/").then(response => response.json()).then(res => {
+    fetch("http://localhost:3000/home").then(response => response.json()).then(res => {
       if (res[0].name) {
         setCount(res);
         console.log(res[0].name);
@@ -20,7 +21,17 @@ function Counter() {
 
   },[])
 
+  const breakPoints = [
+       { width: 1, itemsToShow: 1 },
+       { width: 550, itemsToShow: 2 },
+       { width: 850, itemsToShow: 2 },
+       { width: 1150, itemsToShow: 4 },
+       { width: 1450, itemsToShow: 4 },
+       { width: 1750, itemsToShow: 4 },
+   ]
+
   return (<div className="counter-container bg-white">
+  <Carousel breakPoints={breakPoints} showArrows={true}>
       {
         count.map((item, index) => {
           if(index===0 || (index%2)===0){
@@ -48,6 +59,7 @@ function Counter() {
 
       })
     }
+    </Carousel>
   </div>)
 }
 

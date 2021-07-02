@@ -26,7 +26,7 @@ function App() {
             <Route exact path="/awareness" component={Awarenesspage} />
 
           </Switch>
-          <Footer />
+          <Footer  setInitiative={setInitiative} />
 
 
         </div>

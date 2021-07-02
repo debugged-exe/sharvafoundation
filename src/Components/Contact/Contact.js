@@ -58,7 +58,7 @@ render(){
              <div className="icon"><FaPhoneAlt /></div>
            <div className="text">
              <h3>Ankita Zadoo</h3>
-           <p>1234567890</p>
+           <p>ankitazadoo@gmail.com</p>
            </div>
             </div>
             <div className="box">

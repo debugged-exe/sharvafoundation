@@ -14,7 +14,7 @@ import {FaWhatsapp} from "react-icons/fa";
 import {AiFillLinkedin} from "react-icons/ai";
 
 
-function Footer(){
+function Footer({setInitiative}){
   return(
     <div className="body" style={{display: 'inline-block', width: "100%"}}>
         <footer className="footer">
@@ -29,16 +29,16 @@ function Footer(){
            <li className="EventsBranches">
                      <h2 className={'h2'}>EVENTS</h2>
                      <ul className="box">
-                         <Link to="/hungerfreeindia">
-                           <li>#hungerfreeindia</li></Link>
-                         <Link to="">
-                           <li>#strivewithpride</li></Link>
-                         <Link to="">
-                           <li>#projectruya</li></Link>
-                         <Link to="">
-                           <li>#asfreeasabird</li></Link>
-                 <li>#giveherwings</li>
-
+                       <Link to="/events"  onClick={() => setInitiative("hungerfreeindia")}>
+                          <li>#HungerFreeIndia</li></Link>
+                        <Link to="/events"  onClick={() => setInitiative("strivewithpride")}>
+                          <li>#StriveWithPride</li></Link>
+                        <Link to="/events"  onClick={() => setInitiative("projectruya")}>
+                          <li>#ProjectRuya</li></Link>
+                        <Link to="/events"  onClick={() => setInitiative("asfreeasabird")}>
+                          <li>#AsFreeasaBird</li></Link>
+                        <Link to="/events"  onClick={() => setInitiative("giveherwings")}>
+                          <li>#GiveHerWings</li></Link>
                      </ul>
                  </li>
              </ul>
@@ -52,6 +52,7 @@ function Footer(){
                       </ul>
             </li>
             </ul>
+
             </footer>
 
             <footer className="flexwrapmedia flex justify-between items-center f5 flex-wrap " style={{backgroundColor: "black"}}>

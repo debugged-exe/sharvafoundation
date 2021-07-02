@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react';
-import Carousel from 'react-elastic-carousel'
+import Carousel from 'react-elastic-carousel';
 import './BackgroundCarousel.css';
 
 import Logo from './sharva.png';
