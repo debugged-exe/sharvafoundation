@@ -16,27 +16,27 @@ function Footer({setInitiative}){
   return(
     <div className="body" style={{display: 'inline-block', width: "100%"}}>
         <footer className="footer">
-            <div className="footer-left">
+            <div className="footer-left ">
                     <img src={sharvalogo} alt=""/>
 
-                <p> Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                  <p> We make a living by what we get, but we make a life by what we give” These Words define the very energy that flows through the heart of Sharva foundation. We here at Sharva Foundation believe in building a community through giving. Our young minds and passion for this is what strives us towards giving the best! Although young, we look forward to do small things with great love. Each and every day a new member joins our family, and we ensure that we will keep expanding without overlooking our priorities. We look forward to see you in our family soon. </p>
 
 
             </div>
             <ul className="footer-right">
            <li className="EventsBranches">
                      <h2 className={'h2'}>EVENTS</h2>
-                     <ul className="box">
+                   <ul className="box">
                        <Link to="/events"  onClick={() => setInitiative("hungerfreeindia")}>
-                          <li className="eventsHover">#HungerFreeIndia</li></Link>
+                          <li className="eventsHover ">#HungerFreeIndia</li></Link>
                         <Link to="/events"  onClick={() => setInitiative("strivewithpride")}>
-                          <li className="eventsHover">#StriveWithPride</li></Link>
+                          <li className="eventsHover ">#StriveWithPride</li></Link>
                         <Link to="/events"  onClick={() => setInitiative("projectruya")}>
-                          <li className="eventsHover">#ProjectRuya</li></Link>
+                          <li className="eventsHover ">#ProjectRuya</li></Link>
                         <Link to="/events"  onClick={() => setInitiative("asfreeasabird")}>
-                          <li className="eventsHover">#AsFreeasaBird</li></Link>
+                          <li className="eventsHover ">#AsFreeasaBird</li></Link>
                         <Link to="/events"  onClick={() => setInitiative("giveherwings")}>
-                          <li className="eventsHover">#GiveHerWings</li></Link>
+                          <li className="eventsHover ">#GiveHerWings</li></Link>
                      </ul>
                  </li>
              </ul>
@@ -64,12 +64,12 @@ function Footer({setInitiative}){
 
             <div className="ma2">
                 <ul className="listStylingNone flex pointer  ">
-                  <li className="mh2"><a style={{outline:'none'}} href='https://wa.me/917517502268' className='  white dimIcon '><FaWhatsapp size="1.8rem" /></a></li>
-                  <li className="mh2"><a style={{outline:'none'}} href='https://instagram.com/sharvafoundation?igshid=yubeg3h96wn4' className=' white dimIcon '><FiInstagram size="1.8rem"/></a></li>
-                  <li className="mh2">  <a style={{outline:'none'}} href='https://twitter.com/Sharvacharity' className='  white  dimIcon'><AiOutlineTwitter size="1.8rem" /></a></li>
-                  <li className="mh2"><a style={{outline:'none'}} href='https://www.linkedin.com/company/sharva-foundation' className='  white dimIcon '><FaLinkedinIn size="1.8rem"/></a></li>
-                  <li className="mh2"><a style={{outline:'none'}} href='mailto:foundationsharva@gmail.com?subject=Joining a good cause' className='  white dimIcon'><SiGmail size="1.8rem" /></a></li>
-                <li className="mh2"><a style={{outline:'none'}} href='https://www.youtube.com/channel/UCZT6olVE-2v_LWqXmrbqPug' className='  white dimIcon'><SiYoutube size="1.8rem" /></a></li>
+                  <li className="mh2"><a style={{outline:'none'}} href='https://wa.me/917517502268' className='  white dimIcon '><FaWhatsapp size="1.4rem" /></a></li>
+                <li className="mh2"><a style={{outline:'none'}} href='https://instagram.com/sharvafoundation?igshid=yubeg3h96wn4' className=' white dimIcon '><FiInstagram size="1.4rem"/></a></li>
+              <li className="mh2">  <a style={{outline:'none'}} href='https://twitter.com/Sharvacharity' className='  white  dimIcon'><AiOutlineTwitter size="1.4rem" /></a></li>
+            <li className="mh2"><a style={{outline:'none'}} href='https://www.linkedin.com/company/sharva-foundation' className='  white dimIcon '><FaLinkedinIn size="1.4rem"/></a></li>
+          <li className="mh2"><a style={{outline:'none'}} href='mailto:foundationsharva@gmail.com?subject=Joining a good cause' className='  white dimIcon'><SiGmail size="1.4rem" /></a></li>
+        <li className="mh2"><a style={{outline:'none'}} href='https://www.youtube.com/channel/UCZT6olVE-2v_LWqXmrbqPug' className='  white dimIcon'><SiYoutube size="1.4rem" /></a></li>
                 </ul>
 
             </div>

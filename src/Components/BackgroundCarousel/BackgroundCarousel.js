@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import Carousel from 'react-elastic-carousel';
 import './BackgroundCarousel.css';
-
+import {Link} from 'react-router-dom';
 import Logo from './sharva.png';
 
 const breakPoints=[
@@ -35,7 +35,7 @@ const BackgroundCarousel = () => {
                         <h3 className="tagline">लोका: समस्ता: सुखिनो भवन्तु ।</h3>
                         </div>
                         <div data-aos="fade-up" data-aos-duration={"1000"} >
-                        <a className="f4  link  br2 ba ph3 pv2 mb2 dib near-white caroButton" href="#0">Donate Now</a>
+                        <Link to="/donatenow" className="f4  link  br2 ba ph3 pv2 mb2 dib near-white caroButton">Donate Now</Link>
                         </div>
                     </div>
                   )

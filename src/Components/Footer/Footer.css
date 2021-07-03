@@ -23,9 +23,11 @@ footer{
     flex: 1 100%;
 }
 .footer-left{
-    margin-left: 1.25em;
+    margin-left: 0.25em;
     margin-bottom: 2em;
     padding-top: 25px;
+
+
 }
 .footer-left img{
     width: 20%;
@@ -64,8 +66,9 @@ footer{
     color:#ffffff;
 }
 
+
 .footer-left p{
-    padding-right: 20%;
+    padding-right: 1%;
     color: #ffffff;
 }
 

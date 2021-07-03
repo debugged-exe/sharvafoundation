@@ -67,7 +67,7 @@ function OurGoals() {
                       </div>
                     </div>
                     <div className="flex justify-center items-center">
-                      <a className="f5  link br2 ph3 pv2 mb2 tc  dib cardButton" href="#0">Donate Now</a>
+                      <Link to="/donatenow" className="f5  link br2 ph3 pv2 mb2 tc  dib cardButton">Donate Now</Link>
                     </div>
                     <div className="lastLine">
                       <div className="supporters">
