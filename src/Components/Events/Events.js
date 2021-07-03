@@ -8,7 +8,7 @@ function Events({initiative}) {
   const [drive,setDrive]=useState([]);
   useEffect(() => {
     if(initiative==="hungerfreeindia"){
-      fetch("http://localhost:3000/events")
+      fetch("https://thawing-shelf-77571.herokuapp.com/events")
       .then(response => response.json())
       .then(res => {
         if (res[0].tagline) {
@@ -20,7 +20,7 @@ function Events({initiative}) {
 
     }
     else if (initiative==="strivewithpride") {
-      fetch("http://localhost:3000/strive")
+      fetch("https://thawing-shelf-77571.herokuapp.com/strive")
       .then(response => response.json())
       .then(res => {
         if (res[0].tagline) {
@@ -33,7 +33,7 @@ function Events({initiative}) {
 
     }
     else if (initiative==="projectruya") {
-      fetch("http://localhost:3000/ruya")
+      fetch("https://thawing-shelf-77571.herokuapp.com/ruya")
       .then(response => response.json())
       .then(res => {
         if (res[0].tagline) {
@@ -46,7 +46,7 @@ function Events({initiative}) {
 
     }
     else if (initiative==="asfreeasabird") {
-      fetch("http://localhost:3000/bird")
+      fetch("https://thawing-shelf-77571.herokuapp.com/bird")
       .then(response => response.json())
       .then(res => {
         if (res[0].tagline) {
@@ -59,7 +59,7 @@ function Events({initiative}) {
 
     }
     else if (initiative==="giveherwings") {
-      fetch("http://localhost:3000/wings")
+      fetch("https://thawing-shelf-77571.herokuapp.com/wings")
       .then(response => response.json())
       .then(res => {
         if (res[0].tagline) {
@@ -73,7 +73,7 @@ function Events({initiative}) {
     }
 
     else if (initiative==="covid19") {
-      fetch("http://localhost:3000/covid19")
+      fetch("https://thawing-shelf-77571.herokuapp.com/covid19")
       .then(response => response.json())
       .then(res => {
         if (res[0].tagline) {

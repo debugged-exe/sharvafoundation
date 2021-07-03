@@ -13,7 +13,7 @@ const breakPoints=[
 const BackgroundCarousel = () => {
   const [bgcarousel,setCarousel]=useState([]);
   useEffect(() => {
-      fetch("http://localhost:3000/bgcarousel")
+      fetch("https://thawing-shelf-77571.herokuapp.com/bgcarousel")
       .then(response => response.json())
       .then(res => {
         if (res[0].bgimg) {

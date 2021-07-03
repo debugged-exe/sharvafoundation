@@ -7,7 +7,7 @@ function Awareness() {
 
   const [aware, setAware] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/awareness")
+    fetch("https://thawing-shelf-77571.herokuapp.com/awareness")
     .then(response => response.json())
     .then(res => {
       if (res[0].heading) {

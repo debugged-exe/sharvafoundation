@@ -45,7 +45,7 @@ class Join1 extends React.PureComponent {
 		} = this.state;
 
 		event.preventDefault();
-		fetch('http://localhost:3000/join', {
+		fetch('https://thawing-shelf-77571.herokuapp.com/join', {
 			method: 'post',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({

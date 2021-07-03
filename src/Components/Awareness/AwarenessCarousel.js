@@ -11,7 +11,7 @@ function AwarenessCarousel() {
   ]
   const [aware, setAware] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/acarousel")
+    fetch("https://thawing-shelf-77571.herokuapp.com/acarousel")
     .then(response => response.json())
     .then(res => {
       if (res[0].backimg) {
