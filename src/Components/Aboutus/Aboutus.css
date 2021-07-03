@@ -69,20 +69,16 @@
 @media screen and (max-width: 800px) {
     .imgText{
         width:100%;
+        padding: 0;
     }
     .text{
         padding-top: 1rem;
     }
 
+
     .aboutButton{
     display: flex;
     justify-content: center;
 
-    }
-}
-@media screen and (max-width:320px) {
-    .aboutTop p{
-      width: 100%;
-      height: auto;
     }
 }

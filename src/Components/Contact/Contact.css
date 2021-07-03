@@ -153,6 +153,12 @@
   .container .contactInfo,.contactForm{
     width: 100%;
   }
+  .container .contactInfo .box .text{
+  padding-left: 0;
+  font-size: 11px;
+
+  }
+
 
 }
 
@@ -163,5 +169,6 @@
   }
   .contact{
     padding:5px;
+    width: 100%;
   }
 }

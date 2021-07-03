@@ -49,7 +49,7 @@
 }
 
 .donationAmount {
-  padding: 50px;
+  padding: 40px;
 }
 
 .donationAmountList {
@@ -241,4 +241,16 @@
     width: 40%;
     padding: 10px;
   }
+  .donationAmount{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+  }
+  .donateTextbox{
+    align-content: center;
+  }
+ .donationModalButton{
+   margin-bottom: 10px;
+ }
 }

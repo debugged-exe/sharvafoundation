@@ -49,7 +49,7 @@ const Navbar = ({ setInitiative }) => {
 
         <ul className={` ${navbarContents} list-style-none flex justify-around pa2 mr2 items-center ${dropDown} `}>
 
-          <Link to="/" ><li className="list-style-none mh2 black menu "><span className={` ${location.pathname==='/'?'acName':''}`}>Home</span></li></Link>
+          <Link to="/" ><li className="list-style-none mh2 black menu"><span className={` ${location.pathname==='/'?'acName':''}`}>Home</span></li></Link>
 
         <Link to="/events" className="linkInitiatives">
             <li className="list-style-none mh2 black menu"><span className={` ${(location.pathname==='/events')&&(covid===false)?'acName':''}`}>Our Initiatives</span>
@@ -71,10 +71,10 @@ const Navbar = ({ setInitiative }) => {
             <li className="list-style-none mh2 black menu"><span className={` ${location.pathname==='/joinus'?'acName':''}`}>Join Us</span></li></Link>
           <Link to="/contactus">
             <li className="list-style-none mh2 black menu"><span className={` ${location.pathname==='/contactus'?'acName':''}`}>Contact Us</span></li></Link>
-          <Link to="/donatenow" className="pv2 nav-donate">
+          <Link to="/donatenow" className="pv2  nav-donate">
             <a class="f5 link dim br2 ph3 pv2 white " href="" style={{ backgroundColor: "#e88f0a" }}>Donate Now</a>
           </Link>
-          <p className='tc'><Link className={`f6 link dim ph3 pv1 mb2 dib white crossNavbar flex justify-center items-center`} href='#0'
+          <p className='tc'><Link className={`f6 link dim ph3 pv1 mb2 mt2 dib white crossNavbar flex justify-center items-center`} href='#0'
             onClick={() => hamburger()}
           >
             X

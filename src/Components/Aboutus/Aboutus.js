@@ -4,7 +4,7 @@ import './Aboutus.css';
 function Aboutus(){
     return(
         <div className="aboutUs mb3" id="aboutus">
-            <div className="mw5 mw7-ns center   aboutTop ">
+            <div className="mw7 mw7-ns center ">
                 <h2 className="center" style={{paddingBottom:'1em',textDecoration:'underline',textAlign:"center",textDecorationColor:'#ff8c00'}}>ABOUT SHARVA</h2>
                 <p className="lh-copy " style={{textAlign:"center"}} >
                 Sharva Foundation is a group of young and determined individuals who share the same mindset, that is the maximum reconciliation of the fragments of the society which are over looked and undocumented for. Brought to life during the coronavirus pandemic, we quickly learned the hardships faced by the people firsthand. In times of despair, we took it upon us to create a society that helps and works to grow together. With each growing day we add more people to our family that share our ideals. We have witnessed growth exponentially and that made it clear that there are people out there who want to provide their aid. And we act like a platform. We hope to see tomorrow build out on a foundation laid by love, trust and care. That is what drives our purpose.
