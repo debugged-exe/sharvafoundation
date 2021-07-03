@@ -48,8 +48,8 @@ const Navbar = ({ setInitiative }) => {
         <ul className={` ${navbarContents} list-style-none flex justify-around pa2 mr2 items-center ${dropDown} `}>
 
           <Link to="/" ><li className="list-style-none mh2 black menu "><span className={` ${location.pathname==='/'?'acName':''}`}>Home</span></li></Link>
-        <Link to="/" className="linkInitiatives">
-            <li className="list-style-none mh2 black menu"><span className={` ${location.pathname==='/events'?'acName':''}`}>Our Initiatives</span>
+        <Link to="/pro" className="linkInitiatives">
+            <li className="list-style-none mh2 black menu"><span className={` ${location.pathname==='/pro'?'acName':''}`}>Our Initiatives</span>
               <ul className="sub-menu black align-center">
                 <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => setInitiative("hungerfreeindia")}> Hunger Free India</li></Link>
                 <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => setInitiative("strivewithpride")}> Strive With Pride</li></Link>

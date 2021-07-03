@@ -18,13 +18,12 @@ function App() {
         <div>
           <Navbar setInitiative={setInitiative} />
           <Switch>
-            <Route  path="/" component={Homepage} />
-          <Route exact path="/events" component={() => <Eventspage initiative={initiative} />} />
-        <Route exact path="/joinus" component={Joinus} />
+            <Route exact path="/events" component={() => <Eventspage initiative={initiative} />} />
+            <Route exact path="/joinus" component={Joinus} />
             <Route exact path="/contactus" component={Contactpage} />
             <Route exact path="/donatenow" component={Donatepage} />
             <Route exact path="/awareness" component={Awarenesspage} />
-
+            <Route  path="/" component={Homepage} />
           </Switch>
 
 
