@@ -25,6 +25,8 @@ const Navbar = ({ setInitiative }) => {
   const location=useLocation();
   console.log(location);
 
+  const[covid,setCovid]=useState(false);
+
 
 
   return (
@@ -48,8 +50,9 @@ const Navbar = ({ setInitiative }) => {
         <ul className={` ${navbarContents} list-style-none flex justify-around pa2 mr2 items-center ${dropDown} `}>
 
           <Link to="/" ><li className="list-style-none mh2 black menu "><span className={` ${location.pathname==='/'?'acName':''}`}>Home</span></li></Link>
-        <Link to="/pro" className="linkInitiatives">
-            <li className="list-style-none mh2 black menu"><span className={` ${location.pathname==='/pro'?'acName':''}`}>Our Initiatives</span>
+
+        <Link to="/events" className="linkInitiatives">
+            <li className="list-style-none mh2 black menu"><span className={` ${(location.pathname==='/events')&&(covid===false)?'acName':''}`}>Our Initiatives</span>
               <ul className="sub-menu black align-center">
                 <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => setInitiative("hungerfreeindia")}> Hunger Free India</li></Link>
                 <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => setInitiative("strivewithpride")}> Strive With Pride</li></Link>
@@ -59,7 +62,7 @@ const Navbar = ({ setInitiative }) => {
               </ul>
             </li></Link>
           <Link to="/events">
-            <li className="list-style-none mh2 black menu" onClick={() => setInitiative("covid19")}><span className={` ${location.pathname==='/events'?'acName':''}`}>Covid 19</span></li></Link>
+            <li className="list-style-none mh2 black menu" onClick={() => {setInitiative("covid19");setCovid(true)}}><span className={` ${location.pathname==="/events"&&(covid===true)?'acName':''}`}>Covid 19</span></li></Link>
           <Link to="/awareness">
           <li className="list-style-none mh2 black menu"><span className={` ${location.pathname==='/awareness'?'acName':''}`}>Awareness</span></li></Link>
         <Link to="/#aboutus" >

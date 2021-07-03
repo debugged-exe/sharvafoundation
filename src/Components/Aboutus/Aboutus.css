@@ -80,3 +80,9 @@
 
     }
 }
+@media screen and (max-width:320px) {
+    .aboutTop p{
+      width: 100%;
+      height: auto;
+    }
+}
