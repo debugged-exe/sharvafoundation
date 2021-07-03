@@ -135,7 +135,8 @@
   font-size: 16px;
   margin: 10px 0;
   border: none;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #ff8c00;
+  border-radius: 8px;
   outline: none;
   resize: none;
 }
@@ -238,7 +239,7 @@
 
 @media screen and (max-width: 720px) {
   .donationForm {
-    width: 40%;
+    width: 100%;
     padding: 10px;
   }
   .donationAmount{
