@@ -59,7 +59,7 @@ render(){
 
         <div className="content">
           <h2>Contact Us</h2>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <p>Any help that goes undocumented can result in the failure of someone’s livelihood and survival. It is of utmost importance that this be prevented. There’s where we come in. And only by contacting us can you acquire a platform that helps to distribute this aid.</p>
 			<div className="flex justify-center pt3">< FaPhoneAlt color="#ff8c00" fontSize="1.2em"/><a  className=" no-underline black" href="tel:+91 9596156678">+91 95961 56678</a></div>
         </div>
         <div className="container">
