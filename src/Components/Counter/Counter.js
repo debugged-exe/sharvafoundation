@@ -10,7 +10,7 @@ import CountUp from 'react-countup';
 function Counter() {
   const [count, setCount] = useState([]);
   useEffect(() => {
-    fetch("https://thawing-shelf-77571.herokuapp.com/home").then(response => response.json()).then(res => {
+    fetch("https://thawing-shelf-77571.herokuapp.com/").then(response => response.json()).then(res => {
       if (res[0].name) {
         setCount(res);
         console.log(res[0].name);

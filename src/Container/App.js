@@ -14,12 +14,11 @@ function App() {
 
   return (
     <div>
-      <Router>
+      <Router basename="/">
         <div>
           <Navbar setInitiative={setInitiative} />
           <Switch>
-            <Route exact path="/" component={Homepage} />
-            <Route exact path="/home" component={Homepage} />
+            <Route  path="/" component={Homepage} />
           <Route exact path="/events" component={() => <Eventspage initiative={initiative} />} />
         <Route exact path="/joinus" component={Joinus} />
             <Route exact path="/contactus" component={Contactpage} />
@@ -27,10 +26,11 @@ function App() {
             <Route exact path="/awareness" component={Awarenesspage} />
 
           </Switch>
-          <Footer  setInitiative={setInitiative} />
 
 
         </div>
+        <Footer  setInitiative={setInitiative} />
+
       </Router>
 
     </div>

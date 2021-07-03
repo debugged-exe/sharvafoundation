@@ -23,6 +23,7 @@ const Navbar = ({ setInitiative }) => {
   }
 
   const location=useLocation();
+  console.log(location);
 
 
 
@@ -46,7 +47,7 @@ const Navbar = ({ setInitiative }) => {
 
         <ul className={` ${navbarContents} list-style-none flex justify-around pa2 mr2 items-center ${dropDown} `}>
 
-          <Link to="/home" ><li className="list-style-none mh2 black menu "><span className={` ${location.pathname==='/home'?'acName':''}`}>Home</span></li></Link>
+          <Link to="/" ><li className="list-style-none mh2 black menu "><span className={` ${location.pathname==='/'?'acName':''}`}>Home</span></li></Link>
         <Link to="/" className="linkInitiatives">
             <li className="list-style-none mh2 black menu"><span className={` ${location.pathname==='/events'?'acName':''}`}>Our Initiatives</span>
               <ul className="sub-menu black align-center">
@@ -61,8 +62,8 @@ const Navbar = ({ setInitiative }) => {
             <li className="list-style-none mh2 black menu" onClick={() => setInitiative("covid19")}><span className={` ${location.pathname==='/events'?'acName':''}`}>Covid 19</span></li></Link>
           <Link to="/awareness">
           <li className="list-style-none mh2 black menu"><span className={` ${location.pathname==='/awareness'?'acName':''}`}>Awareness</span></li></Link>
-        <Link to="/home#aboutus" >
-            <li className="list-style-none mh2 black menu"><span className={` ${location.pathname==='/home#aboutus'?'acName':''}`}>About Us</span></li></Link>
+        <Link to="/#aboutus" >
+            <li className="list-style-none mh2 black menu"><span className={` ${location.pathname==='/#aboutus'?'acName':''}`}>About Us</span></li></Link>
           <Link to="/joinus">
             <li className="list-style-none mh2 black menu"><span className={` ${location.pathname==='/joinus'?'acName':''}`}>Join Us</span></li></Link>
           <Link to="/contactus">
