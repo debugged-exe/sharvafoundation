@@ -54,15 +54,15 @@ const Navbar = ({ setInitiative }) => {
         <Link to="/events" className="linkInitiatives">
             <li className="list-style-none mh2 black menu"><span className={` ${(location.pathname==='/events')&&(covid===false)?'acName':''}`}>Our Initiatives</span>
               <ul className="sub-menu black align-center">
-                <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => setInitiative("hungerfreeindia")}> Hunger Free India</li></Link>
-                <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => setInitiative("strivewithpride")}> Strive With Pride</li></Link>
-                <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => setInitiative("projectruya")}> Project Ruya</li></Link>
-                <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => setInitiative("asfreeasabird")}> As Free As a Bird</li></Link>
-                <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => setInitiative("giveherwings")}> Give Her Wings</li></Link>
+                <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => {setInitiative("hungerfreeindia");setCovid(false)}}> Hunger Free India</li></Link>
+                <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => {setInitiative("strivewithpride");setCovid(false)}}> Strive With Pride</li></Link>
+                <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => {setInitiative("projectruya");setCovid(false);setCovid(false)}}> Project Ruya</li></Link>
+                <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => {setInitiative("asfreeasabird");setCovid(false)}}> As Free As a Bird</li></Link>
+                <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => {setInitiative("giveherwings");setCovid(false)}}> Give Her Wings</li></Link>
               </ul>
             </li></Link>
           <Link to="/events">
-            <li className="list-style-none mh2 black menu" onClick={() => {setInitiative("covid19");setCovid(true)}}><span className={` ${location.pathname==="/events"&&(covid===true)?'acName':''}`}>Covid 19</span></li></Link>
+            <li className="list-style-none mh2 black menu" onClick={() => {setInitiative("covid19");setCovid(true)}}><span className={` ${location.pathname==="/events" && (covid===true)?'acName':''}`}>Covid 19</span></li></Link>
           <Link to="/awareness">
           <li className="list-style-none mh2 black menu"><span className={` ${location.pathname==='/awareness'?'acName':''}`}>Awareness</span></li></Link>
         <Link to="/#aboutus" >
