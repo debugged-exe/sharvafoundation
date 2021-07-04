@@ -231,7 +231,6 @@
 
 @media screen and (min-width: 720px) {
   .donationForm {
-    width: 40%;
     padding: 10px;
   }
 }
