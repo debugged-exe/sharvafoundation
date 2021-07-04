@@ -99,6 +99,7 @@ function Events({initiative}) {
     const[showP,setShowPast]=useState(false);
     const[recentA,setrecentA]=useState(false);
     const[pastA,setpastA]=useState(false);
+    const[caro,setCaro]=useState([]);
     console.log(visible);
 
     return (
@@ -143,21 +144,19 @@ function Events({initiative}) {
                           {/* Recent Events grid */}
                           <div className="grid ">{
                               item.events.map((i,index)=>{
-                                console.log("outer i",index);
                                 if(i.recent==='1'){
                                   return(
                                     <div>
 
                                     <div className="pa3 ma3" >
-                                        <img src={i.image[0]} onClick={()=>setrecentA(true)} className="gridImage pointer grow shadow-5" />
+                                        <img src={i.image[0]} onClick={(e)=>{setrecentA(true);setCaro(i.image);}} className="gridImage pointer grow shadow-5" />
                                           <p className="onrightDate">{i.place}</p>
                                         <p className="onrightDate">{i.date}</p>
                                         <Modal isOpen={recentA}  onRequestClose={() => setrecentA(false)} style={{content:{background:"#ddd"}}}>
                                         <span className="modalcloseButton" onClick={()=>setrecentA(false)}>X</span>
                                             <Carousel itemstoShow={4} style={{height:"500px",objectFit:"cover"}}>
                                               {
-                                                i.image.map((photo,index)=>{
-                                                  console.log("i",index);
+                                                caro.map((photo,index)=>{
                                                   return(
                                                     <img src={photo}></img>
                                                   )
@@ -189,7 +188,7 @@ function Events({initiative}) {
                                   <div className="">
 
                                   <div className="pa3 ma3" >
-                                      <img src={i.image[0]} onClick={()=>setrecentA(true)} className="gridImage pointer grow shadow-5" />
+                                      <img src={i.image[0]} onClick={()=>{setrecentA(true);setCaro(i.image);}} className="gridImage pointer grow shadow-5" />
                                         <p className="onrightDate">{i.place}</p>
 
                                       <p className="onrightDate">{i.date}</p>
@@ -197,7 +196,7 @@ function Events({initiative}) {
                                       <span className="modalcloseButton" onClick={()=>setrecentA(false)}>X</span>
                                           <Carousel itemstoShow={4} style={{height:"500px",objectFit:"cover"}}>
                                             {
-                                              i.image.map((photo,index)=>{
+                                              caro.map((photo,index)=>{
                                                 return(
                                                   <img src={photo} height="250%" width="75%" ></img>
                                                 )

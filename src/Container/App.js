@@ -6,7 +6,7 @@ import Eventspage from '../Pages/Eventspage.js';
 import Contactpage from '../Pages/Contactpage';
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
-import Joinus from "../Components/JoinUs/Joinus";
+import Joinus from "../Components/JoinUs/JoinUs";
 import Donatepage from "../Pages/Donatepage";
 import Awarenesspage from "../Pages/Awarenesspage";
 function App() {
