@@ -100,6 +100,7 @@ function Events({initiative}) {
     const[recentA,setrecentA]=useState(false);
     const[pastA,setpastA]=useState(false);
     const[caro,setCaro]=useState([]);
+
     console.log(visible);
 
     return (
@@ -154,11 +155,11 @@ function Events({initiative}) {
                                         <p className="onrightDate">{i.date}</p>
                                         <Modal isOpen={recentA}  onRequestClose={() => setrecentA(false)} style={{content:{background:"#ddd"}}}>
                                         <span className="modalcloseButton" onClick={()=>setrecentA(false)}>X</span>
-                                            <Carousel itemstoShow={4} style={{height:"500px",objectFit:"cover"}}>
+                                            <Carousel itemstoShow={4}>
                                               {
                                                 caro.map((photo,index)=>{
                                                   return(
-                                                    <img src={photo}></img>
+                                                    <img src={photo} style={{objectFit:"fill"}}></img>
                                                   )
                                                 })
                                               }
