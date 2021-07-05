@@ -227,6 +227,15 @@
     width: 100%;
     padding: 10px;
   }
+  .donateDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+  }
+  .donateTextbox{
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 720px) {

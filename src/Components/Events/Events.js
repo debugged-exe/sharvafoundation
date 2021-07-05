@@ -5,6 +5,7 @@ import './Events.css';
 
 
 function Events({initiative}) {
+
   const [drive,setDrive]=useState([]);
   useEffect(() => {
     if(initiative==="hungerfreeindia"){
@@ -102,7 +103,8 @@ function Events({initiative}) {
     const[caro,setCaro]=useState([]);
 
     console.log(visible);
-
+   
+    
     return (
       <div>
         {
@@ -177,17 +179,14 @@ function Events({initiative}) {
                           </div>
                       </div>
                       <div className="past-events">
-                          <div className="heading">
-                              <h1>PAST EVENTS</h1>
-                              <hr id="past-hr" />
-                          </div>
+                          
                           {/* Past Events grid */}
-                          <div className="grid">{
+                          <div className="grid">
+                           {
                               item.events.filter(i=>i.recent==='0').slice(0,visible).map((i,index)=>{
-
+                              
                                 return(
-                                  <div className="">
-
+                                 <div>
                                   <div className="pa3 ma3" >
                                       <img src={i.image[0]} onClick={()=>{setrecentA(true);setCaro(i.image);}} className="gridImage pointer grow shadow-5" />
                                         <p className="onrightDate">{i.place}</p>
@@ -195,11 +194,11 @@ function Events({initiative}) {
                                       <p className="onrightDate">{i.date}</p>
                                       <Modal isOpen={recentA} onRequestClose={() => setrecentA(false)}>
                                       <span className="modalcloseButton" onClick={()=>setrecentA(false)}>X</span>
-                                          <Carousel itemstoShow={4} style={{height:"500px",objectFit:"cover"}}>
+                                          <Carousel itemstoShow={4} style={{height:"80vh"}}>
                                             {
                                               caro.map((photo,index)=>{
                                                 return(
-                                                  <img src={photo} height="250%" width="75%" ></img>
+                                                  <img src={photo} style={{height:"400px",width:"100%",objectFit:"fill"}}></img>
                                                 )
                                               })
                                             }
@@ -208,15 +207,14 @@ function Events({initiative}) {
                                   </div>
 
                                   </div>
+                                
                                 )
-
+                                                 
                               })
                             }
 
                           </div>
                       </div>
-
-
                   </div>
                   <div>
                       {

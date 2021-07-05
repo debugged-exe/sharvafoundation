@@ -1,5 +1,5 @@
 import React from 'react';
-import './Joinus.css';
+import './JoinUs.css';
 import 'tachyons';
 import sharvalogo from './sharva.png';
 const initialState = {

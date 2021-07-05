@@ -30,7 +30,9 @@
 .join-box {
   width: 100%;
   height: 20vh;
-  background-color:#f3a456;
+  background-color: #f42b03;
+background-image: linear-gradient(316deg, #f42b03 0%, #ffbe0b 74%);
+
   color: white;
   display: grid;
   grid-template-columns: 70% 30%;
@@ -130,6 +132,7 @@
 .cardButton {
   color: white;
   width: 40%;
+  font-size: 1rem;
   margin-top: 25px;
   background-color: #ff8c00;
 }
@@ -139,7 +142,9 @@
 @media only screen and (max-width: 390px) {
   .cardButton {
     display: flex;
-    width: 100%;
+    width: 80%;
+    padding:0;
+    font-size:0.8rem;
     align-items: center;
     justify-content: center;
   }
@@ -154,5 +159,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media only screen and (max-width:786px){
+  .cardButton{
+    width:80%;
   }
 }

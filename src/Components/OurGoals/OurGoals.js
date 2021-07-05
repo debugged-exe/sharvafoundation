@@ -40,7 +40,7 @@ function OurGoals() {
     return (
         <div>
             <div className="ourGoals mt4 pa3">
-                <div className="mw5 mw7-ns center topText pa3 ">
+                <div className="mw7 mw7-m mw7-ns center topText  ">
                     <h2 className="center" style={{ paddingBottom: '10px', textDecoration: 'underline', textDecorationColor: '#ff8c00', textAlign: 'center' }}>OUR GOALS</h2>
                     <p className="lh-copy " style={{ textAlign: "center" }}>
                         The optimus goal of Sharva Foundation is to be completely equipped and primed with relief funds so as to be ready with an optimum amount for any event or uncalled situation.
@@ -67,7 +67,7 @@ function OurGoals() {
                       </div>
                     </div>
                     <div className="flex justify-center items-center">
-                      <Link to="/donatenow" className="f5  link br2 ph3 pv2 mb2 tc  dib cardButton">Donate Now</Link>
+                      <Link to="/donatenow" className=" link br2 ph3 pv2 mb2 tc  dib cardButton">Donate Now</Link>
                     </div>
                     <div className="lastLine">
                       <div className="supporters">
