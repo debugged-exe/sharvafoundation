@@ -112,7 +112,7 @@ function Events({initiative}) {
         {
           drive.map((item,index)=>{
             return(
-              <div className="events-1 ba">
+              <div className="events-1 ba mt5">
                   {/* The 100% width image */}
                   <div className="events-top-image" style={{background:`url(${item.bgimg}) no-repeat center center`,backgroundSize:'cover'}}>
                       <h3 className="events-tagline">{item.tagline}</h3>

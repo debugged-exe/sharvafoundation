@@ -112,10 +112,10 @@ class Join1 extends React.PureComponent {
 
 	render() {
 		return (
-			<div className="JoinUs-div pt0" id="survey">
+			<div className="JoinUs-div pt0 pt5" id="survey">
       <div className="backgroundjoinus mt2 ">
        <div className="flex justify-center">
-          <img src={sharvalogo}  className="join-logo"/>
+          <img src={sharvalogo}  className="join-logo" alt="logo"/>
        </div>
        </div>
 

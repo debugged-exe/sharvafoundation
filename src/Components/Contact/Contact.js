@@ -3,7 +3,6 @@ import './Contact.css';
 import {FaUserAlt} from "react-icons/fa";
 import {FaPhoneAlt} from "react-icons/fa";
 import {RiTeamFill} from "react-icons/ri";
-import {IoMdMail} from "react-icons/io";
 import {RiUserSearchFill} from "react-icons/ri";
 import {FaHandshake} from "react-icons/fa";
 
@@ -60,7 +59,7 @@ render(){
         <div className="content">
           <h2>Contact Us</h2>
         <p>Any help that goes undocumented can result in the failure of someone’s livelihood and survival. It is of utmost importance that this be prevented. There’s where we come in. And only by contacting us can you acquire a platform that helps to distribute this aid.</p>
-			<div className="flex justify-center pt3">< FaPhoneAlt color="#ff8c00" fontSize="1.2em"/><a  className=" no-underline black" href="tel:+91 9596156678">+91 95961 56678</a></div>
+			<div className="flex justify-center pt3">< FaPhoneAlt color="#e88f0a" fontSize="1.2em"/><a  className=" no-underline black" href="tel:+91 9596156678">+91 95961 56678</a></div>
         </div>
         <div className="container">
           <div className="contactInfo">
@@ -69,13 +68,6 @@ render(){
            <div className="text">
              <h3>Admin</h3>
            <p>admin@sharvafoundation.org</p>
-           </div>
-            </div>
-            <div className="box">
-             <div className="icon"><IoMdMail/></div>
-           <div className="text">
-             <h3>General</h3>
-           <p>foundationsharva@gmail.com</p>
            </div>
             </div>
             <div className="box">
@@ -121,7 +113,7 @@ render(){
             <span> Type your Message...</span>
             </div>
             <div className="inputBox">
-              <input type="submit" name="" value="Send"></input>
+              <input type="submit" name="" value="Send" style={{backgroundColor:"#e88f0a"}}/>
             </div>
             </form>
           </div>
