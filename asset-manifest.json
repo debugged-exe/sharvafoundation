@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/sharvafoundation/static/css/main.d6aa3aa6.chunk.css",
-    "main.js": "/sharvafoundation/static/js/main.79f87a1d.chunk.js",
-    "main.js.map": "/sharvafoundation/static/js/main.79f87a1d.chunk.js.map",
-    "runtime-main.js": "/sharvafoundation/static/js/runtime-main.e1cb7408.js",
-    "runtime-main.js.map": "/sharvafoundation/static/js/runtime-main.e1cb7408.js.map",
-    "static/css/2.c1f4f5f4.chunk.css": "/sharvafoundation/static/css/2.c1f4f5f4.chunk.css",
-    "static/js/2.60c5b6a1.chunk.js": "/sharvafoundation/static/js/2.60c5b6a1.chunk.js",
-    "static/js/2.60c5b6a1.chunk.js.map": "/sharvafoundation/static/js/2.60c5b6a1.chunk.js.map",
-    "static/js/3.b40454cc.chunk.js": "/sharvafoundation/static/js/3.b40454cc.chunk.js",
-    "static/js/3.b40454cc.chunk.js.map": "/sharvafoundation/static/js/3.b40454cc.chunk.js.map",
+    "main.css": "/sharvafoundation/static/css/main.5cd2a750.chunk.css",
+    "main.js": "/sharvafoundation/static/js/main.bf393f10.chunk.js",
+    "main.js.map": "/sharvafoundation/static/js/main.bf393f10.chunk.js.map",
+    "runtime-main.js": "/sharvafoundation/static/js/runtime-main.84381533.js",
+    "runtime-main.js.map": "/sharvafoundation/static/js/runtime-main.84381533.js.map",
+    "static/css/2.fa671415.chunk.css": "/sharvafoundation/static/css/2.fa671415.chunk.css",
+    "static/js/2.83b54685.chunk.js": "/sharvafoundation/static/js/2.83b54685.chunk.js",
+    "static/js/2.83b54685.chunk.js.map": "/sharvafoundation/static/js/2.83b54685.chunk.js.map",
+    "static/js/3.4c88ab62.chunk.js": "/sharvafoundation/static/js/3.4c88ab62.chunk.js",
+    "static/js/3.4c88ab62.chunk.js.map": "/sharvafoundation/static/js/3.4c88ab62.chunk.js.map",
     "index.html": "/sharvafoundation/index.html",
-    "static/css/2.c1f4f5f4.chunk.css.map": "/sharvafoundation/static/css/2.c1f4f5f4.chunk.css.map",
-    "static/css/main.d6aa3aa6.chunk.css.map": "/sharvafoundation/static/css/main.d6aa3aa6.chunk.css.map",
-    "static/js/2.60c5b6a1.chunk.js.LICENSE.txt": "/sharvafoundation/static/js/2.60c5b6a1.chunk.js.LICENSE.txt",
+    "static/css/2.fa671415.chunk.css.map": "/sharvafoundation/static/css/2.fa671415.chunk.css.map",
+    "static/css/main.5cd2a750.chunk.css.map": "/sharvafoundation/static/css/main.5cd2a750.chunk.css.map",
+    "static/js/2.83b54685.chunk.js.LICENSE.txt": "/sharvafoundation/static/js/2.83b54685.chunk.js.LICENSE.txt",
     "static/media/1.a32f8ca8.jpeg": "/sharvafoundation/static/media/1.a32f8ca8.jpeg",
     "static/media/2.5f97591a.jpeg": "/sharvafoundation/static/media/2.5f97591a.jpeg",
     "static/media/3.a538a2ff.jpeg": "/sharvafoundation/static/media/3.a538a2ff.jpeg",
@@ -24,10 +24,10 @@
     "static/media/sharva.f6451d64.png": "/sharvafoundation/static/media/sharva.f6451d64.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e1cb7408.js",
-    "static/css/2.c1f4f5f4.chunk.css",
-    "static/js/2.60c5b6a1.chunk.js",
-    "static/css/main.d6aa3aa6.chunk.css",
-    "static/js/main.79f87a1d.chunk.js"
+    "static/js/runtime-main.84381533.js",
+    "static/css/2.fa671415.chunk.css",
+    "static/js/2.83b54685.chunk.js",
+    "static/css/main.5cd2a750.chunk.css",
+    "static/js/main.bf393f10.chunk.js"
   ]
 }
