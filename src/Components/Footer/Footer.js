@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import './Footer.css';
+import branches from "./map.png";
 import sharvalogo from './sharva.png';
 import {FiInstagram} from "react-icons/fi";
 import {FiFacebook} from "react-icons/fi";
@@ -40,14 +41,10 @@ function Footer({setInitiative}){
                      </ul>
                  </li>
              </ul>
-             <ul className="footer-right">
-            <li className="EventsBranches">
-                      <h2 className={'h2'}>BRANCHES</h2>
-                      <ul className="box">
-                          <li><a href="">Pune</a> </li>
-                        <li><a href="">Jammu</a> </li>
-                      <li><a href="">Delhi</a> </li>
-                      </ul>
+             <ul className="footer-right"  style={{padding:"0",margin:"0"}}>
+            <li className="EventsBranches" style={{padding:"0",margin:"0"}}>
+                      
+                      <img src={branches} style={{maxHeight:"215px",width:"240px"}}/>
             </li>
             </ul>
 
