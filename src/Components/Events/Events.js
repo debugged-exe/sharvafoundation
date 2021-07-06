@@ -201,7 +201,7 @@ function Events({initiative}) {
                        }
                           <div className="grid">
                            {
-                              item.events.filter(i=>i.recent==='0').slice(0,visible).map((i,index)=>{
+                              abc.slice(0,visible).map((i,index)=>{
 
                                 return(
                                  <div>
