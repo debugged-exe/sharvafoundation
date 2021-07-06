@@ -128,13 +128,13 @@ function Events({initiative}) {
 
                   {/* 50% text and 50% image responsive div */}
                   <div className="event-txt-img w-100">
-                      <div className="event-txt w-50">
+                      <div className="event-txt w-50-ns">
                           <h1>{item.tagline}</h1>
                           <p style={{ textAlign: "left" }}>
                             {item.description}
                           </p>
                       </div>
-                      <div id="event-img w-50" >
+                      <div id="event-img w-50-ns" >
                           <img src={item.imgright}  className="image" style={{height:"450px",width:"600px",objectFit:"cover"}} />
                       </div>
                   </div>
