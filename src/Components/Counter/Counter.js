@@ -2,9 +2,6 @@ import React, {useState, useEffect} from 'react';
 import './Counter.css';
 import Carousel from 'react-elastic-carousel';
 import {GiMeal} from 'react-icons/gi';
-import {FaHandsHelping} from 'react-icons/fa';
-import {GiAngelWings} from 'react-icons/gi';
-import {FaRegIdCard} from 'react-icons/fa';
 import CountUp from 'react-countup';
 
 function Counter() {

@@ -4,10 +4,7 @@ import './BackgroundCarousel.css';
 import {Link} from 'react-router-dom';
 import Logo from './sharva.png';
 
-const breakPoints=[
-    {showArrows:false},
 
-]
 
 
 const BackgroundCarousel = () => {
@@ -26,7 +23,7 @@ const BackgroundCarousel = () => {
     },[])
     return(
 
-            <Carousel  enableAutoPlay={true} autoPlaySpeed={2000} breakPoints={breakPoints}>
+            <Carousel  enableAutoPlay={true} autoPlaySpeed={2000} showArrows={false}>
             {
                 bgcarousel.map((item,index)=>{
                   return(

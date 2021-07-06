@@ -8,7 +8,7 @@ const breakPoints = [
     { width: 550, itemsToShow: 2, itemsToScroll: 1 },
     { width: 760, itemsToShow: 3, itemsToScroll: 1 },
     { width: 1200, itemsToShow: 3, itemsToScroll: 1 },
-    { showArrows: true },
+    {pagination:true},
 ]
 
 function OurGoals() {
@@ -47,7 +47,7 @@ function OurGoals() {
                     </p>
                 </div>
             </div>
-            <Carousel breakPoints={breakPoints}>
+            <Carousel breakPoints={breakPoints} showArrows={false} >
               {
               goal.map((item, index) => {
                 return (<div className="newcard">
@@ -67,7 +67,7 @@ function OurGoals() {
                       </div>
                     </div>
                     <div className="flex justify-center items-center">
-                      <Link to="/donatenow" className=" link br2 ph3 pv2 mb2 tc  dib cardButton">Donate Now</Link>
+                      <Link to="/donatenow" className="link br2 ph3 pv2 mb2 tc dib cardButton">Donate Now</Link>
                     </div>
                     <div className="lastLine">
                       <div className="supporters">
