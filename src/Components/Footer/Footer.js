@@ -25,8 +25,8 @@ function Footer({setInitiative}){
             </div>
             <ul className="footer-right">
            <li className="EventsBranches">
-                     <h2 className={'h2'}>EVENTS</h2>
-                   <ul className="box">
+                     <h2 className={'h2 responsive-heading'}>EVENTS</h2>
+                   <ul className="box flex justify-center items-center">
                        <Link to="/events"  onClick={() => setInitiative("hungerfreeindia")}>
                           <li className="eventsHover ">#HungerFreeIndia</li></Link>
                         <Link to="/events"  onClick={() => setInitiative("strivewithpride")}>

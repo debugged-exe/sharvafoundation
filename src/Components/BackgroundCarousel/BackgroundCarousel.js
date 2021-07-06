@@ -23,7 +23,7 @@ const BackgroundCarousel = () => {
     },[])
     return(
 
-            <Carousel  enableAutoPlay={true} autoPlaySpeed={2000} showArrows={false}>
+            <Carousel  enableAutoPlay={true} autoPlaySpeed={2000} showArrows={false} pagination={false}>
             {
                 bgcarousel.map((item,index)=>{
                   return(

@@ -29,7 +29,7 @@ function RecentEvents(){
       recent.map((item,index) => {
 
         return(
-            <div className="item  mt2 mb2 mr2 ml2 shadow-2 grow pointer" style={{background:`url(${item.recentimg}) no-repeat center center`,backgroundSize:'cover'}}>
+            <div className="item  mt2 mb2 mr2 ml2 shadow-2 grow pointer" style={{background:`rgba(0, 0, 0, .6) url(${item.recentimg}) no-repeat center center`,backgroundSize:'cover', backgroundBlendMode:"darken"}}>
                <h3 className="ma3">{item.heading}</h3>
                <p className="ma3">{item.date}</p>
              </div>

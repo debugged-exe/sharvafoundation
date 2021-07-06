@@ -125,6 +125,12 @@ list-style: none;
     flex-direction: column;
     align-items: center;
   }
+  .box a li{
+      text-align: left;
+  }
+  .responsive-heading{
+      text-align:left ;
+  }
 }
 
 .dimIcon:hover{

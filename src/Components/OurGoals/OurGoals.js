@@ -41,7 +41,7 @@ function OurGoals() {
         <div>
             <div className="ourGoals mt4 pa3">
                 <div className="mw7 mw7-m mw7-ns center topText  ">
-                    <h2 className="center" style={{ paddingBottom: '10px', textDecoration: 'underline', textDecorationColor: '#ff8c00', textAlign: 'center' }}>OUR GOALS</h2>
+                    <h2 className="center" style={{ paddingBottom: '10px', textDecoration: 'underline', textDecorationColor: '#e88f0a', textAlign: 'center' }}>OUR GOALS</h2>
                     <p className="lh-copy " style={{ textAlign: "center" }}>
                         The optimus goal of Sharva Foundation is to be completely equipped and primed with relief funds so as to be ready with an optimum amount for any event or uncalled situation.
                     </p>
@@ -50,9 +50,9 @@ function OurGoals() {
             <Carousel breakPoints={breakPoints} showArrows={false} >
               {
               goal.map((item, index) => {
-                return (<div className="newcard">
+                return (<div className="newcard mv4" >
                   <div className="cardTop">
-                    <img src={item.image} className="cardImg"/>
+                    <img src={item.image} className="cardImg" alt="something"/>
                   </div>
                   <div className="cardBottom flex-column justify-center items-center h-100">
                     <div className="Detail">
