@@ -1,7 +1,8 @@
 import React, { useState,useEffect } from 'react';
 import Modal from 'react-modal';
-import Carousel from 'react-elastic-carousel';
+import AliceCarousel  from 'react-alice-carousel';
 import './Events.css';
+import 'react-alice-carousel/lib/alice-carousel.css';
 
 
 function Events({initiative}) {
@@ -127,14 +128,14 @@ function Events({initiative}) {
 
                   {/* 50% text and 50% image responsive div */}
                   <div className="event-txt-img w-100">
-                      <div className="event-txt w-100">
+                      <div className="event-txt w-50">
                           <h1>{item.tagline}</h1>
                           <p style={{ textAlign: "left" }}>
                             {item.description}
                           </p>
                       </div>
-                      <div id="event-img" >
-                          <img src={item.imgright}  className="image" />
+                      <div id="event-img w-50" >
+                          <img src={item.imgright}  className="image" style={{height:"450px",width:"600px",objectFit:"cover"}} />
                       </div>
                   </div>
 
@@ -159,16 +160,16 @@ function Events({initiative}) {
                                         <p className="onrightDate">{i.date}</p>
                                         <Modal isOpen={recentA}  onRequestClose={() => setrecentA(false)} style={{content:{background:"#ddd"}}}>
                                         <span className="modalcloseButton" onClick={()=>setrecentA(false)}>X</span>
-                                            <Carousel itemstoShow={4}>
+                                            <AliceCarousel >
                                               {
                                                 caro.map((photo,index)=>{
                                                   return(
-                                                    <img src={photo} style={{objectFit:"fill"}}></img>
+                                                    <img src={photo} style={{objectFit:"contain",height:"80vh",}}></img>
                                                   )
                                                 })
                                               }
 
-                                            </Carousel>
+                                            </AliceCarousel>
                                         </Modal>
                                     </div>
                                     </div>
@@ -210,17 +211,17 @@ function Events({initiative}) {
                                         <p className="onrightDate">{i.place}</p>
 
                                       <p className="onrightDate">{i.date}</p>
-                                      <Modal isOpen={recentA} onRequestClose={() => setrecentA(false)}>
+                                      <Modal isOpen={recentA} onRequestClose={() => setrecentA(false)} >
                                       <span className="modalcloseButton" onClick={()=>setrecentA(false)}>X</span>
-                                          <Carousel itemstoShow={4} style={{height:"80vh"}}>
+                                          <AliceCarousel >
                                             {
                                               caro.map((photo,index)=>{
                                                 return(
-                                                  <img src={photo} style={{height:"400px",width:"100%",objectFit:"fill"}}></img>
+                                                  <img src={photo} style={{objectFit:"contain"}}></img>
                                                 )
                                               })
                                             }
-                                          </Carousel>
+                                          </AliceCarousel>
                                       </Modal>
                                   </div>
 
