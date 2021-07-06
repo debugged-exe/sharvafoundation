@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/sharvafoundation/static/css/main.01646deb.chunk.css",
-    "main.js": "/sharvafoundation/static/js/main.ccd0189e.chunk.js",
-    "main.js.map": "/sharvafoundation/static/js/main.ccd0189e.chunk.js.map",
-    "runtime-main.js": "/sharvafoundation/static/js/runtime-main.84381533.js",
-    "runtime-main.js.map": "/sharvafoundation/static/js/runtime-main.84381533.js.map",
+    "main.css": "/sharvafoundation/static/css/main.bdbfa030.chunk.css",
+    "main.js": "/sharvafoundation/static/js/main.9cbdebf5.chunk.js",
+    "main.js.map": "/sharvafoundation/static/js/main.9cbdebf5.chunk.js.map",
+    "runtime-main.js": "/sharvafoundation/static/js/runtime-main.6a580149.js",
+    "runtime-main.js.map": "/sharvafoundation/static/js/runtime-main.6a580149.js.map",
     "static/css/2.fa671415.chunk.css": "/sharvafoundation/static/css/2.fa671415.chunk.css",
-    "static/js/2.7040fd97.chunk.js": "/sharvafoundation/static/js/2.7040fd97.chunk.js",
-    "static/js/2.7040fd97.chunk.js.map": "/sharvafoundation/static/js/2.7040fd97.chunk.js.map",
-    "static/js/3.4c88ab62.chunk.js": "/sharvafoundation/static/js/3.4c88ab62.chunk.js",
-    "static/js/3.4c88ab62.chunk.js.map": "/sharvafoundation/static/js/3.4c88ab62.chunk.js.map",
+    "static/js/2.8a3a054c.chunk.js": "/sharvafoundation/static/js/2.8a3a054c.chunk.js",
+    "static/js/2.8a3a054c.chunk.js.map": "/sharvafoundation/static/js/2.8a3a054c.chunk.js.map",
+    "static/js/3.9c59a81a.chunk.js": "/sharvafoundation/static/js/3.9c59a81a.chunk.js",
+    "static/js/3.9c59a81a.chunk.js.map": "/sharvafoundation/static/js/3.9c59a81a.chunk.js.map",
     "index.html": "/sharvafoundation/index.html",
     "static/css/2.fa671415.chunk.css.map": "/sharvafoundation/static/css/2.fa671415.chunk.css.map",
-    "static/css/main.01646deb.chunk.css.map": "/sharvafoundation/static/css/main.01646deb.chunk.css.map",
-    "static/js/2.7040fd97.chunk.js.LICENSE.txt": "/sharvafoundation/static/js/2.7040fd97.chunk.js.LICENSE.txt",
+    "static/css/main.bdbfa030.chunk.css.map": "/sharvafoundation/static/css/main.bdbfa030.chunk.css.map",
+    "static/js/2.8a3a054c.chunk.js.LICENSE.txt": "/sharvafoundation/static/js/2.8a3a054c.chunk.js.LICENSE.txt",
     "static/media/1.a32f8ca8.jpeg": "/sharvafoundation/static/media/1.a32f8ca8.jpeg",
     "static/media/2.5f97591a.jpeg": "/sharvafoundation/static/media/2.5f97591a.jpeg",
     "static/media/3.a538a2ff.jpeg": "/sharvafoundation/static/media/3.a538a2ff.jpeg",
@@ -24,10 +24,10 @@
     "static/media/sharva.f6451d64.png": "/sharvafoundation/static/media/sharva.f6451d64.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.84381533.js",
+    "static/js/runtime-main.6a580149.js",
     "static/css/2.fa671415.chunk.css",
-    "static/js/2.7040fd97.chunk.js",
-    "static/css/main.01646deb.chunk.css",
-    "static/js/main.ccd0189e.chunk.js"
+    "static/js/2.8a3a054c.chunk.js",
+    "static/css/main.bdbfa030.chunk.css",
+    "static/js/main.9cbdebf5.chunk.js"
   ]
 }
