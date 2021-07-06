@@ -7,6 +7,7 @@ import './Events.css';
 function Events({initiative}) {
 
   const [drive,setDrive]=useState([]);
+  var abc=[];
   useEffect(() => {
     if(initiative==="hungerfreeindia"){
       fetch("https://thawing-shelf-77571.herokuapp.com/events")
@@ -103,8 +104,8 @@ function Events({initiative}) {
     const[caro,setCaro]=useState([]);
 
     console.log(visible);
-   
-    
+
+
     return (
       <div>
         {
@@ -148,6 +149,7 @@ function Events({initiative}) {
                           <div className="grid ">{
                               item.events.map((i,index)=>{
                                 if(i.recent==='1'){
+                                  abc= item.events.filter((a)=>a.recent==='0');
                                   return(
                                     <div>
 
@@ -179,12 +181,28 @@ function Events({initiative}) {
                           </div>
                       </div>
                       <div className="past-events">
-                          
-                          {/* Past Events grid */}
+                       {
+                         abc.map((a,index)=>{
+                           if(abc.length<0){
+                             return(
+                            <div></div>
+                             )
+                           }
+                           else if( index===0){
+                             return(
+                               <div className="heading">
+                                   <h1>PAST EVENTS</h1>
+                                   <hr id="recent-hr" />
+                               </div>
+                             )
+                           }
+
+                         })
+                       }
                           <div className="grid">
                            {
                               item.events.filter(i=>i.recent==='0').slice(0,visible).map((i,index)=>{
-                              
+
                                 return(
                                  <div>
                                   <div className="pa3 ma3" >
@@ -207,9 +225,9 @@ function Events({initiative}) {
                                   </div>
 
                                   </div>
-                                
+
                                 )
-                                                 
+
                               })
                             }
 
@@ -220,9 +238,27 @@ function Events({initiative}) {
                       {
                           showP ? drive : null
                       }
-                      <div className="showButtons mt2 mb2 flex justify-center">
-                          <div className="mh2 br2 mt2 mb4 ba btn ph3 pv2 pointer" onClick={() => showMoreItems()}>Show More</div>
-                        <div className=" mh2 br2 mt2 mb4 ba btn ph3 pv2 pointer" onClick={() => showLessItems()}>Show Less</div>
+                      <div>
+                      {
+                        abc.map((a,index)=>{
+                          if(abc.length<0){
+                            console.log("done",abc.length);
+                            return(
+                           <div></div>
+                            )
+                          }
+                          else if( index===0){
+                            return(
+                              <div className="showButtons mt2 mb2 flex justify-center">
+                                  <div className="mh2 br2 mt2 mb4 ba btn ph3 pv2 pointer" onClick={() => showMoreItems()}>Show More</div>
+                                  <div className=" mh2 br2 mt2 mb4 ba btn ph3 pv2 pointer" onClick={() => showLessItems()}>Show Less</div>
+                              </div>
+                            )
+                          }
+
+                        })
+                      }
+
                       </div>
                   </div>
               </div >
