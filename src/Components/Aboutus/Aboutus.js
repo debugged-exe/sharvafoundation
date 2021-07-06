@@ -1,5 +1,6 @@
 import React from 'react';
 import './Aboutus.css';
+import {Link} from 'react-router-dom';
 
 function Aboutus(){
     return(
@@ -21,13 +22,12 @@ function Aboutus(){
                     <p className="lh-copy mt3" style={{textAlign:"left"}}>
                   We started as taking baby steps towards our goal. Carving new roads and finding new acquaintances as we went down the road. Today, not even a year later from the beginning, we have already dispersed out aid via members of our family to 3 states and 5 cities. Knowing this fuels us with determination that whatever we thought we were capable of, we are that and maybe even more.
                     </p>
-                    <div className="inputBox aboutButton mt3 ">
+                    <Link className="inputBox aboutButton mt3 " to="/donatenow">
                       <input type="submit" name="" value="Donate Now"></input>
-                    </div>
+                    </Link>
                   </div>
             </div>
         </div>
-
     );
 }
 
