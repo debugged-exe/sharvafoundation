@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Homepage from "../Pages/Homepage.js";
+import vid1 from "./sharva.mp4";
 import Eventspage from '../Pages/Eventspage.js';
 import Contactpage from '../Pages/Contactpage';
 import Navbar from "../Components/Navbar/Navbar";
@@ -11,9 +12,30 @@ import Donatepage from "../Pages/Donatepage";
 import Awarenesspage from "../Pages/Awarenesspage";
 function App() {
   const [initiative, setInitiative] = useState("hungerfreeindia");
+  const [loading,setLoading]=useState(true);
+  useEffect(()=>{
+    console.log(loading);
+    setTimeout(()=>{
+      setLoading(false);
+    },10000)
+    console.log(loading);
+  }
+  
+    )
 
   return (
-    <div>
+    <div>{
+      
+      loading ?
+      <div style={{height:"100%",width:"100%"}}>
+        <video width="100%" height="100%" autoplay muted>
+        <source src={vid1} type="video/webm"/>
+        <source src={vid1} type="video/ogg"/>
+          <source src={vid1} type="video/mp4"/>
+        </video>
+      </div>
+      :
+      <div>
       <Router basename="/">
         <div>
           <Navbar setInitiative={setInitiative} />
@@ -31,7 +53,8 @@ function App() {
         <Footer  setInitiative={setInitiative} />
 
       </Router>
-
+      </div>
+}
     </div>
 
   );
