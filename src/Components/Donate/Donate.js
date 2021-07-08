@@ -13,9 +13,13 @@ function Donate() {
   const [header, setHeader] = useState("");
   const [i, seti] = useState(0);
   const [toggleState, settoggleState] = useState(1);
+  const [toggleDonate,settoggleDonate]=useState(1);
   const toggleTab = (index) => {
     settoggleState(index);
   }
+  // const toggleD=(index)=>{
+  //   settoggleDonate(index);
+  // }
   const [Amount, setAmount] = useState("");
   var list = [
     {
@@ -69,11 +73,11 @@ function Donate() {
 
         <div className="donationBox flex justify-center items-center">
 
-          <div className="donation-Images shadow-5">
+          <div className="donation-Images  shadow-5">
             <div className="donateImages" >
               <img src={list[i].img} style={{ height: '260px', width: '100%', objectFit: 'fill' }} alt="donate" />
             </div>
-            <div className="pa3">
+            <div className="pa3-ns">
               <h1>{header}</h1>
               <p> {list[i].tagline} </p>
             </div>
@@ -87,21 +91,21 @@ function Donate() {
                 </div>
                 <div className="flex flex-column justify-center items-center mb2">
                   <div className="flex justify-center items-center mb4">
-                    <p style={{ backgroundColor: "#e88f0a" }} className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib white pa3 mr2">GIVE ONCE</p>
-                    <p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black pa3 mr2">MONTHLY</p>
+                    <p  className={toggleDonate === 1 ? "f4 link pointer br2 hover-btn  dib white pa3 mr2 donateActive" : "f4 link pointer br2 hover-btn  dib black pa3 mr2"} onClick={() => settoggleDonate(1)} >GIVE ONCE</p>
+                    <p  className={toggleDonate === 2 ? "f4 link pointer br2 hover-btn  dib white pa3 mr2 donateActive" : "f4 link pointer br2 hover-btn  dib black pa3 mr2"} onClick={() => settoggleDonate(2)} >MONTHLY</p>
                   </div>
                   <div className="flex justify-center items-center mb3">
-                    <p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3 mr3">₹ 1000</p>
-                    <p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3 mr3">₹ 2000</p>
-                    <p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3">₹ 3000</p>
+                    <p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3 mr3" onClick={()=>{setAmount(1000);setmodalIsOpen(true)}}>₹ 1000</p>
+                    <p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3 mr3" onClick={()=>{setAmount(2000);setmodalIsOpen(true)}}>₹ 2000</p>
+                    <p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3" onClick={()=>{setAmount(3000);setmodalIsOpen(true)}}>₹ 3000</p>
                   </div>
                   <div className="flex justify-center items-center">
-                    <p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3 mr3">₹ 4000</p>
-                    <p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3 mr3">₹ 5000</p>
-                    <p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3">₹ 6000</p>
+                    <p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3 mr3" onClick={()=>{setAmount(4000);setmodalIsOpen(true)}}>₹ 4000</p>
+                    <p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3 mr3" onClick={()=>{setAmount(5000);setmodalIsOpen(true)}}>₹ 5000</p>
+                    <p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3" onClick={()=>{setAmount(6000);setmodalIsOpen(true)}}>₹ 6000</p>
                   </div>
-                  <input type="text" style={{height:"50px", width:"326px"}} className="ph2 f4 mt4 mb4 placeholder" placeholder="Enter your amount INR" />
-                  <p style={{ backgroundColor: "#e88f0a" }} className="grow f4 link pointer br2 ph3 pv2 mb2 dib white shadow-2 pa3 b">Donate</p>
+                  <input type="text" style={{height:"50px", width:"326px"}} className="ph2 f4 mt4 mb4 placeholder" placeholder="Enter your amount INR" onChange={(event)=>setAmount(event.target.value)} />
+                  <p style={{ backgroundColor: "#e88f0a" }} className="grow f4 link pointer br2 ph3 pv2 mb2 dib white shadow-2 pa3 b" onClick={()=>setmodalIsOpen(true)} >Donate</p>
                 </div>
               </div>
             </div>

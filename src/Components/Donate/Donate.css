@@ -34,13 +34,20 @@
  cursor: pointer;
 }
 
+.donateActive{
+  color:white;
+  background: #f0982e;
+  
+}
+
+
 .active{
   text-decoration: none;
   padding: 4px;
   font-size: 20px;
   color:#f0982e;
   font-weight: bold;
-  text-decoration: underline;
+  
 }
 
 .donationAmount {
@@ -84,14 +91,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding:0;
   }
 
   .donation-Images {
     height: auto;
     display: flex;
     flex-direction: column;
-    width: 60%;
-    padding: 0;
+    width: 100%;
+    padding: 16px;
+    text-align:center;
   }
 
   .donate-text {

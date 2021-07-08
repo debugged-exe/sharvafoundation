@@ -17,7 +17,7 @@ function App() {
     console.log(loading);
     setTimeout(()=>{
       setLoading(false);
-    },7000)
+    },1000)
     console.log(loading);
   }
   

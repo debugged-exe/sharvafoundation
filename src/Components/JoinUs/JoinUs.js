@@ -33,13 +33,13 @@ class Join1 extends React.PureComponent {
 			dob,
 			gender,
 			phone,
-			permanentaddress,
+			address,
 			city,
 			state,
 			bloodgroup,
 			currentcity,
 			category,
-			whyjoin
+			whyjoin,
 
 
 		} = this.state;
@@ -54,12 +54,13 @@ class Join1 extends React.PureComponent {
 				dob: dob,
 				gender: gender,
 				phone: phone,
+				address:address,
 				city: city,
 				state:state,
 				bloodgroup:bloodgroup,
 				currentcity:currentcity,
 				category:category,
-				whyjoin:whyjoin
+				whyjoin:whyjoin,
 			})
 		})
 		.then(response => response.json())
@@ -219,20 +220,20 @@ class Join1 extends React.PureComponent {
 								/>
 						</div>
 						<div className="input-div">
-								<label for="edu" value={this.state.phone} className="label">
+								<label for="edu"  className="label">
 								Permanent Address<span className="red f3">*</span></label>
 								<input
 									name="address"
                 className="inputform"
-                placeholder="Address" />
+                placeholder="Address" onChange={this.handleChange}/>
 						</div>
             <div className="input-div">
-                <label for="edu" value={this.state.phone} className="label">
+                <label for="edu"  className="label">
                 City<span className="red f3">*</span></label>
                 <input
 								name="city"
                 className="inputform"
-                placeholder="Address" />
+                placeholder="Address" onChange={this.handleChange}/>
             </div>
 						<div className="input-div">
 								<label htmlFor="occupation" className="label">State<span className="red f3">*</span></label>
@@ -313,12 +314,12 @@ class Join1 extends React.PureComponent {
 								<label for="none">Strategies Buildup</label><br/>
 						</div>
 						<div className="input-div">
-							<label for="edu" value={this.state.phone} className="label">
+							<label for="edu"  className="label">
 							Why do you want to Join Us?<span className="red f3">*</span></label>
-							<input
-								name="why"
+							<input type="text"
+								name="whyjoin"
 							className="inputform"
-							placeholder=""  />
+							placeholder=""  onChange={this.handleChange}/>
 						</div>
 						<div className="inputBoxJoinUs">
 							<input type="submit" name="" value="Submit"></input>

@@ -33,7 +33,7 @@ function Counter() {
         count.map((item, index) => {
           if(index===0 || (index%2)===0){
             return (<div className="floatCard grow pointer flex-column justify-center bg-white shadow-2 mb2 br3 tc mh4 pv4 ph4 mv3">
-              <GiMeal color="#FF9800" size="3em"/>
+              <img src={item.reacticon} style={{height:"60px"}}  />
               <div className="pv2">
                 <span className="txt num1">
                   <CountUp end={item.count} duration={10}></CountUp>
@@ -44,8 +44,8 @@ function Counter() {
           }
           else if(index===1 ||(index%2)!==0){
             return (<div className="floatCard grow pointer flex-column justify-center bg-white shadow-2 mb2 br3 tc mh4 pv4 ph4 mv3">
-              <GiMeal color="#8BCA4E" size="3em"/>
-              <div className="pv2">
+              <img src={item.reacticon} style={{height:"60px"}} />
+                <div className="pv2">
                 <span className="txt num1" style={{color:"#8BCA4E"}}>
                   <CountUp end={item.count} duration={10}></CountUp>
                 </span>
