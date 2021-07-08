@@ -1,7 +1,8 @@
 import React from 'react';
-import './JoinUs.css';
+import './Joinus.css';
 import 'tachyons';
 import sharvalogo from './sharva.png';
+
 const initialState = {
 	name: '',
 	email: '',
@@ -17,6 +18,8 @@ const initialState = {
 	whyjoin:''
 
 }
+
+
 
 class Join1 extends React.PureComponent {
 	constructor(){

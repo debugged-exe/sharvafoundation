@@ -23,7 +23,8 @@ function AwarenessCarousel() {
 
   }, [])
 return(
-  <Carousel  enableAutoPlay={true} autoPlaySpeed={2000} breakPoints={breakPoints}>
+  <div style={{overflow:"hidden"}}>
+  <Carousel style={{position:"relative",right:"-10px",left:"-10px",width:"102%"}} enableAutoPlay={true} autoPlaySpeed={2000} breakPoints={breakPoints}>
   {
       aware.map((item,index)=>{
         return(
@@ -36,6 +37,7 @@ return(
       })
     }
   </Carousel>
+  </div>
 
 );
 }
