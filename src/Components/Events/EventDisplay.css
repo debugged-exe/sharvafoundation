@@ -2,3 +2,16 @@
   display: grid;
   grid-template-columns:33% 33% 33%;
 }
+
+@media (max-width: 768px) {
+  .grid-component{
+    display: grid;
+    grid-template-columns:50% 50%;
+  }
+}
+@media (max-width: 426px) {
+  .grid-component{
+    display: grid;
+    grid-template-columns:100%;
+  }
+}

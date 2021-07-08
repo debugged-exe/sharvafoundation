@@ -49,7 +49,7 @@ function App() {
             <Route exact path="/contactus" component={Contactpage} />
             <Route exact path="/donatenow" component={Donatepage} />
             <Route exact path="/awareness" component={Awarenesspage} />
-            <Route exact path="/eventdisplay" component={()=><EventDisplay proj={caro}/>}/>
+            <Route exact path="/eventdisplay" component={()=><EventDisplay proj={caro} initiative={initiative}/>}/>
             <Route  path="/" component={Homepage} />
           </Switch>
 
