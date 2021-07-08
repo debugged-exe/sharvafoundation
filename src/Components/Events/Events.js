@@ -1,11 +1,12 @@
 import React, { useState,useEffect } from 'react';
 import Modal from 'react-modal';
 import AliceCarousel  from 'react-alice-carousel';
+import { HashLink as Link } from 'react-router-hash-link';
 import './Events.css';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
 
-function Events({initiative}) {
+function Events({initiative,setCarousel}) {
 
   const [drive,setDrive]=useState([]);
   var abc=[];
@@ -102,7 +103,7 @@ function Events({initiative}) {
     const[showP,setShowPast]=useState(false);
     const[recentA,setrecentA]=useState(false);
     const[pastA,setpastA]=useState(false);
-    const[caro,setCaro]=useState([]);
+
 
     console.log(visible);
 
@@ -153,24 +154,13 @@ function Events({initiative}) {
                                   abc= item.events.filter((a)=>a.recent==='0');
                                   return(
                                     <div>
-
                                     <div className="pa3 ma3" >
-                                        <img src={i.image[0]} onClick={(e)=>{setrecentA(true);setCaro(i.image);}} className="gridImage pointer grow shadow-5" />
+                                      <Link to="/eventdisplay/#project" onClick={(e)=>{setCarousel(i.image);}} >
+                                         <img src={i.image[0]} className="gridImage pointer grow shadow-5" />
+                                      </Link>
                                           <p className="onrightDate">{i.place}</p>
-                                        <p className="onrightDate">{i.date}</p>
-                                        <Modal isOpen={recentA}  onRequestClose={() => setrecentA(false)} style={{content:{background:"#ddd"}}}>
-                                        <span className="modalcloseButton" onClick={()=>setrecentA(false)}>X</span>
-                                            <AliceCarousel >
-                                              {
-                                                caro.map((photo,index)=>{
-                                                  return(
-                                                    <img src={photo} style={{objectFit:"contain",height:"80vh",}}></img>
-                                                  )
-                                                })
-                                              }
+                                          <p className="onrightDate">{i.date}</p>
 
-                                            </AliceCarousel>
-                                        </Modal>
                                     </div>
                                     </div>
                                   )
@@ -207,22 +197,13 @@ function Events({initiative}) {
                                 return(
                                  <div>
                                   <div className="pa3 ma3" >
-                                      <img src={i.image[0]} onClick={()=>{setrecentA(true);setCaro(i.image);}} className="gridImage pointer grow shadow-5" />
+                                  <Link to="/eventdisplay/#project" onClick={(e)=>{setCarousel(i.image);}} >
+                                     <img src={i.image[0]} className="gridImage pointer grow shadow-5" />
+                                  </Link>
                                         <p className="onrightDate">{i.place}</p>
 
                                       <p className="onrightDate">{i.date}</p>
-                                      <Modal isOpen={recentA} onRequestClose={() => setrecentA(false)} >
-                                      <span className="modalcloseButton" onClick={()=>setrecentA(false)}>X</span>
-                                          <AliceCarousel >
-                                            {
-                                              caro.map((photo,index)=>{
-                                                return(
-                                                  <img src={photo} style={{objectFit:"contain"}}></img>
-                                                )
-                                              })
-                                            }
-                                          </AliceCarousel>
-                                      </Modal>
+
                                   </div>
 
                                   </div>
