@@ -22,10 +22,10 @@ const BackgroundCarousel = () => {
 
     },[])
     return(
-
-            <Carousel  enableAutoPlay={true} autoPlaySpeed={2000} showArrows={false} pagination={false}>
+        <div style={{overflow:"hidden"}}>
+            <Carousel style={{position:"relative",right:"-10px",left:"-10px",width:"102%"}}  enableAutoPlay={true} autoPlaySpeed={2000} showArrows={false} pagination={false}>
             {
-                bgcarousel.map((item,index)=>{
+              bgcarousel.map((item,index)=>{
                   return(
                     <div className='slide1 flex justify-center items-center font-size flex-column' style={{background:`url(${item.bgimg}) no-repeat center center`,backgroundSize:'cover'}}>
                         <div data-aos="fade-up" data-aos-duration={"1000"} >
@@ -39,7 +39,7 @@ const BackgroundCarousel = () => {
                 })
               }
             </Carousel>
-
+          </div>
     );
 }
 
