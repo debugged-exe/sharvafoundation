@@ -1,12 +1,16 @@
 import React,{useState,useEffect} from 'react';
+import { SiOpencontainersinitiative } from 'react-icons/si';
 import {Link} from 'react-router-dom';
 import './EventDisplay.css';
 
-
-const EventDisplay = ({proj,initiative}) => {
+const EventDisplay = ({proj,initiative,setInitiative}) => {
 
     return(
       <div className="mt6 tc" id="project">
+        <Link to="/events" onClick={()=>setInitiative(initiative)} >
+        <p className="return">Back button</p>
+        </Link>
+       
         <h1 className="black">#{initiative.toUpperCase()}</h1>
          <div className="grid-component mt3">
             {

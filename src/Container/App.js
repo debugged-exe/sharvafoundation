@@ -44,12 +44,12 @@ function App() {
         <div>
           <Navbar setInitiative={setInitiative} />
           <Switch>
-            <Route exact path="/events" component={() => <Eventspage setCarousel={setCarousel} initiative={initiative} />} />
+            <Route exact path="/events" component={() => <Eventspage setCarousel={setCarousel} initiative={initiative} setInitiative={setInitiative}/>} />
             <Route exact path="/joinus" component={Joinus} />
             <Route exact path="/contactus" component={Contactpage} />
             <Route exact path="/donatenow" component={Donatepage} />
             <Route exact path="/awareness" component={Awarenesspage} />
-            <Route exact path="/eventdisplay" component={()=><EventDisplay proj={caro} initiative={initiative}/>}/>
+            <Route exact path="/eventdisplay" component={()=><EventDisplay proj={caro} initiative={initiative} setInitiative={setInitiative}/>}/>
             <Route  path="/" component={Homepage} />
           </Switch>
 
