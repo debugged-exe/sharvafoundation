@@ -94,7 +94,7 @@ function Donate() {
                     <p  className={toggleDonate === 1 ? "f4 link pointer br2 hover-btn  dib white pa3 mr2 donateActive" : "f4 link pointer br2 hover-btn  dib black pa3 mr2-ns mr2"} onClick={() => settoggleDonate(1)} >GIVE ONCE</p>
                     <p  className={toggleDonate === 2 ? "f4 link pointer br2 hover-btn  dib white pa3 mr2 donateActive" : "f4 link pointer br2 hover-btn  dib black pa3 mr2-ns mr2"} onClick={() => settoggleDonate(2)} >MONTHLY</p>
                   </div>
-                  <div className="flex justify-center items-center mb3">
+                  <div className="flex justify-center items-center mb3 mr2 ml2">
                     <Link to="/donatenow/#donateForm"><p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3 mr3-ns mr3" onClick={()=>{setAmount(1000);setFormIsOpen('block')}}>₹ 1000</p></Link>
                     <Link to="/donatenow/#donateForm"><p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3 mr3-ns mr3" onClick={()=>{setAmount(2000);setFormIsOpen('block')}}>₹ 2000</p></Link>
                     <Link to="/donatenow/#donateForm"><p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3" onClick={()=>{setAmount(3000);setFormIsOpen('block')}}>₹ 3000</p></Link>
@@ -122,15 +122,15 @@ function Donate() {
                 <h2 >Donation</h2>
               </div>
               <div className="inputBox ">
-                <input type="text" name=""  placeholder="Name" required="required" style={{paddingLeft:"15px"}}></input>
+                <input type="text" name=""  placeholder="Name" required="required" style={{paddingLeft:"15px",color:"white"}}></input>
                 
               </div>
               <div className="inputBox ">
-                <input type="text" name="" placeholder="Email-id" required="required" style={{paddingLeft:"15px"}}></input>
+                <input type="text" name="" placeholder="Email-id" required="required" style={{paddingLeft:"15px",color:"white"}}></input>
                 
               </div>
               <div className="inputBox ">
-                <input type="number" name="" placeholder="Phone Number" required="required" style={{paddingLeft:"15px"}}></input>
+                <input type="number" name="" placeholder="Phone Number" required="required" style={{paddingLeft:"15px",color:"white"}}></input>
                 
               </div>
               <div className="inputBox ">
@@ -138,7 +138,7 @@ function Donate() {
                 
               </div>
               <div className="inputBox ">
-                <input type="text" name="" placeholder="City" required="required" style={{paddingLeft:"15px"}}></input>
+                <input type="text" name="" placeholder="City" required="required" style={{paddingLeft:"15px",color:"white"}}></input>
                 
               </div>
               <div className="inputBox ">
