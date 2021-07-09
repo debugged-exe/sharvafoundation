@@ -49,6 +49,10 @@ class Contact extends Component{
   const {value, name} = event.target;
   this.setState({[name]: value});
 }
+
+componentDidMount(){
+	window.scrollTo(0,0);
+}
 render(){
   return(
         <div>

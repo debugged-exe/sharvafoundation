@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useLayoutEffect} from 'react';
 import './Joinus.css';
 import 'tachyons';
 import sharvalogo from './sharva.png';
@@ -22,9 +22,13 @@ const initialState = {
 
 
 class Join1 extends React.PureComponent {
+
 	constructor(){
 		super();
 		this.state = initialState;
+	}
+	componentDidMount(){
+		window.scrollTo(0,0);
 	}
 
 	handleSubmit = (event) =>
@@ -112,7 +116,9 @@ class Join1 extends React.PureComponent {
   			console.log('');
   		})
   	}
+
   }
+
 
 	render() {
 		return (

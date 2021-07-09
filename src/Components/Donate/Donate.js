@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useLayoutEffect } from 'react';
 import "./Donate.css";
 import Modal from 'react-modal';
 import pic1 from "../../Database/1.jpeg";
@@ -17,9 +17,11 @@ function Donate() {
   const toggleTab = (index) => {
     settoggleState(index);
   }
-  // const toggleD=(index)=>{
-  //   settoggleDonate(index);
-  // }
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+});
+
   const [Amount, setAmount] = useState("");
   var list = [
     {
@@ -43,6 +45,7 @@ function Donate() {
       tagline: "Female literacy is very low in rural villages of India, girls are kept away from formal schooling and they are married by arrangement in their teenage years. This has some serious consequences such as poor health and loss of equal opportunities, to individuals, families, communities, and to the country.Therefore the main aim of the project is to improve female literacy in the rural villages of India by raising awareness about the importance of girl’s education and supporting girls from poor families.",
     }
   ]
+
   return (
 
     <div>
