@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState,useEffect,useLayoutEffect } from 'react';
 import Modal from 'react-modal';
 import AliceCarousel  from 'react-alice-carousel';
 import { HashLink as Link } from 'react-router-hash-link';
@@ -10,6 +10,9 @@ function Events({initiative,setCarousel}) {
 
   const [drive,setDrive]=useState([]);
   var abc=[];
+  useLayoutEffect(()=>{
+    window.scrollTo(0,0);
+  })
   useEffect(() => {
     if(initiative==="hungerfreeindia"){
       fetch("https://thawing-shelf-77571.herokuapp.com/events")

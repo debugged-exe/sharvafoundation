@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState} from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Homepage from "../Pages/Homepage.js";
@@ -19,6 +19,7 @@ function App() {
   const setCarousel = (caro) => {
      setCaro(caro);
    }
+   
   useEffect(()=>{
     console.log(loading);
     setTimeout(()=>{
@@ -26,6 +27,7 @@ function App() {
     },5000)
     console.log(loading);
   }
+  
 
     )
 

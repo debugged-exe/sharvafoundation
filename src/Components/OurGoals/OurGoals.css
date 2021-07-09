@@ -166,4 +166,12 @@ background-image: linear-gradient(316deg, #f42b03 0%, #ffbe0b 74%);
   .cardButton{
     width:80%;
   }
+  .join-head{
+    margin:0;
+    text-align: center;
+  }
+  .button-div{
+    margin-top:5px;
+    
+  }
 }
