@@ -13,7 +13,7 @@ function Aboutus(){
             </div>
             <div className="cf abouttext ">
                 <div className="fl imgText">
-                   <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" className="abs"></img>
+                   <img alt="" src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" className="abs"></img>
                 </div>
                 <div className="fl  imgText text">
                     <p className="lh-copy " style={{textAlign:"left"}}>

@@ -1,6 +1,4 @@
 import React, { useState,useEffect,useLayoutEffect } from 'react';
-import Modal from 'react-modal';
-import AliceCarousel  from 'react-alice-carousel';
 import { HashLink as Link } from 'react-router-hash-link';
 import './Events.css';
 import 'react-alice-carousel/lib/alice-carousel.css';
@@ -139,7 +137,7 @@ function Events({initiative,setCarousel}) {
                           </p>
                       </div>
                       <div id="event-img  w-50-n" >
-                          <img src={item.imgright}  className="image" style={{height:"450px",width:"600px",objectFit:"cover"}} />
+                          <img alt="" src={item.imgright}  className="image" style={{height:"450px",width:"600px",objectFit:"cover"}} />
                       </div>
                   </div>
 
@@ -159,7 +157,7 @@ function Events({initiative,setCarousel}) {
                                     <div>
                                     <div className="pa3 ma3" >
                                       <Link to="/eventdisplay/#project" onClick={(e)=>{setCarousel(i.image);}} >
-                                         <img src={i.image[0]} className="gridImage pointer grow shadow-5" />
+                                         <img alt="" src={i.image[0]} className="gridImage pointer grow shadow-5" />
                                       </Link>
                                           <p className="onrightDate">{i.place}</p>
                                           <p className="onrightDate">{i.date}</p>
@@ -201,7 +199,7 @@ function Events({initiative,setCarousel}) {
                                  <div>
                                   <div className="pa3 ma3" >
                                   <Link to="/eventdisplay/#project" onClick={(e)=>{setCarousel(i.image);}} >
-                                     <img src={i.image[0]} className="gridImage pointer grow shadow-5" />
+                                     <img alt="" src={i.image[0]} className="gridImage pointer grow shadow-5" />
                                   </Link>
                                         <p className="onrightDate">{i.place}</p>
 

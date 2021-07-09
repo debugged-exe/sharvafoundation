@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react';
 import Carousel from 'react-elastic-carousel';
 import './BackgroundCarousel.css';
 import {Link} from 'react-router-dom';
-import Logo from './sharva.png';
+
 
 
 

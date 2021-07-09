@@ -4,10 +4,8 @@ import './Footer.css';
 import branches from "./map.png";
 import sharvalogo from './sharva.png';
 import {FiInstagram} from "react-icons/fi";
-import {FiFacebook} from "react-icons/fi";
 import {SiGmail} from "react-icons/si";
 import {SiYoutube} from "react-icons/si";
-import {AiOutlineLinkedin} from "react-icons/ai";
 import {AiOutlineTwitter} from "react-icons/ai";
 import {FaWhatsapp} from "react-icons/fa";
 import {FaLinkedinIn} from "react-icons/fa";
@@ -44,7 +42,7 @@ function Footer({setInitiative}){
              <ul className="footer-right"  style={{padding:"0",margin:"0"}}>
             <li className="EventsBranches" style={{padding:"0",margin:"0"}}>
                       
-                      <img src={branches} style={{maxHeight:"215px",width:"240px"}}/>
+                      <img src={branches} alt="" style={{maxHeight:"215px",width:"240px"}}/>
             </li>
             </ul>
 

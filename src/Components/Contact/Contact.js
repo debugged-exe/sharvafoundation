@@ -56,7 +56,7 @@ componentDidMount(){
 render(){
   return(
         <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13425.808366924324!2d74.8207416968506!3d32.72718415917507!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53673d0d8afc078c!2sSharva%20Foundation!5e0!3m2!1sen!2sin!4v1621161103362!5m2!1sen!2sin" style={{ width:"100%" ,height:"50vh", border:0, allowfullscreen:"",loading:"lazy"}}></iframe>
+        <iframe alt="location-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13425.808366924324!2d74.8207416968506!3d32.72718415917507!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53673d0d8afc078c!2sSharva%20Foundation!5e0!3m2!1sen!2sin!4v1621161103362!5m2!1sen!2sin" style={{ width:"100%" ,height:"50vh", border:0, allowfullscreen:"",loading:"lazy"}}></iframe>
 
       <section className="contact">
 

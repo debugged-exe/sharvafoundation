@@ -72,7 +72,7 @@ const Navbar = ({ setInitiative }) => {
           <Link to="/contactus">
             <li className="list-style-none mh2 black menu"><span className={` ${location.pathname==='/contactus'?'acName':''}`}  onClick={() => hamburger()}>Contact Us</span></li></Link>
           <Link to="/donatenow" className="pv2  nav-donate">
-            <a class="f5 link dim br2 ph3 pv2 white " href="" style={{ backgroundColor: "#e88f0a" }}  onClick={() => hamburger()}>Donate Now</a>
+            <a class="f5 link dim br2 ph3 pv2 white "  style={{ backgroundColor: "#e88f0a" }}  onClick={() => hamburger()}>Donate Now</a>
           </Link>
           <p className='tc'><Link className={`f6 link dim ph3 pv1 mb2 mt2 dib white crossNavbar flex justify-center items-center`} href='#0'
             onClick={() => hamburger()}

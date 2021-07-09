@@ -1,4 +1,4 @@
-import React,{useLayoutEffect} from 'react';
+import React from 'react';
 import './JoinUs.css';
 import 'tachyons';
 import sharvalogo from './sharva.png';
