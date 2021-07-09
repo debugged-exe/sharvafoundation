@@ -1,6 +1,6 @@
 import React, { useState,useLayoutEffect } from 'react';
 import "./Donate.css";
-import Modal from 'react-modal';
+import {HashLink as Link} from "react-router-hash-link";
 import pic1 from "../../Database/1.jpeg";
 import pic2 from "../../Database/2.jpeg";
 import pic3 from "../../Database/3.jpeg";
@@ -9,8 +9,8 @@ import pic5 from "../../Database/5.jpeg";
 import { MdSecurity } from 'react-icons/md';
 
 function Donate() {
-  const [modalIsOpen, setmodalIsOpen] = useState(false);
-  const [header, setHeader] = useState("");
+  const [formIsOpen, setFormIsOpen] = useState('none');
+  const [header, setHeader] = useState("Give Her Wings");
   const [i, seti] = useState(0);
   const [toggleState, settoggleState] = useState(1);
   const [toggleDonate,settoggleDonate]=useState(1);
@@ -49,66 +49,63 @@ function Donate() {
   return (
 
     <div>
-      <div className="donation-Container">
+      <div className="donation-Container" style={{background:` rgba(0, 0, 0, .6) url(${list[i].img}) no-repeat center center/cover `,backgroundBlendMode:"darken"}}>
         <div>
-          <img id="donateImage" className="donation-top-image" src={pic1} alt="donate" />
+          <h1 className="mt5 tc white">Make a Contribution!</h1>
         </div>
         <div className="titles-bar">
           <ul className="project-titles pt2 pb2 ">
-            <li className={toggleState === 1 ? "mh3 active" : "projectsUnderline"} onClick={() => toggleTab(1)}>
-              <p className="projectsUnderlineColor" href="#" onClick={() =>{ seti(0); setHeader("Give Her Wings")}}>Give Her Wings</p>
+            <li className={toggleState === 1 ? "mh3 active" : "projectsUnderline"} onClick={() =>{ toggleTab(1);seti(0); setHeader("Give Her Wings")}}>
+              <p className="projectsUnderlineColor" href="#" >Give Her Wings</p>
             </li>
-            <li className={toggleState === 2 ? "mh3 active" : "projectsUnderline"} onClick={() => toggleTab(2)}>
-              <p className="projectsUnderlineColor" href="#" onClick={() =>{ seti(1); setHeader("Project Ruya")}}>Project Ruya</p>
+            <li className={toggleState === 2 ? "mh3 active" : "projectsUnderline"} onClick={() => {toggleTab(2);seti(1); setHeader("Project Ruya")}}>
+              <p className="projectsUnderlineColor" href="#" >Project Ruya</p>
             </li>
-            <li className={toggleState === 3 ? "mh3 active" : "projectsUnderline"} onClick={() => toggleTab(3)}>
-              <p className="projectsUnderlineColor" href="#" onClick={() =>{ seti(2); setHeader("Hunger Free India")}}>Hunger Free India</p>
+            <li className={toggleState === 3 ? "mh3 active" : "projectsUnderline"} onClick={() =>{ toggleTab(3);seti(2); setHeader("Hunger Free India")}}>
+              <p className="projectsUnderlineColor" href="#" >Hunger Free India</p>
             </li>
-            <li className={toggleState === 4 ? "mh3 active" : "projectsUnderline"} onClick={() => toggleTab(4)}>
-              <p className="projectsUnderlineColor" href="#" onClick={() =>{ seti(3); setHeader("Strive With Pride")}}>Strive With Pride</p>
+            <li className={toggleState === 4 ? "mh3 active" : "projectsUnderline"} onClick={() => {toggleTab(4);seti(3); setHeader("Strive With Pride")}}>
+              <p className="projectsUnderlineColor" href="#" >Strive With Pride</p>
             </li>
-            <li className={toggleState === 5 ? "mh3 active" : "projectsUnderline"} onClick={() => toggleTab(5)}>
-              <p className="projectsUnderlineColor" href="#" onClick={() => { seti(4); setHeader("As Free As a Bird")}}>As Free As a Bird</p>
+            <li className={toggleState === 5 ? "mh3 active" : "projectsUnderline"} onClick={() =>{ toggleTab(5);seti(4); setHeader("As Free As a Bird")}}>
+              <p className="projectsUnderlineColor" href="#" >As Free As a Bird</p>
             </li>
           </ul>
         </div>
 
 
-        <div className="donationBox flex justify-center items-center">
-
-          <div className="donation-Images  shadow-5">
-            <div className="donateImages" >
-              <img src={list[i].img} style={{ height: '260px', width: '100%', objectFit: 'fill' }} alt="donate" />
-            </div>
-            <div className="pa3-ns">
+        <div className="donationBox  flex justify-center items-center">
+          <div className="donation-Images white f4 " style={{maxHeight:"620px"}}>
+            <div className="pa3-ns white">
               <h1>{header}</h1>
               <p> {list[i].tagline} </p>
             </div>
           </div>
+          
 
           <div style={{height:"620px",lineHeight:"1.5",letterSpacing:"1.5px"}} className="donationAmount">
-              <div style={{backgroundColor:"#e88f0a0f"}} className="flex flex-column justify-center h-100 ph4 shadow-4 br2">
+              <div style={{backgroundColor:"white"}} className="flex flex-column justify-center h-100 ph2-ns br4">
                 <div className="flex justify-center items-center mb4">
                   <MdSecurity color="green" size="2rem" />
                   <p>Secure Donation</p>
                 </div>
                 <div className="flex flex-column justify-center items-center mb2">
                   <div className="flex justify-center items-center mb4">
-                    <p  className={toggleDonate === 1 ? "f4 link pointer br2 hover-btn  dib white pa3 mr2 donateActive" : "f4 link pointer br2 hover-btn  dib black pa3 mr2"} onClick={() => settoggleDonate(1)} >GIVE ONCE</p>
-                    <p  className={toggleDonate === 2 ? "f4 link pointer br2 hover-btn  dib white pa3 mr2 donateActive" : "f4 link pointer br2 hover-btn  dib black pa3 mr2"} onClick={() => settoggleDonate(2)} >MONTHLY</p>
+                    <p  className={toggleDonate === 1 ? "f4 link pointer br2 hover-btn  dib white pa3 mr2 donateActive" : "f4 link pointer br2 hover-btn  dib black pa3 mr2-ns mr2"} onClick={() => settoggleDonate(1)} >GIVE ONCE</p>
+                    <p  className={toggleDonate === 2 ? "f4 link pointer br2 hover-btn  dib white pa3 mr2 donateActive" : "f4 link pointer br2 hover-btn  dib black pa3 mr2-ns mr2"} onClick={() => settoggleDonate(2)} >MONTHLY</p>
                   </div>
                   <div className="flex justify-center items-center mb3">
-                    <p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3 mr3" onClick={()=>{setAmount(1000);setmodalIsOpen(true)}}>₹ 1000</p>
-                    <p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3 mr3" onClick={()=>{setAmount(2000);setmodalIsOpen(true)}}>₹ 2000</p>
-                    <p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3" onClick={()=>{setAmount(3000);setmodalIsOpen(true)}}>₹ 3000</p>
+                    <Link to="/donatenow/#donateForm"><p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3 mr3-ns mr3" onClick={()=>{setAmount(1000);setFormIsOpen('block')}}>₹ 1000</p></Link>
+                    <Link to="/donatenow/#donateForm"><p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3 mr3-ns mr3" onClick={()=>{setAmount(2000);setFormIsOpen('block')}}>₹ 2000</p></Link>
+                    <Link to="/donatenow/#donateForm"><p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3" onClick={()=>{setAmount(3000);setFormIsOpen('block')}}>₹ 3000</p></Link>
                   </div>
                   <div className="flex justify-center items-center">
-                    <p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3 mr3" onClick={()=>{setAmount(4000);setmodalIsOpen(true)}}>₹ 4000</p>
-                    <p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3 mr3" onClick={()=>{setAmount(5000);setmodalIsOpen(true)}}>₹ 5000</p>
-                    <p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3" onClick={()=>{setAmount(6000);setmodalIsOpen(true)}}>₹ 6000</p>
+                    <Link to="/donatenow/#donateForm"><p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3 mr3-ns mr3" onClick={()=>{setAmount(4000);setFormIsOpen('block')}}>₹ 4000</p></Link>
+                    <Link to="/donatenow/#donateForm"><p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3 mr3-ns mr3" onClick={()=>{setAmount(5000);setFormIsOpen('block')}}>₹ 5000</p></Link>
+                    <Link to="/donatenow/#donateForm"><p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3" onClick={()=>{setAmount(6000);setFormIsOpen('block')}}>₹ 6000</p></Link>
                   </div>
                   <input type="text" style={{height:"50px", width:"326px"}} className="ph2 f4 mt4 mb4 placeholder" placeholder="Enter your amount INR" onChange={(event)=>setAmount(event.target.value)} />
-                  <p style={{ backgroundColor: "#e88f0a" }} className="grow f4 link pointer br2 ph3 pv2 mb2 dib white shadow-2 pa3 b" onClick={()=>setmodalIsOpen(true)} >Donate</p>
+                  <Link to="/donatenow/#donateForm"><p style={{ backgroundColor: "#e88f0a" }} className="grow f4 link pointer br2 ph3 pv2 mb2 dib white shadow-2 pa3 b" onClick={()=>setFormIsOpen('block')} >Donate</p></Link>
                 </div>
               </div>
             </div>
@@ -116,42 +113,42 @@ function Donate() {
 
 
 
-      </div>
-      <Modal isOpen={modalIsOpen} onRequestClose={() => setmodalIsOpen(false)}>
-        <div className="flex justify-center tc">
-          <div className="donationForm">
+      
+      <div id="donateForm" >
+        <div className="flex justify-center pt5 tc">
+          <div className="donationForm " style={{display:`${formIsOpen}`}} >
             <form>
               <div className="modalHeader">
-                <h2>Donation</h2>
-                <span className="modalcloseButton" onClick={() => setmodalIsOpen(false)}>X</span>
+                <h2 >Donation</h2>
               </div>
-              <div className="inputBox">
-                <input type="text" name="" required="required"></input>
-                <span> Full Name</span>
+              <div className="inputBox ">
+                <input type="text" name=""  placeholder="Name" required="required" style={{paddingLeft:"15px"}}></input>
+                
               </div>
-              <div className="inputBox">
-                <input type="text" name="" required="required"></input>
-                <span> Email</span>
+              <div className="inputBox ">
+                <input type="text" name="" placeholder="Email-id" required="required" style={{paddingLeft:"15px"}}></input>
+                
               </div>
-              <div className="inputBox">
-                <input type="number" name="" required="required"></input>
-                <span> Phone No.</span>
+              <div className="inputBox ">
+                <input type="number" name="" placeholder="Phone Number" required="required" style={{paddingLeft:"15px"}}></input>
+                
               </div>
-              <div className="inputBox">
-                <input type="number" value={Amount} name="" required="required"></input>
-                <span> Donate Amount.</span>
+              <div className="inputBox ">
+                <input type="number" value={Amount} name="" placeholder="Donate Amount" required="required" style={{paddingLeft:"15px",color:"white"}}></input>
+                
               </div>
-              <div className="inputBox">
-                <input type="text" name="" required="required"></input>
-                <span>City</span>
+              <div className="inputBox ">
+                <input type="text" name="" placeholder="City" required="required" style={{paddingLeft:"15px"}}></input>
+                
               </div>
-              <div className="inputBox">
+              <div className="inputBox ">
                 <input type="submit" name="" value="Send"></input>
               </div>
             </form>
           </div>
         </div>
-      </Modal>
+      </div>
+      </div>
     </div>
   );
 }

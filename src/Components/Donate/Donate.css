@@ -10,6 +10,7 @@
 .donation-Images {
   width: 28%;
   object-fit: cover;
+  line-height: 1.5;
 }
 
 .donate-text {
@@ -23,14 +24,14 @@
  .projectsUnderline {
   text-decoration: none;
   padding: 4px;
-  color: black;
-  font-size: 20px;
+  color: white;
+  font-size: 25px;
 
 }
 .projectsUnderlineColor {
  text-decoration: none;
  padding: 4px;
- font-size: 20px;
+ font-size: 25px;
  cursor: pointer;
 }
 
@@ -93,6 +94,9 @@
     align-items: center;
     padding:0;
   }
+  .donationAmount{
+    padding:0;
+  }
 
   .donation-Images {
     height: auto;
@@ -112,10 +116,9 @@
 
 /* DonationForm CSS */
 .donationForm {
-  width: 40%;
+  width: 100%;
   padding: 20px;
-  background: #fff;
-  box-shadow: 1px 1px 24px rgb(0 0 0 / 26%);
+  
   justify-content: center;
   align-items: center;
 }
@@ -138,17 +141,23 @@
 
 .donationForm .inputBox {
   position: relative;
-  width: 100%;
-  margin-top: 10px;
+  width: 50%;
+  margin:auto;
+  
+}
+
+.donationForm .inputBox input::placeholder{
+  color:white;
 }
 
 .donationForm .inputBox input,
 .donationForm .inputBox input {
   width: 100%;
-  padding: 5px 0;
-  font-size: 16px;
+  padding: 10px 10px 10px 10px;
+  font-size: 20px;
   margin: 10px 0;
   border: none;
+  background: #ffffff59;
   border-bottom: 2px solid #ff8c00;
   border-radius: 8px;
   outline: none;
@@ -158,6 +167,7 @@
 .donationForm .inputBox span {
   position: absolute;
   left: 0;
+  color:white;
   padding: 5px 0;
   font-size: 16px;
   margin: 10px 0;
@@ -177,7 +187,6 @@
 
 .contact .inputBox input[type="submit"] {
   width: 100px;
-  background: #ddd;
   color: black;
   border: none;
   cursor: pointer;
@@ -189,16 +198,21 @@
 
 .contact .inputBox input[type="submit"]:hover {
   background-color: #ff8c00;
+
   color: white;
 }
 
 .modalHeader {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  color:white;
   padding: 0;
   margin: 0;
+}
+
+.modalHeader h2{
+  color:white;
 }
 
 .modalcloseButton {
@@ -269,6 +283,10 @@
     margin: 0;
     text-align: center;
 
+  }
+  .donationForm .inputBox {
+    width:90%;
+    padding:10px;
   }
   .donateTextbox{
     align-content: center;
