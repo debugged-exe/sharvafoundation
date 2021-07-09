@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import './OurGoals.css';
 import Carousel from 'react-elastic-carousel';
-import {Link} from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const breakPoints = [
     { width: 1, itemsToShow: 1, itemsToScroll: 1 },
@@ -67,7 +67,7 @@ function OurGoals() {
                       </div>
                     </div>
                     <div className="flex justify-center items-center">
-                      <Link to="/donatenow" className="link br2 ph3 pv2 mb2 tc dib cardButton">Donate Now</Link>
+                      <Link to="/donatenow/#donateImage" className="link br2 ph3 pv2 mb2 tc dib cardButton">Donate Now</Link>
                     </div>
                     <div className="lastLine">
                       <div className="supporters">
@@ -89,7 +89,7 @@ function OurGoals() {
             <div className="join-box mv5">
                 <p className="join-head fw6 " style={{ fontSize: '35px' }}>Join Us Now!!</p>
                 <div className="button-div">
-                    <Link to="/joinus"><button onClick={() => setShow(true)} className=" fw6 bg-white black pa3 ph4 f4 grow pointer" style={{ borderRadius: '8px', border: 'none' }}>
+                    <Link to="/joinus/#survey"><button onClick={() => setShow(true)} className=" fw6 bg-white black pa3 ph4 f4 grow pointer" style={{ borderRadius: '8px', border: 'none' }}>
                         Join Us
                     </button></Link>
                 </div>

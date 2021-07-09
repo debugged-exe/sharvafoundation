@@ -48,7 +48,7 @@ function Donate() {
     <div>
       <div className="donation-Container">
         <div>
-          <img className="donation-top-image" src={pic1} alt="donate" />
+          <img id="donateImage" className="donation-top-image" src={pic1} alt="donate" />
         </div>
         <div className="titles-bar">
           <ul className="project-titles pt2 pb2 ">
