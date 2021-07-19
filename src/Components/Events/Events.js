@@ -116,18 +116,6 @@ function Events({initiative,setCarousel}) {
             return(
               <div className="events-1 ba mt5">
                   {/* The 100% width image */}
-                  <div className="events-top-image" style={{background:`url(${item.bgimg}) no-repeat center center`,backgroundSize:'cover'}}>
-                      <h3 className="events-tagline">{item.tagline}</h3>
-                      <a href="#event-img">
-                      <div className="eventscrollDown pointer"><a href="#"></a>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                      </div>
-                  </a>
-                  </div>
-
-
                   {/* 50% text and 50% image responsive div */}
                   <div className="event-txt-img w-100">
                       <div className="event-txt w-50-ns">

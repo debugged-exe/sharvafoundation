@@ -39,6 +39,14 @@ function OurGoals() {
     }
     return (
         <div>
+          <div className="join-box mv5">
+                <p className="join-head fw6 " style={{ fontSize: '35px' }}>Join Us Now!!</p>
+                <div className="button-div">
+                    <Link to="/joinus/#survey"><button onClick={() => setShow(true)} className=" fw6 bg-white black pa3 ph4 f4 grow pointer" style={{ borderRadius: '8px', border: 'none' }}>
+                        Join Us
+                    </button></Link>
+                </div>
+            </div>
             <div className="ourGoals mt4 pa3">
                 <div className="mw7 mw7-m mw7-ns center topText  ">
                     <h2 className="center" style={{ paddingBottom: '10px', textDecoration: 'underline', textDecorationColor: '#e88f0a', textAlign: 'center' }}>OUR GOALS</h2>
@@ -87,10 +95,10 @@ function OurGoals() {
             }
             </Carousel>
             <div className="join-box mv5">
-                <p className="join-head fw6 " style={{ fontSize: '35px' }}>Join Us Now!!</p>
+                <p className="join-head fw6 " style={{ fontSize: '35px' }}>Ongoing Projects</p>
                 <div className="button-div">
                     <Link to="/joinus/#survey"><button onClick={() => setShow(true)} className=" fw6 bg-white black pa3 ph4 f4 grow pointer" style={{ borderRadius: '8px', border: 'none' }}>
-                        Join Us
+                        Click Here
                     </button></Link>
                 </div>
             </div>

@@ -51,7 +51,7 @@ function Donate() {
     <div>
       <div className="donation-Container" style={{background:` rgba(0, 0, 0, .6) url(${list[i].img}) no-repeat center center/cover `,backgroundBlendMode:"darken"}}>
         <div>
-          <h1 className="mt5 tc white">Make a Contribution!</h1>
+          <h1 className="mt5 tc white pt2">Make a Contribution!</h1>
         </div>
         <div className="titles-bar">
           <ul className="project-titles pt2 pb2 ">
@@ -78,7 +78,7 @@ function Donate() {
           <div className="donation-Images white f4 " style={{maxHeight:"620px"}}>
             <div className="pa3-ns white">
               <h1>{header}</h1>
-              <p> {list[i].tagline} </p>
+              <p style={{textAlign:"justify"}}> {list[i].tagline} </p>
             </div>
           </div>
           

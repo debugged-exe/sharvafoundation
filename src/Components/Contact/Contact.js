@@ -68,13 +68,6 @@ render(){
         <div className="container">
           <div className="contactInfo">
             <div className="box">
-             <div className="icon"><FaUserAlt /></div>
-           <div className="text">
-             <h3>Admin</h3>
-           <p>admin@sharvafoundation.org</p>
-           </div>
-            </div>
-            <div className="box">
              <div className="icon"><RiTeamFill /> </div>
            <div className="text">
              <h3>Team</h3>
