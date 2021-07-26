@@ -94,10 +94,10 @@ function OurGoals() {
               })
             }
             </Carousel>
-            <div className="join-box mv5">
+            <div className="join-box events-click-box mv5">
                 <p className="join-head fw6 " style={{ fontSize: '35px' }}>Ongoing Projects</p>
                 <div className="button-div">
-                    <Link to="/joinus/#survey"><button onClick={() => setShow(true)} className=" fw6 bg-white black pa3 ph4 f4 grow pointer" style={{ borderRadius: '8px', border: 'none' }}>
+                    <Link to="events-summary/#eventsummary"><button onClick={() => setShow(true)} className=" fw6 bg-white black pa3 ph4 f4 grow pointer" style={{ borderRadius: '8px', border: 'none' }}>
                         Click Here
                     </button></Link>
                 </div>

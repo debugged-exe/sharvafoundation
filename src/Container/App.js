@@ -11,6 +11,7 @@ import Footer from "../Components/Footer/Footer";
 import Joinus from "../Components/JoinUs/JoinUs";
 import Donatepage from "../Pages/Donatepage";
 import Awarenesspage from "../Pages/Awarenesspage";
+import EventsSummary from '../Components/EventsSummary/EventsSummary';
 function App() {
   const [initiative, setInitiative] = useState("hungerfreeindia");
   const [loading,setLoading]=useState(true);
@@ -51,6 +52,7 @@ function App() {
             <Route exact path="/contactus" component={Contactpage} />
             <Route exact path="/donatenow" component={Donatepage} />
             <Route exact path="/awareness" component={Awarenesspage} />
+            <Route exact path="/events-summary" component={EventsSummary} />
             <Route exact path="/eventdisplay" component={()=><EventDisplay proj={caro} initiative={initiative} setInitiative={setInitiative}/>}/>
             <Route  path="/" component={Homepage} />
           </Switch>

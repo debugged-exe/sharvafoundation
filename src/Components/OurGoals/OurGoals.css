@@ -29,9 +29,9 @@
 /* Join Us */
 .join-box {
   width: 100%;
-  height: 20vh;
+  height: 15vh;
   background-color: #f42b03;
-background-image: linear-gradient(316deg, #f42b03 0%, #ffbe0b 74%);
+background-image: linear-gradient(316deg, #ff9100 0%, #ffbe0b 74%);
 
   color: white;
   display: grid;
@@ -39,6 +39,11 @@ background-image: linear-gradient(316deg, #f42b03 0%, #ffbe0b 74%);
   justify-content: center;
   align-items: center;
 }
+
+.events-click-box{
+  background-image:linear-gradient(75deg, #ff9100 0%, #ffbb00 74%);
+}
+
 
 .join-head {
   margin-left: 20%;

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import './Footer.css';
 import branches from "./map.png";
 import sharvalogo from './sharva.png';
@@ -8,37 +7,21 @@ import {SiGmail} from "react-icons/si";
 import {SiYoutube} from "react-icons/si";
 import {AiOutlineTwitter} from "react-icons/ai";
 import {FaWhatsapp} from "react-icons/fa";
-import {FaLinkedinIn} from "react-icons/fa";
-
+import {FaLinkedinIn,FaQuoteRight,FaQuoteLeft} from "react-icons/fa";
 
 function Footer({setInitiative}){
   return(
     <div className="body" style={{display: 'inline-block', width: "100%"}}>
         <footer className="footer">
             <div className="footer-left ">
-                    <img src={sharvalogo} alt="" style={{height:"75px",width:"75px"}}/>
-
-                  <p> We make a living by what we get, but we make a life by what we give” These Words define the very energy that flows through the heart of Sharva foundation. We here at Sharva Foundation believe in building a community through giving. Our young minds and passion for this is what strives us towards giving the best! Although young, we look forward to do small things with great love.</p>
+                  <img src={sharvalogo} alt="" style={{height:"75px",width:"75px"}}/>
+                  <br/><FaQuoteLeft className="mv1"/>
+                  <p className="lh-copy"> We make a living by what we get, but we make a life by what we give” These Words define the very energy that flows through the heart of Sharva foundation. We here at Sharva Foundation believe in building a community through giving. Our young minds and passion for this is what strives us towards giving the best! Although young, we look forward to do small things with great love.</p>
+                  <FaQuoteRight className="mv1"/>
 
 
             </div>
-            <ul className="footer-right">
-           <li className="EventsBranches">
-                     <h2 className={'h2 responsive-heading'}>EVENTS</h2>
-                   <ul className="box flex justify-center items-center">
-                       <Link to="/events"  onClick={() => setInitiative("hungerfreeindia")}>
-                          <li className="eventsHover ">#HungerFreeIndia</li></Link>
-                        <Link to="/events"  onClick={() => setInitiative("strivewithpride")}>
-                          <li className="eventsHover ">#StriveWithPride</li></Link>
-                        <Link to="/events"  onClick={() => setInitiative("projectruya")}>
-                          <li className="eventsHover ">#ProjectRuya</li></Link>
-                        <Link to="/events"  onClick={() => setInitiative("asfreeasabird")}>
-                          <li className="eventsHover ">#AsFreeasaBird</li></Link>
-                        <Link to="/events"  onClick={() => setInitiative("giveherwings")}>
-                          <li className="eventsHover ">#GiveHerWings</li></Link>
-                     </ul>
-                 </li>
-             </ul>
+            
              <ul className="footer-right"  style={{padding:"0",margin:"0"}}>
             <li className="EventsBranches" style={{padding:"0",margin:"0"}}>
                       
