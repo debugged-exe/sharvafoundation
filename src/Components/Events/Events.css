@@ -77,9 +77,9 @@
 
 .gridImage {
   border-radius: 8px;
-  height: 220px;
-  width: 320px;
-  object-fit: fill;
+  height: 280px;
+  width: 430px;
+  object-fit: cover;
 }
 .onrightDate{
   display: flex;
