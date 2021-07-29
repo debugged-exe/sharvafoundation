@@ -77,6 +77,21 @@ function Events({initiative,setCarousel}) {
 
     }
 
+    else if (initiative==="projectgreen") {
+      fetch("https://thawing-shelf-77571.herokuapp.com/projectgreen")
+      .then(response => response.json())
+      .then(res => {
+        if (res[0].tagline) {
+          setDrive(res);
+        }
+      }).catch(error => {
+        console.log(error);
+      })
+
+
+    }
+
+
     else if (initiative==="covid19") {
       fetch("https://thawing-shelf-77571.herokuapp.com/covid19")
       .then(response => response.json())

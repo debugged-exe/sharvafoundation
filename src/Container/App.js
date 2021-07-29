@@ -20,7 +20,7 @@ function App() {
   const setCarousel = (caro) => {
      setCaro(caro);
    }
-   
+
   useEffect(()=>{
     console.log(loading);
     setTimeout(()=>{
@@ -28,7 +28,7 @@ function App() {
     },5000)
     console.log(loading);
   }
-  
+
 
     )
 
@@ -52,7 +52,7 @@ function App() {
             <Route exact path="/contactus" component={Contactpage} />
             <Route exact path="/donatenow" component={Donatepage} />
             <Route exact path="/awareness" component={Awarenesspage} />
-            <Route exact path="/events-summary" component={EventsSummary} />
+          <Route exact path="/events-summary" component={EventsSummary} setInitiative={setInitiative} />
             <Route exact path="/eventdisplay" component={()=><EventDisplay proj={caro} initiative={initiative} setInitiative={setInitiative}/>}/>
             <Route  path="/" component={Homepage} />
           </Switch>
