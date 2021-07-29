@@ -65,6 +65,11 @@
 .imgText{
     width:50%;
 }
+.imgCenter{
+  display: block;
+  margin: auto 0;
+  
+}
 
 @media screen and (max-width: 800px) {
     .imgText{

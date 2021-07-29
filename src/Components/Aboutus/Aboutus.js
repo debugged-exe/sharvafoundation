@@ -6,11 +6,11 @@ function Aboutus(){
     return(
         <div className="aboutUs mb3" id="aboutus">
             <div className="mw7 mw7-ns center ">
-                
+
             </div>
-            <div className="cf abouttext ">
-                <div className="fl imgText">
-                   <img alt="" src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" className="abs"></img>
+            <div className="cf abouttext  ">
+                <div className="fl imgText imgCenter">
+                   <img alt="" src="https://i.postimg.cc/VNRbQ24c/4.jpg" className="abs "></img>
                 </div>
                 <div className="fl imgText text">
                     <h2 className="center" style={{paddingBottom:'1em',textDecoration:'underline',textAlign:"center",textDecorationColor:'#e88f0a'}}>ABOUT SHARVA</h2>

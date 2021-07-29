@@ -25,23 +25,23 @@ function Donate() {
   const [Amount, setAmount] = useState("");
   var list = [
     {
-      img: pic1,
+      img: 'https://i.imgur.com/PB6v6SB.jpg',
       tagline: "Due to the inability to effectively manage menstruation 1 out of 5 Indian school girls skip school or drop out of school entirely due to lack of menstrual products and poor sanitation. This critical unavailability of sanitary products is a major barrier to education for girls of school-going age. We have distributed 4000+ sanitary pads in Pune & Jammu. We supported 30 school girls with sanitary pads to make sure that they don't feel uncomfortable",
     },
     {
-      img: pic2,
+      img: 'https://i.imgur.com/VmL5Rey.png',
       tagline: "India has the misfortune of having the largest number of blind persons in the world. Blindness is a disability, which one can overcome with proper training and guidance. Persons affected by blindness need opportunities for quality education, skills, training. rehabilitation, employment, and a full social and family life. We here at Sharva Foundation have created a platform for them. We'll showcase their talent & help them to get more jobs.",
     },
     {
-      img: pic3,
+      img: 'https://i.postimg.cc/BQ9kSW7d/rightimg.jpg',
       tagline: "Tackling hunger on the frontline of emergencies is critical, but we also need long-lasting solutions. That's why we work to help people everywhere get the food they need to survive and thrive. Hunger causes a range of problems and the most severe among these is malnutrition",
     },
     {
-      img: pic4,
+      img: 'https://i.postimg.cc/gkv8TKkP/background.jpg',
       tagline: "The Constitution of India ensures equality, freedom, justice, and dignity of all individuals and implicitly mandates an inclusive society for all including Transgender persons. In recent years, there have been significant changes in the perception of society towards transgenders.  We at Sharva Foundation, are trying our level best to help and uplift the community. We are providing them with essential items for their daily day-to-day use.",
     },
     {
-      img: pic5,
+      img: 'https://i.imgur.com/Galujig.jpg',
       tagline: "Female literacy is very low in rural villages of India, girls are kept away from formal schooling and they are married by arrangement in their teenage years. This has some serious consequences such as poor health and loss of equal opportunities, to individuals, families, communities, and to the country.Therefore the main aim of the project is to improve female literacy in the rural villages of India by raising awareness about the importance of girl’s education and supporting girls from poor families.",
     }
   ]
@@ -81,7 +81,7 @@ function Donate() {
               <p style={{textAlign:"justify"}}> {list[i].tagline} </p>
             </div>
           </div>
-          
+
 
           <div style={{height:"620px",lineHeight:"1.5",letterSpacing:"1.5px"}} className="donationAmount">
               <div style={{backgroundColor:"white"}} className="flex flex-column justify-center h-100 ph2-ns br4">
@@ -113,7 +113,7 @@ function Donate() {
 
 
 
-      
+
       <div id="donateForm" >
         <div className="flex justify-center pt5 tc">
           <div className="donationForm " style={{display:`${formIsOpen}`}} >
@@ -123,23 +123,23 @@ function Donate() {
               </div>
               <div className="inputBox ">
                 <input type="text" name=""  placeholder="Name" required="required" style={{paddingLeft:"15px",color:"white"}}></input>
-                
+
               </div>
               <div className="inputBox ">
                 <input type="text" name="" placeholder="Email-id" required="required" style={{paddingLeft:"15px",color:"white"}}></input>
-                
+
               </div>
               <div className="inputBox ">
                 <input type="number" name="" placeholder="Phone Number" required="required" style={{paddingLeft:"15px",color:"white"}}></input>
-                
+
               </div>
               <div className="inputBox ">
                 <input type="number" value={Amount} name="" placeholder="Donate Amount" required="required" style={{paddingLeft:"15px",color:"white"}}></input>
-                
+
               </div>
               <div className="inputBox ">
                 <input type="text" name="" placeholder="City" required="required" style={{paddingLeft:"15px",color:"white"}}></input>
-                
+
               </div>
               <div className="inputBox ">
                 <input type="submit" name="" value="Send"></input>
