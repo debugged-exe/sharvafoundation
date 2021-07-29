@@ -6,12 +6,12 @@
 .event-txt-img {
   display: flex;
   padding: 1rem;
-  
+
 }
 
 .event-img {
   padding: 0.5rem;
-  
+
 }
 
 .event-txt {
@@ -84,6 +84,7 @@
 .onrightDate{
   display: flex;
   justify-content: flex-start;
+
 }
 /* "Show Less" and "Show More" */
 .showButtons {
@@ -181,4 +182,3 @@
   max-width: 700px;
 
 }
-
