@@ -88,6 +88,18 @@ function Events({initiative,setCarousel}) {
         console.log(error);
       })
 
+    }
+
+    else if (initiative==="blooddonation") {
+      fetch("https://thawing-shelf-77571.herokuapp.com/blooddonation")
+      .then(response => response.json())
+      .then(res => {
+        if (res[0].tagline) {
+          setDrive(res);
+        }
+      }).catch(error => {
+        console.log(error);
+      })
 
     }
 
@@ -129,7 +141,7 @@ function Events({initiative,setCarousel}) {
         {
           drive.map((item,index)=>{
             return(
-              <div className="events-1 ba mt5">
+              <div className="events-1  mt5">
                   {/* The 100% width image */}
                   {/* 50% text and 50% image responsive div */}
                   <div className="event-txt-img w-100">

@@ -318,6 +318,11 @@ class Join1 extends React.PureComponent {
                 <input type="checkbox" id="none" name="category" value="marketing"
 								onClick={this.handleCheck}/>
 								<label for="none">Marketing</label><br/>
+								
+								<input type="checkbox" id="none" name="category" value="marketing"
+								onClick={this.handleCheck}/>
+								<label for="none">Graphic Designing</label><br/>
+
                 <input type="checkbox" id="none" name="category" value="strategies"
 								onClick={this.handleCheck}/>
 								<label for="none">Strategies Buildup</label><br/>

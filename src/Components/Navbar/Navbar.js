@@ -60,6 +60,7 @@ const Navbar = ({ setInitiative }) => {
                 <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => {setInitiative("asfreeasabird");setCovid(false);hamburger()}} > As Free As a Bird</li></Link>
                 <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => {setInitiative("giveherwings");setCovid(false);hamburger()}} > Give Her Wings to Fly</li></Link>
               <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => {setInitiative("projectgreen");setCovid(false);hamburger()}} >Project Green</li></Link>
+              <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => {setInitiative("blooddonation");setCovid(false);hamburger()}} >Blood Donation</li></Link>
               </ul>
             </li></Link>
           <Link to="/events">
