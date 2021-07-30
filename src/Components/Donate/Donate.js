@@ -1,11 +1,6 @@
 import React, { useState,useLayoutEffect } from 'react';
 import "./Donate.css";
 import {HashLink as Link} from "react-router-hash-link";
-import pic1 from "../../Database/1.jpeg";
-import pic2 from "../../Database/2.jpeg";
-import pic3 from "../../Database/3.jpeg";
-import pic4 from "../../Database/4.jpeg";
-import pic5 from "../../Database/5.jpeg";
 import { MdSecurity } from 'react-icons/md';
 
 function Donate() {

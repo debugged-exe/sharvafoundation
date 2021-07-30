@@ -27,14 +27,14 @@ const EventsSummary = ({setInitiative}) => {
                 <div className="w-50-ns pa2" >
                     <h1>{item.heading}</h1>
                     <p className="tj"> {item.para}</p>
-                  <Link  to="/events"><div className="pv2" onClick={()=>{setInitiative(item.tagline);}} >
-                  <a  className=" fw6  ph3 grow f4 pointer"  style={{ borderRadius: '8px', border: 'none',color:"#e88f0a" }}>
-                        Click Here
+                  <Link  to="/events"><div className="pv2 " onClick={()=>{setInitiative(item.tagline);}} >
+                  <a  href='#0' className="link fw6 grow f4 pointer dib"  style={{ borderRadius: '8px', border: 'none',color:"#e88f0a" }}>
+                        View Details
                     </a></div></Link>
                 </div>
 
                 <div className="w-50-ns pa2 ">
-                    <img src={item.imgUrl} alt={item.heading} className="br4" />
+                    <img src={item.imgUrl} height='400px' width='100%' alt={item.heading} className="br4 grow pointer" />
                 </div>
 
             </div>
