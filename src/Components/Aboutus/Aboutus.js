@@ -10,7 +10,7 @@ function Aboutus(){
             </div>
             <div className="cf abouttext  ">
                 <div className="fl imgText imgCenter">
-                   <img alt="" src="https://i.postimg.cc/VNRbQ24c/4.jpg" className="abs "></img>
+                   <img alt="" src="https://i.postimg.cc/VNRbQ24c/4.jpg" className="abs"></img>
                 </div>
                 <div className="fl imgText text">
                     <h2 className="center" style={{paddingBottom:'1em',textDecoration:'underline',textAlign:"center",textDecorationColor:'#e88f0a'}}>ABOUT SHARVA</h2>

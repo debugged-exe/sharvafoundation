@@ -3,13 +3,19 @@ import './RecentsEvents.css';
 import 'tachyons';
 function RecentEvents(){
 
-  const [recent, setRecent] = useState([]);
+ var rlength=0;
+  const [recent1, setRecent1] = useState([]);
+  const [recent2,setRecent2] = useState([]);
+  const [recent3,setRecent3] = useState([]);
   useEffect(() => {
-    fetch("https://thawing-shelf-77571.herokuapp.com/recentevents")
+    fetch("https://thawing-shelf-77571.herokuapp.com/events")
     .then(response => response.json())
     .then(res => {
-      if (res[0].heading) {
-        setRecent(res);
+      if (res[0].tagline) {
+         // rlength= res[0].events.length;
+       console.log("hello" ,recent1);
+        setRecent1(res);
+        console.log("hello1" ,recent1);
       }
     }).catch(error => {
       console.log(error);
@@ -25,22 +31,25 @@ function RecentEvents(){
 
 
 {
-
-      recent.map((item,index) => {
-
+      recent1.map((item,index) =>{
+         
         return(
-            <div className="item  mt2 mb2 mr2 ml2 shadow-2 grow pointer" style={{background:`rgba(0, 0, 0, .6) url(${item.recentimg}) no-repeat center center`,backgroundSize:'cover', backgroundBlendMode:"darken"}}>
-               <h3 className="ma3">{item.heading}</h3>
-               <p className="ma3">{item.date}</p>
-             </div>
+          item.events.map((i,index)=>{
+            <p className="ma3">{item.date}</p>
+          })
 
 
 
     )
-  })
+  }
+  )
 }
   </div>
   </div>
   )
 }
 export default RecentEvents;
+{/* <div className="item  mt2 mb2 mr2 ml2 shadow-2 grow pointer" style={{background:`rgba(0, 0, 0, .6) url(${item.recentimg}) no-repeat center center`,backgroundSize:'cover', backgroundBlendMode:"darken"}}>
+   <h3 className="ma3">{item.heading}</h3>
+   <p className="ma3">{item.date}</p>
+ </div> */}
