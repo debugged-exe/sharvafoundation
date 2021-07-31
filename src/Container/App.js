@@ -7,7 +7,8 @@ import Eventspage from '../Pages/Eventspage.js';
 import EventDisplay from "../Components/Events/EventDisplay.js";
 import Contactpage from '../Pages/Contactpage';
 import Navbar from "../Components/Navbar/Navbar";
-import Footer from "../Components/Footer/Footer";
+import FooterBottom from "../Components/Footer/FooterBottom";
+
 import Joinus from "../Components/JoinUs/JoinUs";
 import Donatepage from "../Pages/Donatepage";
 import Awarenesspage from "../Pages/Awarenesspage";
@@ -59,7 +60,7 @@ function App() {
 
 
         </div>
-        <Footer  setInitiative={setInitiative} />
+      <FooterBottom />
 
       </Router>
       </div>

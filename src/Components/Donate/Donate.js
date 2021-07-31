@@ -2,8 +2,10 @@ import React, { useState,useLayoutEffect } from 'react';
 import "./Donate.css";
 import {HashLink as Link} from "react-router-hash-link";
 import { MdSecurity } from 'react-icons/md';
+import Footer from "./../Footer/Footer.js";
 
-function Donate() {
+
+function Donate({setInitiative}) {
   const [formIsOpen, setFormIsOpen] = useState('none');
   const [header, setHeader] = useState("Give Her Wings");
   const [i, seti] = useState(0);
@@ -144,6 +146,8 @@ function Donate() {
         </div>
       </div>
       </div>
+      <Footer  setInitiative={setInitiative} />
+
     </div>
   );
 }
