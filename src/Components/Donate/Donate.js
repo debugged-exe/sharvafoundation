@@ -7,7 +7,7 @@ import Footer from "./../Footer/Footer.js";
 
 function Donate({setInitiative}) {
   const [formIsOpen, setFormIsOpen] = useState('none');
-  const [header, setHeader] = useState("Give Her Wings");
+  const [header, setHeader] = useState("Give Her Wings to Fly");
   const [i, seti] = useState(0);
   const [toggleState, settoggleState] = useState(1);
   const [toggleDonate,settoggleDonate]=useState(1);

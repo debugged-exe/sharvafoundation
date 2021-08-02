@@ -13,6 +13,7 @@ const breakPoints = [
 
 function OurGoals() {
 
+  var percent=5;
   const [goal, setGoal] = useState([]);
   useEffect(() => {
     fetch("https://thawing-shelf-77571.herokuapp.com/goals").then(response => response.json()).then(res => {
@@ -67,11 +68,14 @@ function OurGoals() {
                       <h4>
                         {item.head}
                       </h4>
+                      <br />
+                        {item.desp}
                       <p>
-                        <b> ₹ 5,000 </b>
+                        
+                        <b> ₹ {item.initialAmount} </b>
                          raised out of ₹ {item.totalCost}</p>
-                      <div class="skill-bar">
-                        <div class="skill-per" per="90"></div>
+                      <div className="skill-bar">
+                        <div className="skill-per" per="90" style={{width:`${(item.initialAmount/item.totalCost)*100}%`}}></div>
                       </div>
                     </div>
                     <div className="flex justify-center items-center">
