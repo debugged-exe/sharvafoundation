@@ -15,7 +15,7 @@ function RecentEvents(){
     }).catch(error => {
       console.log(error);
     })
-    
+
     fetch("https://thawing-shelf-77571.herokuapp.com/covid19")
     .then(response => response.json())
     .then(res => {
@@ -45,20 +45,21 @@ function RecentEvents(){
 		 <h1>Recent Events</h1>
        <div className="RecentEvents-container">
 
-    {     
+    {
           recentA.map((item,index) =>{
             console.log("item",item.events);
             return(
               item.events.map((i,index)=>{
                 if(index===(item.events.length-1))
-                  {                
+                  {
                     return(
-                      <a href="https://www.youtube.com/channel/UCZT6olVE-2v_LWqXmrbqPug" className="dib link">
+
                     <div key={index} className="item  mt2 mb2 mr2 ml2 shadow-2 grow pointer" style={{background:`rgba(0, 0, 0, .6) url(${i.image[0]}) no-repeat center center`,backgroundSize:'cover', backgroundBlendMode:"darken"}}>
+                    <a href="https://www.youtube.com/channel/UCZT6olVE-2v_LWqXmrbqPug" className="dib link"></a>
                       <p className="ma3">{i.date}</p>
                       <p className="ma3">{i.place}</p>
                     </div>
-                    </a>
+
 
                     )
                   }
@@ -67,7 +68,7 @@ function RecentEvents(){
 
         )
       }
-      )  
+      )
     }
     <div>
       {
@@ -76,14 +77,15 @@ function RecentEvents(){
           return(
             item.events.map((i,index)=>{
               if(index===(item.events.length-1))
-                {                
+                {
                   return(
-                    <a href="https://www.youtube.com/channel/UCZT6olVE-2v_LWqXmrbqPug" className="dib link">
+
                   <div key={index} className="item  mt2 mb2 mr2 ml2 shadow-2 grow pointer" style={{background:`rgba(0, 0, 0, .6) url(${i.image[0]}) no-repeat center center`,backgroundSize:'cover', backgroundBlendMode:"darken"}}>
+                  <a href="https://www.youtube.com/channel/UCZT6olVE-2v_LWqXmrbqPug" className="dib link"></a>
                     <p className="ma3">{i.date}</p>
                     <p className="ma3">{i.place}</p>
                   </div>
-                  </a>
+
 
                   )
                 }
@@ -92,7 +94,7 @@ function RecentEvents(){
 
       )
     }
-    )  
+    )
       }
     </div>
     <div>
@@ -102,22 +104,23 @@ function RecentEvents(){
                     return(
                       item.events.map((i,index)=>{
                         if(index===(item.events.length-1))
-                          {                
+                          {
                             return(
-                              <a href="https://www.youtube.com/channel/UCZT6olVE-2v_LWqXmrbqPug" className="dib link">
+
                             <div key={index} className="item  mt2 mb2 mr2 ml2 shadow-2 grow pointer" style={{background:`rgba(0, 0, 0, .6) url(${i.image[0]}) no-repeat center center`,backgroundSize:'cover', backgroundBlendMode:"darken"}}>
+                            <a href="https://www.youtube.com/channel/UCZT6olVE-2v_LWqXmrbqPug" className="dib link"></a>
                               <p className="ma3">{i.date}</p>
                               <p className="ma3">{i.place}</p>
                             </div>
-                            </a>
+                            
                             )
                           }
                       })
-          
-          
+
+
                 )
               }
-              ) 
+              )
         }
       </div>
   </div>
