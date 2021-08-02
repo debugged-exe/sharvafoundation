@@ -39,7 +39,7 @@ function OurGoals() {
     }
     return (
         <div>
-          <div className="join-box mv5">
+          <div className="join-box mv5 ">
                 <p className="join-head fw6 " style={{ fontSize: '35px' }}>Join Us Now!!</p>
                 <div className="button-div">
                     <Link to="/joinus/#survey"><button onClick={() => setShow(true)} className=" fw6 bg-white black pa3 ph4 f4 grow pointer" style={{ borderRadius: '8px', border: 'none' }}>
@@ -58,7 +58,7 @@ function OurGoals() {
             <Carousel breakPoints={breakPoints} showArrows={false} >
               {
               goal.map((item, index) => {
-                return (<div className="newcard mv4" >
+                return (<div className="newcard mv5" >
                   <div className="cardTop">
                     <img src={item.image} className="cardImg" alt="something"/>
                   </div>
@@ -68,8 +68,8 @@ function OurGoals() {
                         {item.head}
                       </h4>
                       <p>
-                        <b>₹42,000</b>
-                        raised out of ₹60,000</p>
+                        <b> ₹ 5,000 </b>
+                         raised out of ₹ {item.totalCost}</p>
                       <div class="skill-bar">
                         <div class="skill-per" per="90"></div>
                       </div>
@@ -80,11 +80,11 @@ function OurGoals() {
                     <div className="lastLine">
                       <div className="supporters">
                         <p>
-                          <b>Supporters {item.supporters}</b>
+                          <b>Location: {item.location}</b>
                         </p>
                       </div>
                       <div>
-                        <a href="sharvafoundation.org" className="no-underline">
+                        <a href={item.flyer} className="no-underline">
                           <b className="LearnColor">Learn More</b>
                         </a>
                       </div>

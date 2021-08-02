@@ -6,6 +6,10 @@
 
 }
 
+.a{
+  list-style: none;
+}
+
 .item{
   height:44vh;
   width:30.5vw;

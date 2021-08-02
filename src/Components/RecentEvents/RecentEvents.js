@@ -53,10 +53,12 @@ function RecentEvents(){
                 if(index===(item.events.length-1))
                   {                
                     return(
+                      <a href="https://www.youtube.com/channel/UCZT6olVE-2v_LWqXmrbqPug">
                     <div key={index} className="item  mt2 mb2 mr2 ml2 shadow-2 grow pointer" style={{background:`rgba(0, 0, 0, .6) url(${i.image[0]}) no-repeat center center`,backgroundSize:'cover', backgroundBlendMode:"darken"}}>
                       <p className="ma3">{i.date}</p>
                       <p className="ma3">{i.place}</p>
                     </div>
+                    </a>
 
                     )
                   }
@@ -76,10 +78,12 @@ function RecentEvents(){
               if(index===(item.events.length-1))
                 {                
                   return(
+                    <a href="https://www.youtube.com/channel/UCZT6olVE-2v_LWqXmrbqPug">
                   <div key={index} className="item  mt2 mb2 mr2 ml2 shadow-2 grow pointer" style={{background:`rgba(0, 0, 0, .6) url(${i.image[0]}) no-repeat center center`,backgroundSize:'cover', backgroundBlendMode:"darken"}}>
                     <p className="ma3">{i.date}</p>
                     <p className="ma3">{i.place}</p>
                   </div>
+                  </a>
 
                   )
                 }
@@ -100,11 +104,12 @@ function RecentEvents(){
                         if(index===(item.events.length-1))
                           {                
                             return(
+                              <a href="https://www.youtube.com/channel/UCZT6olVE-2v_LWqXmrbqPug">
                             <div key={index} className="item  mt2 mb2 mr2 ml2 shadow-2 grow pointer" style={{background:`rgba(0, 0, 0, .6) url(${i.image[0]}) no-repeat center center`,backgroundSize:'cover', backgroundBlendMode:"darken"}}>
                               <p className="ma3">{i.date}</p>
                               <p className="ma3">{i.place}</p>
                             </div>
-          
+                            </a>
                             )
                           }
                       })

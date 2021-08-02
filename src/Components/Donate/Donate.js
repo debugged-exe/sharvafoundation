@@ -52,8 +52,8 @@ function Donate({setInitiative}) {
         </div>
         <div className="titles-bar">
           <ul className="project-titles pt2 pb2 ">
-            <li className={toggleState === 1 ? "mh3 active" : "projectsUnderline"} onClick={() =>{ toggleTab(1);seti(0); setHeader("Give Her Wings")}}>
-              <p className="projectsUnderlineColor" href="#" >Give Her Wings</p>
+            <li className={toggleState === 1 ? "mh3 active" : "projectsUnderline"} onClick={() =>{ toggleTab(1);seti(0); setHeader("Give Her Wings to Fly")}}>
+              <p className="projectsUnderlineColor" href="#" >Give Her Wings to Fly</p>
             </li>
             <li className={toggleState === 2 ? "mh3 active" : "projectsUnderline"} onClick={() => {toggleTab(2);seti(1); setHeader("Project Ruya")}}>
               <p className="projectsUnderlineColor" href="#" >Project Ruya</p>

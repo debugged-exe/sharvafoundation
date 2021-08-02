@@ -21,7 +21,7 @@ function Aboutus(){
                     With each growing day we add more people to our family that share our ideals. We have witnessed growth exponentially and that made it clear that there are people out there who want to provide their aid. And we act like a platform. We hope to see tomorrow build out on a foundation laid by love, trust and care. That is what drives our purpose.In times such as these, it is of upmost importance that we need to work together. Any undocumented call of aid can turn out to be the decision that governs someone’s survival. By reaching us is how you prevent this.
                     </p>
                     <p className="lh-copy mt3" style={{textAlign:"justify"}}>
-                    We started as taking baby steps towards our goal. Carving new roads and finding new acquaintances as we went down the road. Today, not even a year later from the beginning, we have already dispersed out aid via members of our family to 3 states and 5 cities. Knowing this fuels us with determination that whatever we thought we were capable of, we are that and maybe even more.
+                    We started as taking baby steps towards our goal. Carving new roads and finding new acquaintances as we went down the road. Today, not even a year later from the beginning, we have already dispersed out aid via members of our family. Knowing this fuels us with determination that whatever we thought we were capable of, we are that and maybe even more.
                     </p>
                     <Link className="inputBox aboutButton" to="/donatenow/#donateImage">
                       <input type="submit" name="" value="Donate Now" style={{marginTop:"10px"}}></input>
