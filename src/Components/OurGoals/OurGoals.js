@@ -71,7 +71,7 @@ function OurGoals() {
                       <br />
                         {item.desp}
                       <p>
-                        
+
                         <b> ₹ {item.initialAmount} </b>
                          raised out of ₹ {item.totalCost}</p>
                       <div className="skill-bar">
@@ -106,6 +106,7 @@ function OurGoals() {
                     </button></Link>
                 </div>
             </div>
+            
         </div>
     )
 }

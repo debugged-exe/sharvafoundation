@@ -3,7 +3,7 @@ import "./Donate.css";
 import {HashLink as Link} from "react-router-hash-link";
 import { MdSecurity } from 'react-icons/md';
 import Footer from "./../Footer/Footer.js";
-
+import DonationDetails from "./DonationDetails"
 
 function Donate({setInitiative}) {
   const [formIsOpen, setFormIsOpen] = useState('none');
@@ -14,6 +14,7 @@ function Donate({setInitiative}) {
   const toggleTab = (index) => {
     settoggleState(index);
   }
+  const [donationEvent,setDonationEvent]=useState('none');
 
   useLayoutEffect(() => {
     window.scrollTo(0, 0)
@@ -46,7 +47,9 @@ function Donate({setInitiative}) {
   return (
 
     <div>
-      <div className="donation-Container" style={{background:` rgba(0, 0, 0, .6) url(${list[i].img}) no-repeat center center/cover `,backgroundBlendMode:"darken"}}>
+
+
+      <div className="donation-Container" style={{display:`${donationEvent}` ,background:` rgba(0, 0, 0, .6) url(${list[i].img} ) no-repeat center center/cover `,backgroundBlendMode:"darken"}}>
         <div>
           <h1 className="mt5 tc white pt2">Make a Contribution!</h1>
         </div>
@@ -111,8 +114,11 @@ function Donate({setInitiative}) {
 
 
 
-      <div id="donateForm" >
-        <div className="flex justify-center pt5 tc">
+
+      </div>
+
+      <div id="donateForm " >
+        <div className="flex justify-center pt5 bg-black tc">
           <div className="donationForm " style={{display:`${formIsOpen}`}} >
             <form>
               <div className="modalHeader">
@@ -145,9 +151,10 @@ function Donate({setInitiative}) {
           </div>
         </div>
       </div>
-      </div>
-      <Footer  setInitiative={setInitiative} />
 
+      <Footer  setInitiative={setInitiative} />
+      <button onClick={()=>setDonationEvent('block')}>Click me</button>
+      <button onClick={()=><DonationDetails />}>Spank Me</button>
     </div>
   );
 }

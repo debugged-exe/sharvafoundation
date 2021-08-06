@@ -8,9 +8,11 @@ function Events({initiative,setCarousel}) {
 
   const [drive,setDrive]=useState([]);
   var abc=[];
-  useLayoutEffect(()=>{
-    window.scrollTo(0,0);
-  })
+
+  const[hideShowMore,sethideShowMore]=useState('block');
+    const[hideShowLess,sethideShowLess]=useState('none');
+
+
   useEffect(() => {
     if(initiative==="hungerfreeindia"){
       fetch("https://thawing-shelf-77571.herokuapp.com/events")
@@ -121,12 +123,16 @@ function Events({initiative,setCarousel}) {
 
   const [visible, setVisible] = useState(3);
 
-  	const showMoreItems = () => {
-  		setVisible( visible + 3);
-  	}
-    const showLessItems =() =>{
-      setVisible(3);
-    }
+  const showMoreItems = () => {
+            setVisible( visible + 3);
+        sethideShowMore('none');
+        sethideShowLess('block');
+        }
+      const showLessItems =() =>{
+        setVisible(3);
+        sethideShowLess('none');
+        sethideShowMore('block');
+      }
 
     const[showP,setShowPast]=useState(false);
     const[recentA,setrecentA]=useState(false);
@@ -248,8 +254,10 @@ function Events({initiative,setCarousel}) {
                           else if( index===0){
                             return(
                               <div className="showButtons mt2 mb2 flex justify-center">
-                                  <div className="mh2 br2 mt2 mb4 ba btn ph3 pv2 pointer" onClick={() => showMoreItems()}>Show More</div>
-                                  <div className=" mh2 br2 mt2 mb4 ba btn ph3 pv2 pointer" onClick={() => showLessItems()}>Show Less</div>
+                                  <div className="mh2 br2 mt2 mb4 ba btn ph3 pv2 pointer" style={{display:`${hideShowMore}`}}
+  onClick={() => showMoreItems()}>Show More</div>
+<div className=" mh2 br2 mt2 mb4 ba btn ph3 pv2 pointer" style={{display:`${hideShowLess}`}}
+ onClick={() => showLessItems()}>Show Less</div>
                               </div>
                             )
                           }
