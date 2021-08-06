@@ -26,7 +26,7 @@ function App() {
     console.log(loading);
     setTimeout(()=>{
       setLoading(false);
-    },5)
+    },5000)
     console.log(loading);
   }
 
