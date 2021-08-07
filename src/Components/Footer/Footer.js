@@ -2,11 +2,6 @@ import React from 'react';
 import './Footer.css';
 import branches from "./ankita_pic.jpeg";
 import sharvalogo from './sharva.png';
-import {FiInstagram} from "react-icons/fi";
-import {SiGmail} from "react-icons/si";
-import {SiYoutube} from "react-icons/si";
-import {AiOutlineTwitter} from "react-icons/ai";
-import {FaWhatsapp} from "react-icons/fa";
 import {FaLinkedinIn,FaQuoteRight,FaQuoteLeft} from "react-icons/fa";
 
 function Footer({setInitiative}){

@@ -1,11 +1,11 @@
-import React, { useState,useLayoutEffect } from 'react';
+import React, { useState } from 'react';
 import "./Donate.css";
 import {HashLink as Link} from "react-router-hash-link";
 import { MdSecurity } from 'react-icons/md';
-import Footer from "./../Footer/Footer.js";
+
 import DonationDetails from "./DonationDetails"
 
-function Donate({setInitiative}) {
+function Donate() {
   const [formIsOpen, setFormIsOpen] = useState('none');
   const [header, setHeader] = useState("Give Her Wings to Fly");
   const [i, seti] = useState(0);
@@ -16,9 +16,6 @@ function Donate({setInitiative}) {
   }
   const [donationEvent,setDonationEvent]=useState('none');
 
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0)
-});
 
   const [Amount, setAmount] = useState("");
   var list = [
@@ -49,7 +46,7 @@ function Donate({setInitiative}) {
     <div>
 
 
-      <div className="donation-Container" style={{display:`${donationEvent}` ,background:` rgba(0, 0, 0, .6) url(${list[i].img} ) no-repeat center center/cover `,backgroundBlendMode:"darken"}}>
+      <div className="donation-Container" style={{background:` rgba(0, 0, 0, .6) url(${list[i].img} ) no-repeat center center/cover `,backgroundBlendMode:"darken"}}>
         <div>
           <h1 className="mt5 tc white pt2">Make a Contribution!</h1>
         </div>
@@ -61,8 +58,8 @@ function Donate({setInitiative}) {
             <li className={toggleState === 2 ? "mh3 active" : "projectsUnderline"} onClick={() => {toggleTab(2);seti(1); setHeader("Project Ruya")}}>
               <p className="projectsUnderlineColor" href="#" >Project Ruya</p>
             </li>
-            <li className={toggleState === 3 ? "mh3 active" : "projectsUnderline"} onClick={() =>{ toggleTab(3);seti(2); setHeader("Hunger Free India")}}>
-              <p className="projectsUnderlineColor" href="#" >Hunger Free India</p>
+            <li className={toggleState === 3 ? "mh3 active" : "projectsUnderline"} onClick={() =>{ toggleTab(3);seti(2); setHeader("Food for Cause")}}>
+              <p className="projectsUnderlineColor" href="#" >Food for Cause</p>
             </li>
             <li className={toggleState === 4 ? "mh3 active" : "projectsUnderline"} onClick={() => {toggleTab(4);seti(3); setHeader("Strive With Pride")}}>
               <p className="projectsUnderlineColor" href="#" >Strive With Pride</p>
@@ -111,14 +108,8 @@ function Donate({setInitiative}) {
             </div>
         </div>
 
-
-
-
-
-      </div>
-
-      <div id="donateForm " >
-        <div className="flex justify-center pt5 bg-black tc">
+        <div id="donateForm " >
+        <div className="flex justify-center pt5 tc">
           <div className="donationForm " style={{display:`${formIsOpen}`}} >
             <form>
               <div className="modalHeader">
@@ -152,9 +143,13 @@ function Donate({setInitiative}) {
         </div>
       </div>
 
-      <Footer  setInitiative={setInitiative} />
-      <button onClick={()=>setDonationEvent('block')}>Click me</button>
-      <button onClick={()=><DonationDetails />}>Spank Me</button>
+
+
+      </div>
+
+     
+
+  
     </div>
   );
 }

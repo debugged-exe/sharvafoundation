@@ -14,7 +14,7 @@ function Events({initiative,setCarousel}) {
 
 
   useEffect(() => {
-    if(initiative==="hungerfreeindia"){
+    if(initiative==="foodforcause"){
       fetch("https://thawing-shelf-77571.herokuapp.com/events")
       .then(response => response.json())
       .then(res => {
@@ -65,7 +65,7 @@ function Events({initiative,setCarousel}) {
 
 
     }
-    else if (initiative==="giveherwings") {
+    else if (initiative==="giveherwingstofly") {
       fetch("https://thawing-shelf-77571.herokuapp.com/wings")
       .then(response => response.json())
       .then(res => {

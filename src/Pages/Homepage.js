@@ -16,7 +16,6 @@ function Homepage({setInitiative}){
             <Aboutus id="#aboutus"/>
             <OurGoals />
           <RecentEvents />
-          <Footer  setInitiative={setInitiative} />
 
         </div>
 
