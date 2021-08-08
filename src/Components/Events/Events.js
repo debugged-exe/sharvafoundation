@@ -175,8 +175,8 @@ function Events({initiative,setCarousel}) {
                                 if(i.recent==='1'){
                                   abc= item.events.filter((a)=>a.recent==='0');
                                   return(
-                                    <div>
-                                    <div className="pa3 ma3" >
+
+                                    <div className="pa3 ma3 tc" >
                                       <Link to="/eventdisplay/#project" onClick={(e)=>{setCarousel(i.image);}} >
                                          <img alt="" src={i.image[0]} className="gridImage pointer grow shadow-5" />
                                       </Link>
@@ -184,7 +184,7 @@ function Events({initiative,setCarousel}) {
                                           <p className="onrightDate">{i.date}</p>
 
                                     </div>
-                                    </div>
+
                                   )
                                 }
 
@@ -217,7 +217,6 @@ function Events({initiative,setCarousel}) {
                               abc.slice(0,visible).map((i,index)=>{
 
                                 return(
-                                 <div>
                                   <div className="pa3 ma3" >
                                   <Link to="/eventdisplay/#project" onClick={(e)=>{setCarousel(i.image);}} >
                                      <img alt="" src={i.image[0]} className="gridImage pointer grow shadow-5" />
@@ -228,7 +227,7 @@ function Events({initiative,setCarousel}) {
 
                                   </div>
 
-                                  </div>
+
 
                                 )
 
