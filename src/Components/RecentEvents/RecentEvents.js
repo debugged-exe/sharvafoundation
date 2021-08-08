@@ -16,7 +16,7 @@ function RecentEvents(){
       console.log(error);
     })
 
-    fetch("https://thawing-shelf-77571.herokuapp.com/covid19")
+    fetch("https://thawing-shelf-77571.herokuapp.com/strive")
     .then(response => response.json())
     .then(res => {
       if (res[0].tagline) {
@@ -109,7 +109,7 @@ function RecentEvents(){
                               <p className="ma3">{i.date}</p>
                               <p className="ma3">{i.place}</p>
                             </div>
-                            
+
                             )
                           }
                       })
