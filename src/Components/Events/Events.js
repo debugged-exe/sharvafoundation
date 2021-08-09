@@ -180,7 +180,7 @@ function Events({initiative,setCarousel}) {
                                       <Link to="/eventdisplay/#project" onClick={(e)=>{setCarousel(i.image);}} >
                                          <img alt="" src={i.image[0]} className="gridImage pointer grow shadow-5" />
                                       </Link>
-                                          <p className="onrightDate f3 b">{i.place}</p>
+                                          <p className="onrightDate f4 b">{i.place}</p>
                                           <p className="onrightDate">{i.date}</p>
 
                                     </div>
@@ -221,7 +221,7 @@ function Events({initiative,setCarousel}) {
                                   <Link to="/eventdisplay/#project" onClick={(e)=>{setCarousel(i.image);}} >
                                      <img alt="" src={i.image[0]} className="gridImage pointer grow shadow-5" />
                                   </Link>
-                                        <p className="onrightDate f3 b">{i.place}</p>
+                                        <p className="onrightDate f4 b">{i.place}</p>
 
                                       <p className="onrightDate">{i.date}</p>
 

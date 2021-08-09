@@ -14,7 +14,7 @@ import Donatepage from "../Pages/Donatepage";
 import Awarenesspage from "../Pages/Awarenesspage";
 import EventsSummary from '../Components/EventsSummary/EventsSummary';
 function App() {
-  const [initiative, setInitiative] = useState("hungerfreeindia");
+  const [initiative, setInitiative] = useState("foodforcause");
   const [loading,setLoading]=useState(true);
   const [caro,setCaro]=useState([]);
 

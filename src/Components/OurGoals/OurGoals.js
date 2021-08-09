@@ -56,7 +56,7 @@ function OurGoals() {
                     </p>
                 </div>
             </div>
-            <Carousel breakPoints={breakPoints} showArrows={false} >
+            <Carousel breakPoints={breakPoints} showArrows={true} >
               {
               goal.map((item, index) => {
                 return (<div className="newcard mv5" >

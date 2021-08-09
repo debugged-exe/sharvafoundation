@@ -192,32 +192,65 @@ class Join1 extends React.PureComponent {
 									<br/>
 									<input
 									type="radio"
-									id="transgender"
+									id="cis-male"
 									name="gender"
-									value="transgender"
+									value="cis-male"
 									onChange={this.handleChange}
 									required
 									/>
-									<label
-									for="transgender" className="label">
-									Transgender
-									</label>
-									<br/>
+									<label for="cis-male" className="label">Cis-male</label><br/>
 									<input
 									type="radio"
-									id="not_to_say"
+									id="cis-female"
 									name="gender"
-									value="not_to_say"
+									value="cis-female"
+									onChange={this.handleChange}
+									required
+									/>
+									<label for="cis-female" className="label">Cis-female</label><br/>
+									<input
+									type="radio"
+									id="Trans male"
+									name="gender"
+									value="Trans male"
+									onChange={this.handleChange}
+									required
+									/>
+									<label for="Trans female" className="label">Trans male</label><br/>
+									<input
+									type="radio"
+									id="Trans female"
+									name="gender"
+									value="Trans female"
+									onChange={this.handleChange}
+									required
+									/>
+									<label for="Trans male" className="label">Trans female</label><br/>
+									<input
+									type="radio"
+									id="Non binary"
+									name="gender"
+									value="Non binary"
+									onChange={this.handleChange}
+									required
+									/>
+									<label for="Non-binary" className="label">Non-binary</label><br/>
+									<input
+									type="radio"
+									id="prefer not to say"
+									name="gender"
+									value="Prefer not to say"
 									onChange={this.handleChange}
 									required
 									/>
 									<label
 									for="not_to_say" className="label">
 									Prefer Not to Say
-									</label>
+									</label><br />
+									
 						</div>
 						<div className="input-div">
-								<label htmlFor="phone" className="label">PhoneNumber<span className="red f3">*</span></label>
+								<label htmlFor="phone" className="label">Phone Number<span className="red f3">*</span></label>
 								<input
 								className="inputform"
 								placeholder="Phone no."
