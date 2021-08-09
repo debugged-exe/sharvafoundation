@@ -1,18 +1,19 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState,useEffect} from 'react';
 import './OurGoals.css';
 import Carousel from 'react-elastic-carousel';
 import { HashLink as Link } from 'react-router-hash-link';
 
 const breakPoints = [
-    { width: 1, itemsToShow: 1, itemsToScroll: 1 },
-    { width: 550, itemsToShow: 2, itemsToScroll: 1 },
-    { width: 760, itemsToShow: 3, itemsToScroll: 1 },
-    { width: 1200, itemsToShow: 3, itemsToScroll: 1 },
+    { width: 1, itemsToShow: 1, itemsToScroll: 1,showArrows:false },
+    { width: 550, itemsToShow: 2, itemsToScroll: 1 ,showArrows:false},
+    { width: 760, itemsToShow: 3, itemsToScroll: 1,showArrows:true },
+    { width: 1024, itemsToShow: 3, itemsToScroll: 1 },
     {pagination:true},
+
 ]
 
 function OurGoals() {
-
+  
   var percent=5;
   const [goal, setGoal] = useState([]);
   useEffect(() => {
@@ -101,7 +102,7 @@ function OurGoals() {
             <div className="join-box events-click-box mv5">
                 <p className="join-head fw6 " style={{ fontSize: '35px' }}>Ongoing Projects</p>
                 <div className="button-div">
-                    <Link to="events-summary/#eventsummary"><button onClick={() => setShow(true)} className=" fw6 bg-white black pa3 ph4 f4 grow pointer" style={{ borderRadius: '8px', border: 'none' }}>
+                    <Link to="/donatenow"><button onClick={() => setShow(true)} className=" fw6 bg-white black pa3 ph4 f4 grow pointer" style={{ borderRadius: '8px', border: 'none' }}>
                         Click Here
                     </button></Link>
                 </div>

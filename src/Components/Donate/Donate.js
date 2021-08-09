@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState,useLayoutEffect } from 'react';
 import "./Donate.css";
-import {HashLink as Link} from "react-router-hash-link";
-import { MdSecurity } from 'react-icons/md';
 
-import DonationDetails from "./DonationDetails"
+
 
 function Donate() {
+  useLayoutEffect(()=>{
+    window.scrollTo(0,0);
+  })
+
   const [formIsOpen, setFormIsOpen] = useState('none');
   const [header, setHeader] = useState("Give Her Wings to Fly");
   const [i, seti] = useState(0);
@@ -14,10 +16,7 @@ function Donate() {
   const toggleTab = (index) => {
     settoggleState(index);
   }
-  const [donationEvent,setDonationEvent]=useState('none');
 
-
-  const [Amount, setAmount] = useState("");
   var list = [
     {
       img: 'https://i.imgur.com/PB6v6SB.jpg',
@@ -48,7 +47,7 @@ function Donate() {
 
       <div className="donation-Container" style={{background:` rgba(0, 0, 0, .6) url(${list[i].img} ) no-repeat center center/cover `,backgroundBlendMode:"darken"}}>
         <div>
-          <h1 className="mt5 tc white pt2">Make a Contribution!</h1>
+          <h1 className="mt5 tc white pt2">Ongoing Projects</h1>
         </div>
         <div className="titles-bar">
           <ul className="project-titles pt2 pb2 ">
@@ -75,73 +74,13 @@ function Donate() {
           <div className="donation-Images white f4 " style={{maxHeight:"620px"}}>
             <div className="pa3-ns white">
               <h1>{header}</h1>
-              <p style={{textAlign:"justify"}}> {list[i].tagline} </p>
+              <p style={{textAlign:"center"}}> {list[i].tagline} </p>
             </div>
           </div>
 
 
-          <div style={{height:"620px",lineHeight:"1.5",letterSpacing:"1.5px"}} className="donationAmount">
-              <div style={{backgroundColor:"white"}} className="flex flex-column justify-center h-100 ph2-ns br4">
-                <div className="flex justify-center items-center mb4">
-                  <MdSecurity color="green" size="2rem" />
-                  <p>Secure Donation</p>
-                </div>
-                <div className="flex flex-column justify-center items-center mb2">
-                  <div className="flex justify-center items-center mb4">
-                    <p  className={toggleDonate === 1 ? "f4 link pointer br2 hover-btn  dib white pa3 mr2 donateActive" : "f4 link pointer br2 hover-btn  dib black pa3 mr2-ns mr2"} onClick={() => settoggleDonate(1)} >GIVE ONCE</p>
-                    <p  className={toggleDonate === 2 ? "f4 link pointer br2 hover-btn  dib white pa3 mr2 donateActive" : "f4 link pointer br2 hover-btn  dib black pa3 mr2-ns mr2"} onClick={() => settoggleDonate(2)} >MONTHLY</p>
-                  </div>
-                  <div className="flex justify-center items-center mb3 mr2 ml2">
-                    <Link to="/donatenow/#donateForm"><p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3 mr3-ns mr3" onClick={()=>{setAmount(1000);setFormIsOpen('block')}}>₹ 1000</p></Link>
-                    <Link to="/donatenow/#donateForm"><p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3 mr3-ns mr3" onClick={()=>{setAmount(2000);setFormIsOpen('block')}}>₹ 2000</p></Link>
-                    <Link to="/donatenow/#donateForm"><p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3" onClick={()=>{setAmount(3000);setFormIsOpen('block')}}>₹ 3000</p></Link>
-                  </div>
-                  <div className="flex justify-center items-center">
-                    <Link to="/donatenow/#donateForm"><p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3 mr3-ns mr3" onClick={()=>{setAmount(4000);setFormIsOpen('block')}}>₹ 4000</p></Link>
-                    <Link to="/donatenow/#donateForm"><p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3 mr3-ns mr3" onClick={()=>{setAmount(5000);setFormIsOpen('block')}}>₹ 5000</p></Link>
-                    <Link to="/donatenow/#donateForm"><p className="f4 link pointer br2 hover-btn ph3 pv2 mb2 dib black shadow-2 pa3" onClick={()=>{setAmount(6000);setFormIsOpen('block')}}>₹ 6000</p></Link>
-                  </div>
-                  <input type="text" style={{height:"50px", width:"326px"}} className="ph2 f4 mt4 mb4 placeholder" placeholder="Enter your amount INR" onChange={(event)=>setAmount(event.target.value)} />
-                  <Link to="/donatenow/#donateForm"><p style={{ backgroundColor: "#e88f0a" }} className="grow f4 link pointer br2 ph3 pv2 mb2 dib white shadow-2 pa3 b" onClick={()=>setFormIsOpen('block')} >Donate</p></Link>
-                </div>
-              </div>
-            </div>
         </div>
 
-        <div id="donateForm " >
-        <div className="flex justify-center pt5 tc">
-          <div className="donationForm " style={{display:`${formIsOpen}`}} >
-            <form>
-              <div className="modalHeader">
-                <h2 >Donation</h2>
-              </div>
-              <div className="inputBox ">
-                <input type="text" name=""  placeholder="Name" required="required" style={{paddingLeft:"15px",color:"white"}}></input>
-
-              </div>
-              <div className="inputBox ">
-                <input type="text" name="" placeholder="Email-id" required="required" style={{paddingLeft:"15px",color:"white"}}></input>
-
-              </div>
-              <div className="inputBox ">
-                <input type="number" name="" placeholder="Phone Number" required="required" style={{paddingLeft:"15px",color:"white"}}></input>
-
-              </div>
-              <div className="inputBox ">
-                <input type="number" value={Amount} name="" placeholder="Donate Amount" required="required" style={{paddingLeft:"15px",color:"white"}}></input>
-
-              </div>
-              <div className="inputBox ">
-                <input type="text" name="" placeholder="City" required="required" style={{paddingLeft:"15px",color:"white"}}></input>
-
-              </div>
-              <div className="inputBox ">
-                <input type="submit" name="" value="Send"></input>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
 
 
 
