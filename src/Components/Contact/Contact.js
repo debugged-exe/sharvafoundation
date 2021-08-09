@@ -5,7 +5,7 @@ import {FaPhoneAlt} from "react-icons/fa";
 import {RiTeamFill} from "react-icons/ri";
 import {RiUserSearchFill} from "react-icons/ri";
 import {FaHandshake} from "react-icons/fa";
-import Footer from "./../Footer/Footer.js";
+
 
 
 
@@ -117,7 +117,6 @@ render(setInitiative){
         </div>
       </section>
 
-			<Footer  setInitiative={setInitiative} />
 
       </div>
 

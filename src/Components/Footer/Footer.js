@@ -32,11 +32,11 @@ function Footer({setInitiative}){
            </ul>
 
            <ul className="footer-right">
-              <li className="mv4">
+              <li className="mv4 ">
                        <h2 className={'h2'}>Contact Us</h2>
                        <p className="mv3"><ImLocation2 className="mh2" size="1.2em" />Sharva Foundation <br/>
               House no- 163, near PHC Gole Gujral, Ambika Vihar, Talab Tillo, Jammu, Jammu and Kashmir 180002</p>
-            <span className="flex items-center justify-center mv4"><MdEmail className="mh2" size="2em" /> Email: team.sharvafoundation@gmail.com</span>
+            <span className="flex items-center justify-center mv4"><MdEmail className="mh0-s mh0-m mh2 " size="2em" /> Email: team.sharvafoundation@gmail.com</span>
 
 
               </li>

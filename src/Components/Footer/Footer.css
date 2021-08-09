@@ -110,6 +110,7 @@ list-style: none;
         flex: 2 0px;
     }
 
+
 }
 
 
@@ -123,7 +124,9 @@ list-style: none;
   .responsive-heading{
       text-align:left ;
   }
-
+  .footer-right{
+      padding:0px;
+  }
 }
 
 .dimIcon:hover{

@@ -8,7 +8,7 @@ import EventDisplay from "../Components/Events/EventDisplay.js";
 import Contactpage from '../Pages/Contactpage';
 import Navbar from "../Components/Navbar/Navbar";
 import FooterBottom from "../Components/Footer/FooterBottom";
-
+import Footer from "../Components/Footer/Footer.js";
 import Joinus from "../Components/JoinUs/JoinUs";
 import Donatepage from "../Pages/Donatepage";
 import Awarenesspage from "../Pages/Awarenesspage";
@@ -53,13 +53,14 @@ function App() {
             <Route exact path="/contactus" component={Contactpage} />
             <Route exact path="/donatenow" component={Donatepage} />
             <Route exact path="/awareness" component={Awarenesspage} />
-          <Route exact path="/events-summary" component={EventsSummary} setInitiative={setInitiative} />
+          <Route exact path="/events-summary" component={()=> <EventsSummary setInitiative={setInitiative} />} />
             <Route exact path="/eventdisplay" component={()=><EventDisplay proj={caro} initiative={initiative} setInitiative={setInitiative}/>}/>
             <Route  path="/" component={Homepage} />
           </Switch>
 
 
         </div>
+        <Footer setInitiative={setInitiative} />
       <FooterBottom />
 
       </Router>
