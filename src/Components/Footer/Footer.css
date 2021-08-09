@@ -14,8 +14,8 @@ footer{
     flex-flow: row wrap;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     color: #fff;
     background-color:#323232;
 }
@@ -59,10 +59,9 @@ footer{
 }
 .footer-right > *{
     flex:1 50%;
-    margin-right: 1.25em;
 }
 
-.box a{
+.box{
     color:#ffffff;
 }
 
@@ -99,14 +98,7 @@ list-style: none;
   color:#e88f0a;
 }
 
-.ankita-pic{
-    padding: 0px;
-    margin: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+
 @media screen and (min-width:600px){
     .footer-right > *{
         flex: 1;
@@ -120,24 +112,18 @@ list-style: none;
 
 }
 
-@media only screen and (max-width:950px){
-  .flexwrapmedia{
-    justify-content: center;
-    align-items: center;
-  }
-}
+
+
+
 @media only screen and (max-width:640px){
-  .flexwrapmedia{
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
+
   .box a li{
       text-align: left;
   }
   .responsive-heading{
       text-align:left ;
   }
+
 }
 
 .dimIcon:hover{
