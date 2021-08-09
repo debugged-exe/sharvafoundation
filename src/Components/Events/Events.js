@@ -158,7 +158,7 @@ function Events({initiative,setCarousel}) {
                           </p>
                       </div>
                       <div id="event-img  w-50-n" >
-                          <img alt="" src={item.imgright}  className="image" style={{height:"450px",width:"600px",objectFit:"cover"}} />
+                          <img alt="" src={item.imgright}  className="image" style={{height:"400px",width:"600px",objectFit:"contain"}} />
                       </div>
                   </div>
 
