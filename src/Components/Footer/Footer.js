@@ -19,14 +19,14 @@ function Footer({setInitiative}){
                   <FaQuoteRight className="mv1"/>
             </div>
 
-            <ul className="footer-right ">
-              <li className="mv4">
+            <ul className="footer-right  ">
+              <li className="mv4 ">
                    <h2 className={'h2'}>IMPORTANT LINKS</h2>
-                   <ul className=" pointer mt4">
-                       <li className="mv2">Donate</li>
-                       <li className="mv2">Join Us</li>
-                       <li className="mv2">Contact Us</li>
-                       <li className="mv2">Events</li>
+                 <ul className=" pointer mt4">
+                       <li className="mv2 white">Donate</li>
+                    <Link to="/joinus"><li className="mv2 white">Join Us</li></Link>
+                     <Link to="/contactus"><li className="mv2 white">Contact Us</li></Link>
+                   <Link to="/events"><li className="mv2 white">Events</li></Link>
                    </ul>
               </li>
            </ul>
