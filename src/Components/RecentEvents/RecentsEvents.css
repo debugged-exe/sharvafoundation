@@ -10,6 +10,22 @@
   list-style: none;
 }
 
+.middleNameLocation {
+  transition: .5s ease;
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.item:hover .middleNameLocation {
+  opacity: 1;
+}
+
+
 .item{
   height:44vh;
   width:30.5vw;
@@ -20,6 +36,9 @@
   background:white;
   color: white;
   padding: 0;
+  opacity: 1;
+transition: .5s ease;
+backface-visibility: hidden;
 }
 
 
