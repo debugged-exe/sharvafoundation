@@ -33,7 +33,7 @@ const Navbar = ({ setInitiative }) => {
 
     <nav className={`flex justify-between items-center shadow-5 ${navbarContents}`}>
       <div className="mr2">
-        <img src={imgUrl} alt="Logo" style={{ height: "60px", width: "60px" }}></img>
+        <Link to="/"><img src={imgUrl} alt="Logo" style={{ height: "60px", width: "60px" }}></img></Link>
       </div>
 
       <div className={`hamburger ${line} pr2`}

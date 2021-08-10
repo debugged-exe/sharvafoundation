@@ -19,10 +19,25 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  animation: down-bump 0.4s ease;
+
+}
+
+@keyframes up-bump {
+  0% { padding-top: 2em; }
+  50% { padding-top: 1.5em; }
+  100% { padding-top: 2em; }
+}
+@keyframes down-bump {
+  0% { padding-top: 2em; }
+  50% { padding-top: 2.5em; }
+  100% { padding-top: 2em; }
 }
 
 .item:hover .middleNameLocation {
   opacity: 1;
+  animation: up-bump 0.4s ease;
+
 }
 
 

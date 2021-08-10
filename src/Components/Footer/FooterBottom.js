@@ -1,4 +1,5 @@
 import React from 'react';
+import './FooterBottom.css';
 import {FiInstagram} from "react-icons/fi";
 import {SiGmail} from "react-icons/si";
 import {SiYoutube} from "react-icons/si";
@@ -15,14 +16,14 @@ function FooterBottom(){
 
 
 
-    <div className="ma2">
+    <div className="ma2  ">
         <ul className="listStylingNone flex pointer">
-          <li className="mh2"><a style={{outline:'none'}} href='https://wa.me/917517502268' className='  white dimIcon '><FaWhatsapp size="1.3rem" /></a></li>
-          <li className="mh2"><a style={{outline:'none'}} href='https://instagram.com/sharvafoundation?igshid=yubeg3h96wn4' className=' white dimIcon '><FiInstagram size="1.3rem"/></a></li>
-          <li className="mh2">  <a style={{outline:'none'}} href='https://twitter.com/Sharvacharity' className='  white  dimIcon'><AiOutlineTwitter size="1.3rem" /></a></li>
-          <li className="mh2"><a style={{outline:'none'}} href='https://www.linkedin.com/company/sharva-foundation' className='  white dimIcon '><FaLinkedinIn size="1.3rem"/></a></li>
-          <li className="mh2"><a style={{outline:'none'}} href='mailto:foundationsharva@gmail.com?subject=Joining a good cause' className='  white dimIcon'><SiGmail size="1.3rem" /></a></li>
-          <li className="mh2"><a style={{outline:'none'}} href='https://www.youtube.com/channel/UCZT6olVE-2v_LWqXmrbqPug' className='  white dimIcon'><SiYoutube size="1.3rem" /></a></li>
+          <li className="mh2"><a style={{outline:'none'}} href='https://wa.me/917517502268' className='  white dimIcon '><FaWhatsapp className="whatsappHover" size="1.3rem" /></a></li>
+          <li className="mh2"><a style={{outline:'none'}} href='https://instagram.com/sharvafoundation?igshid=yubeg3h96wn4' className=' white dimIcon '><FiInstagram className="instagramHover" size="1.3rem"/></a></li>
+          <li className="mh2">  <a style={{outline:'none'}} href='https://twitter.com/Sharvacharity' className='  white  dimIcon'><AiOutlineTwitter className="twitterHover" size="1.3rem" /></a></li>
+          <li className="mh2"><a style={{outline:'none'}} href='https://www.linkedin.com/company/sharva-foundation' className='  white dimIcon '><FaLinkedinIn className="linkedinHover" size="1.3rem"/></a></li>
+          <li className="mh2"><a style={{outline:'none'}} href='mailto:foundationsharva@gmail.com?subject=Joining a good cause' className=' white dimIcon'><SiGmail className="gmailHover" size="1.3rem" /></a></li>
+          <li className="mh2"><a style={{outline:'none'}} href='https://www.youtube.com/channel/UCZT6olVE-2v_LWqXmrbqPug' className='  white dimIcon'><SiYoutube className="youtubeHover" size="1.3rem" /></a></li>
         </ul>
 
     </div>
