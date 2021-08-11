@@ -23,10 +23,12 @@ function Footer({setInitiative}){
               <li className="mv4 ">
                    <h2 className={'h2'}>IMPORTANT LINKS</h2>
                  <ul className=" pointer mt4">
-                   <Link to="/donatenow"><li className="mv2 white">On Going Projects</li></Link>
-                       <li className="mv2 white">Donate Us</li>
+                   <Link to="/donatenow"><li className="mv2 white">Our Recent Causes to Serve Better</li></Link>
+                       <a href="https://rzp.io/l/02C64fT"><li className="mv2 white">Donate Us</li></a>
                      <Link to="/contactus"><li className="mv2 white">Contact Us</li></Link>
                        <Link to="/joinus"><li className="mv2 white">Join Us</li></Link>
+                       <Link to="/termsandcondition"><li className="mv2 white">Terms And Condition</li></Link>
+                    <Link to="privacy"><li className="mv2 white">Privacy</li></Link>
 
                    </ul>
               </li>

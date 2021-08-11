@@ -32,7 +32,7 @@ const BackgroundCarousel = () => {
                         <h3 className="tagline">लोका: समस्ता: सुखिनो भवन्तु ।</h3>
                         </div>
                         <div data-aos="fade-up" data-aos-duration={"1000"} >
-                        <Link to="/donatenow" className="f4  link  br2 ba ph3 pv2 mb2 dib near-white caroButton">Donate Now</Link>
+                        <a href="https://rzp.io/l/02C64fT" className="f4  link  br2 ba ph3 pv2 mb2 dib near-white caroButton">Donate Now</a>
                         </div>
                     </div>
                   )

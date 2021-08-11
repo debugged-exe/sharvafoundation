@@ -80,7 +80,7 @@ function OurGoals() {
                       </div>
                     </div>
                     <div className="flex justify-center items-center">
-                      <Link to="/donatenow/#donateImage" className="link br2 ph3 pv2 mb2 tc dib cardButton">Donate Now</Link>
+                      <a href="https://rzp.io/l/02C64fT" className="link br2 ph3 pv2 mb2 tc dib cardButton">Donate Now</a>
                     </div>
                     <div className="lastLine">
                       <div className="supporters">

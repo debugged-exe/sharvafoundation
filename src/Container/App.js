@@ -13,6 +13,9 @@ import Joinus from "../Components/JoinUs/JoinUs";
 import Donatepage from "../Pages/Donatepage";
 import Awarenesspage from "../Pages/Awarenesspage";
 import EventsSummary from '../Components/EventsSummary/EventsSummary';
+import TermsAndConditionPage from './../Pages/TermsAndConditionPage.js';
+import PrivacyPage from './../Pages/PrivacyPage.js';
+
 function App() {
   const [initiative, setInitiative] = useState("foodforcause");
   const [loading,setLoading]=useState(true);
@@ -55,11 +58,15 @@ function App() {
             <Route exact path="/awareness" component={Awarenesspage} />
           <Route exact path="/events-summary" component={()=> <EventsSummary setInitiative={setInitiative} />} />
             <Route exact path="/eventdisplay" component={()=><EventDisplay proj={caro} initiative={initiative} setInitiative={setInitiative}/>}/>
-            <Route  path="/" component={Homepage} />
+          <Route  path="/"  component={()=> <Homepage setInitiative={setInitiative} />} />
           </Switch>
 
 
         </div>
+        <Route path="/termsandcondition" component={TermsAndConditionPage} />
+        <Route path="/privacy" component={PrivacyPage} />
+
+
         <Footer setInitiative={setInitiative} />
       <FooterBottom />
 

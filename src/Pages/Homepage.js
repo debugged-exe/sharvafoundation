@@ -15,9 +15,9 @@ function Homepage({setInitiative}){
             <BackgroundCarousel />
             <Counter />
             <Aboutus id="#aboutus"/>
-          
+
             <OurGoals />
-          <RecentEvents />
+        <RecentEvents setInitiative={setInitiative} />
 
         </div>
 
