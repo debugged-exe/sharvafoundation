@@ -4,7 +4,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 const Privacy = () => {
     return (
-        <section className={'bg-white pt6 pb4'}>
+        <section className={'bg-white pt6 pb4'} id="privacy">
             <div>
                 <h1 className="tc">
                     Privacy Policy

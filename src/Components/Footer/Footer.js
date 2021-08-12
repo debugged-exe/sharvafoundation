@@ -27,8 +27,8 @@ function Footer({setInitiative}){
                        <a href="https://rzp.io/l/02C64fT"><li className="mv2 white">Donate Us</li></a>
                      <Link to="/contactus"><li className="mv2 white">Contact Us</li></Link>
                        <Link to="/joinus"><li className="mv2 white">Join Us</li></Link>
-                       <Link to="/termsandcondition"><li className="mv2 white">Terms And Condition</li></Link>
-                    <Link to="privacy"><li className="mv2 white">Privacy</li></Link>
+                       <Link to="/termsandcondition/#terms"><li className="mv2 white">Terms And Condition</li></Link>
+                     <Link to="/privacy/#privacy"><li className="mv2 white">Privacy</li></Link>
 
                    </ul>
               </li>

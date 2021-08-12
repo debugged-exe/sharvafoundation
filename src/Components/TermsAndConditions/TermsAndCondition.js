@@ -5,9 +5,9 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 const TermsAndCondition = () => {
     return (
-        <section className={'bg-white pt6 pb4'}>
-            <div>
-                <h1 className="tc">
+        <section className={'bg-white pt6 pb4'} id="terms">
+            <div >
+                <h1 className="tc" >
                     TERMS OF SERVICES
                 </h1>
                 <h4 className="gray tc">PLEASE READ THIS TERMS OF SERVICE AGREEMENT CAREFULLY, AS IT CONTAINS
