@@ -53,9 +53,9 @@ function App() {
           <Switch>
             <Route exact path="/events" component={() => <Eventspage setCarousel={setCarousel} initiative={initiative} setInitiative={setInitiative}/>} />
             <Route exact path="/joinus" component={Joinus} />
-            <Route exact path="/contactus" component={Contactpage} />
+            <Route exact path="/contactus" component={()=><Contactpage setInitiative={setInitiative}/>} />
             <Route exact path="/donatenow" component={Donatepage} />
-            <Route exact path="/awareness" component={Awarenesspage} />
+            <Route exact path="/awareness" component={<Awarenesspage setInitiative={setInitiative}/>} />
           <Route exact path="/events-summary" component={()=> <EventsSummary setInitiative={setInitiative} />} />
             <Route exact path="/eventdisplay" component={()=><EventDisplay proj={caro} initiative={initiative} setInitiative={setInitiative}/>}/>
           <Route  path="/"  component={()=> <Homepage setInitiative={setInitiative} />} />
@@ -67,7 +67,6 @@ function App() {
         <Route path="/privacy" component={PrivacyPage} />
 
 
-        <Footer setInitiative={setInitiative} />
       <FooterBottom />
 
       </Router>

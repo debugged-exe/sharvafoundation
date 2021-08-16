@@ -1,5 +1,6 @@
 import React, { useState,useEffect} from 'react';
 import './OurGoals.css';
+import ScriptTag from 'react-script-tag';
 import Carousel from 'react-elastic-carousel';
 import { HashLink as Link } from 'react-router-hash-link';
 
@@ -12,11 +13,26 @@ const breakPoints = [
 
 ]
 
+// function razor(){
+//   const script = document.createElement('script');
+//   script.src = "https://checkout.razorpay.com/v1/payment-button.js";
+//   script.async = true;
+//   script.data-payment_button_id = "pl_HkzlefxtPshjBG";
+//   document.body.appendChild(script);
+// }
+
 function OurGoals() {
+
+  
 
   var percent=5;
   const [goal, setGoal] = useState([]);
   useEffect(() => {
+
+    
+    
+  
+
     fetch("https://thawing-shelf-77571.herokuapp.com/goals").then(response => response.json()).then(res => {
       if (res[0].head) {
         setGoal(res);
@@ -26,7 +42,10 @@ function OurGoals() {
       console.log(error);
     })
 
-  }, [])
+  },
+  
+  
+  [])
 
     const [hover1, toggleHover1] = useState(false);
     const [hover2, toggleHover2] = useState(false);
@@ -51,7 +70,7 @@ function OurGoals() {
             </div>
             <div className="ourGoals mt4 pa3">
                 <div className="mw7 mw7-m mw7-ns center topText  ">
-                    <h2 className="center" style={{ paddingBottom: '10px', textDecoration: 'underline', textDecorationColor: '#e88f0a', textAlign: 'center' }}>On Going Projects</h2>
+                    <h2 className="center" style={{ paddingBottom: '10px', textDecoration: 'underline', textDecorationColor: '#e88f0a', textAlign: 'center' }}>Our Recent Causes to Serve Better</h2>
                     <p className="lh-copy " style={{ textAlign: "center" }}>
                         The optimus goal of Sharva Foundation is to be completely equipped and primed with relief funds so as to be ready with an optimum amount for any event or uncalled situation.
                     </p>
@@ -79,9 +98,12 @@ function OurGoals() {
                         <div className="skill-per" per="90" style={{width:`${(item.initialAmount/item.totalCost)*100}%`}}></div>
                       </div>
                     </div>
-                    <div className="flex justify-center items-center">
-                      <a href="https://rzp.io/l/02C64fT" className="link br2 ph3 pv2 mb2 tc dib cardButton">Donate Now</a>
+                    <div className="flex justify-center items-center pt3">
+                   <form>
+                       <ScriptTag src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HkzlefxtPshjBG" async></ScriptTag>
+                    </form>
                     </div>
+                    
                     <div className="lastLine">
                       <div className="supporters">
                         <p>
@@ -113,3 +135,8 @@ function OurGoals() {
 }
 
 export default OurGoals;
+
+
+// <form>
+//   <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HkzlefxtPshjBG" async> 
+// </script> </form>
