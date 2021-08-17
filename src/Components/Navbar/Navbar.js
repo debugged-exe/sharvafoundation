@@ -76,7 +76,7 @@ const Navbar = ({ setInitiative }) => {
           <div className="pv2  nav-donate">
             <a class="f5 link dim br2 ph3 pv2 white " href="https://rzp.io/l/02C64fT" style={{ backgroundColor: "#e88f0a" }}  onClick={() => hamburger()}>Donate</a>
           </div>
-          <p className='tc crossNavbar'><a className={`f6 link dim ph3 pv1 mb2 mt2 dib white  flex justify-center items-center`} href='#0'
+          <p className='tc crossNavbar'><a className={`f6 link dim ph3 pv1 mb2 mt2 dib black  flex justify-center items-center`} href='#0'
             onClick={() => hamburger()}
           >
             X
