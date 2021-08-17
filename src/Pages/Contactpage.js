@@ -5,12 +5,12 @@ import Footer from "../Components/Footer/Footer.js";
 function Contactpage({setInitiative}){
     return(
         <div>
-            
+
             <Contact />
-            
+            <Footer />
         </div>
 
     )
 }
-        
+
 export default Contactpage;
