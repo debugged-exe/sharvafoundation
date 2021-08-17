@@ -12,7 +12,7 @@ function Footer({setInitiative}){
     <div className="body" style={{display: 'inline-block', width: "100%"}}>
         <footer className="footer ">
 
-            <div className="footer-left mh4 ">
+            <div className="footer-left mh2 ">
 
                   {/* <br/><FaQuoteLeft className="mv0"/> */}
                   <h2 style={{}}>Our Vision</h2><br/>
@@ -23,12 +23,12 @@ function Footer({setInitiative}){
             <ul className="footer-right  ">
               <li className="mv3">
                    <h2 className={'h2'}>Quick Links</h2>
-                 <ul className=" pointer mt4">
-                   <Link to="/donatenow"><li className="mv2 white">Ongoing Projects</li></Link>
-                       <a href="https://rzp.io/l/02C64fT"><li className="mv2 white">Donate Now</li></a>
-                       <Link to="/joinus"><li className="mv2 white">Become a Volunteer</li></Link>
-                       <Link to="/termsandcondition/#terms"><li className="mv2 white">Terms And Condition</li></Link>
-                     <Link to="/privacy/#privacy"><li className="mv2 white">Privacy</li></Link>
+                 <ul className=" pointer mt4 ">
+                   <Link to="/ongoingprojects"><li className="mv2 white quickLinks">Ongoing Projects</li></Link>
+                       <a href="https://rzp.io/l/02C64fT"><li className="mv2 white quickLinks">Donate</li></a>
+                       <Link to="/joinus"><li className="mv2 white quickLinks">Become a Volunteer</li></Link>
+                       <Link to="/termsandcondition/#terms"><li className="mv2 white quickLinks">Terms And Condition</li></Link>
+                     <Link to="/privacy/#privacy"><li className="mv2 white quickLinks">Privacy</li></Link>
 
                    </ul>
               </li>

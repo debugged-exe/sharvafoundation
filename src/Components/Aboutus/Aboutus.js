@@ -10,8 +10,8 @@ function Aboutus(){
 
             </div>
             <div className="cf abouttext  ">
-                <div className="fl imgText imgCenter pl3">
-                   <img alt=""style={{height:"375px",width:"650px"}} src={aboutimage} className= "mv4"></img>
+                <div className="fl imgText imgCenter pl4">
+                   <img alt=""style={{height:"375px",width:"650px"}} src={aboutimage} className= "mv4 "></img>
                 </div>
                 <div className="fl imgText text">
                     <h2 className="center" style={{paddingBottom:'1em',textDecoration:'underline',textAlign:"center",textDecorationColor:'#e88f0a'}}>ABOUT SHARVA</h2>

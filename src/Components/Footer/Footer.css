@@ -98,6 +98,9 @@ list-style: none;
   color:#e88f0a;
 }
 
+.quickLinks:hover{
+  color:#e88f0a;
+}
 
 @media screen and (min-width:600px){
     .footer-right > *{

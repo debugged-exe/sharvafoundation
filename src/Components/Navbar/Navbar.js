@@ -67,8 +67,8 @@ const Navbar = ({ setInitiative }) => {
             <li className="list-style-none mh2 black menu" onClick={() => {setInitiative("covid19");setCovid(true)}}><span className={` ${location.pathname==="/events" && (covid===true)?'acName':''}`}  onClick={() => hamburger()}>Covid 19</span></li></Link>
         {/*  <Link to="/awareness">
           <li className="list-style-none mh2 black menu"><span className={` ${location.pathname==='/awareness'?'acName':''}`}  onClick={() => hamburger()}>Awareness</span></li></Link>*/}
-        <Link to="/#aboutus" >
-            <li className="list-style-none mh2 black menu"><span className={` ${location.pathname==='/#aboutus'?'acName':''}`}  onClick={() => hamburger()}>About Us</span></li></Link>
+        {/*<Link to="/#aboutus" >
+            <li className="list-style-none mh2 black menu"><span className={` ${location.pathname==='/#aboutus'?'acName':''}`}  onClick={() => hamburger()}>About Us</span></li></Link>*/}
           <Link to="/joinus">
             <li className="list-style-none mh2 black menu"><span className={` ${location.pathname==='/joinus'?'acName':''}`}  onClick={() => hamburger()}>Join Us</span></li></Link>
           <Link to="/contactus">
