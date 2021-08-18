@@ -1,7 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import Carousel from 'react-elastic-carousel';
 import './BackgroundCarousel.css';
-import {Link} from 'react-router-dom';
 
 
 
@@ -32,7 +31,7 @@ const BackgroundCarousel = () => {
                         <h3 className="tagline">लोका: समस्ता: सुखिनो भवन्तु ।</h3>
                         </div>
                         <div data-aos="fade-up" data-aos-duration={"1000"} >
-                        <a href="https://rzp.io/l/02C64fT" className="f4  link  br2 ba ph3 pv2 mb2 dib near-white caroButton">Donate</a>
+                        <a href="https://rzp.io/l/QEare0TAIU" className="f4  link  br2 ba ph3 pv2 mb2 dib near-white caroButton">Donate</a>
                         </div>
                     </div>
                   )

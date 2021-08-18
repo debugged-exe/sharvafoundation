@@ -5,7 +5,7 @@ import {SiGmail} from "react-icons/si";
 import {SiYoutube} from "react-icons/si";
 import {AiOutlineTwitter} from "react-icons/ai";
 import {FaWhatsapp} from "react-icons/fa";
-import {FaLinkedinIn,FaQuoteRight,FaQuoteLeft} from "react-icons/fa";
+import {FaLinkedinIn} from "react-icons/fa";
 function FooterBottom(){
   return(
 

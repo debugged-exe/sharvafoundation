@@ -1,9 +1,6 @@
 import React from 'react';
 import './Footer.css';
 import {HashLink as Link} from 'react-router-hash-link';
-import branches from "./ankita_pic.jpeg";
-import sharvalogo from './sharva.png';
-import {FaLinkedinIn,FaQuoteRight,FaQuoteLeft} from "react-icons/fa";
 import {MdEmail} from "react-icons/md";
 import {ImLocation2} from "react-icons/im";
 

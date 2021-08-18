@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
 import './Contact.css';
-import {FaUserAlt} from "react-icons/fa";
 import {FaPhoneAlt} from "react-icons/fa";
 import {RiTeamFill} from "react-icons/ri";
 import {RiUserSearchFill} from "react-icons/ri";

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './Awareness.css';
-import AwarenessCarousel from "./AwarenessCarousel.js"
+// import AwarenessCarousel from "./AwarenessCarousel.js"
 
 function Awareness() {
 

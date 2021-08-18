@@ -13,14 +13,6 @@ const breakPoints = [
 
 ]
 
-// function razor(){
-//   const script = document.createElement('script');
-//   script.src = "https://checkout.razorpay.com/v1/payment-button.js";
-//   script.async = true;
-//   script.data-payment_button_id = "pl_HkzlefxtPshjBG";
-//   document.body.appendChild(script);
-// }
-
 function OurGoals() {
 
   
@@ -100,7 +92,7 @@ function OurGoals() {
                     </div>
                     <div className="flex justify-center items-center pt3">
                    <form>
-                       <ScriptTag src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HkzlefxtPshjBG" async></ScriptTag>
+                       <ScriptTag src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HmatBPsKhfdW45" async></ScriptTag>
                     </form>
                     </div>
                     
@@ -121,14 +113,7 @@ function OurGoals() {
               })
             }
             </Carousel>
-              {/*<div className="join-box events-click-box mv5">
-              <p className="join-head fw6  " style={{ fontSize: '35px' }}>Ongoing Projects</p>
-                <div className="button-div">
-                    <Link to="/donatenow"><button onClick={() => setShow(true)} className=" fw6 bg-white black pa3 ph4 f4 grow pointer" style={{ borderRadius: '8px', border: 'none' }}>
-                        Click Here
-                    </button></Link>
-                </div>
-            </div>*/}
+             
 
         </div>
     )
@@ -136,7 +121,3 @@ function OurGoals() {
 
 export default OurGoals;
 
-
-// <form>
-//   <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HkzlefxtPshjBG" async> 
-// </script> </form>

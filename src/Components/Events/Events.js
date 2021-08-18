@@ -1,4 +1,4 @@
-import React, { useState,useEffect,useLayoutEffect } from 'react';
+import React, { useState,useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import './Events.css';
 import 'react-alice-carousel/lib/alice-carousel.css';
@@ -135,11 +135,11 @@ function Events({initiative,setCarousel}) {
       }
 
     const[showP,setShowPast]=useState(false);
-    const[recentA,setrecentA]=useState(false);
-    const[pastA,setpastA]=useState(false);
+    // const[recentA,setrecentA]=useState(false);
+    // const[pastA,setpastA]=useState(false);
 
 
-    console.log(visible);
+    // console.log(visible);
 
 
     return (

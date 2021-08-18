@@ -57,7 +57,7 @@ function RecentEvents({setInitiative}){
 
     {
           recentA.map((item,index) =>{
-            console.log("item",item.events);
+            // console.log("item",item.events);
             return(
               item.events.map((i,index)=>{
                 if(index===(item.events.length-1))
@@ -83,7 +83,7 @@ function RecentEvents({setInitiative}){
     <div>
       {
         recentB.map((item,index) =>{
-          console.log("item",item.events);
+          // console.log("item",item.events);
           return(
             item.events.map((i,index)=>{
               if(index===(item.events.length-1))
@@ -111,8 +111,8 @@ function RecentEvents({setInitiative}){
     <div>
         {
                   recentC.map((item,index) =>{
-                    console.log("item",item.events);
-                    console.log(item.initiative);
+                    // console.log("item",item.events);
+                    // console.log(item.initiative);
                     return(
                       item.events.map((i,index)=>{
                         if(index===(item.events.length-1))

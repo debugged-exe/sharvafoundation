@@ -26,11 +26,11 @@ function App() {
    }
 
   useEffect(()=>{
-    console.log(loading);
+  
     setTimeout(()=>{
       setLoading(false);
     },5000)
-    console.log(loading);
+  
   }
 
 
