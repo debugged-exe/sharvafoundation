@@ -26,11 +26,11 @@ function App() {
    }
 
   useEffect(()=>{
-  
+
     setTimeout(()=>{
       setLoading(false);
     },5000)
-  
+
   }
 
 
@@ -41,7 +41,7 @@ function App() {
 
       loading ?
       <div style={{width:"100vw",height:"100vh",background:"#a0a1a2"  }}>
-        <video width="100%" height="100%" autoplay="true" muted>
+        <video width="100%" height="100%" autoPlay={true} muted>
           <source src={vid1} type="video/mp4"/>
         </video>
       </div>

@@ -1,7 +1,12 @@
 import React from 'react';
 import './JoinUs.css';
 import 'tachyons';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import sharvalogo from './sharva.png';
+
+toast.configure();
 
 const initialState = {
 	name: '',
@@ -21,7 +26,9 @@ const initialState = {
 
 
 
+
 class Join1 extends React.PureComponent {
+
 
 	constructor(){
 		super();
@@ -74,14 +81,22 @@ class Join1 extends React.PureComponent {
 		.then(resp => {
 			if(resp==='Success')
 			{
-				alert('Your message was recieved successfully.Thank you for your feedback.');
+				toast.success('Your message was recieved successfully.Thank you for your feedback.',{
+					position:toast.POSITION.TOP_CENTER,
+					autoClose:2500
+				});
 			}
 		})
 		.catch(err => {
 			console.log(err);
-			alert('OOPS....something went wrong.Please try again.');
+			toast.error('OOPS....something went wrong.Please try again.',{
+				position:toast.POSITION.TOP_CENTER,
+				autoClose:2500
+			});
 		})
+		document.getElementById('registerForm').reset();
 	}
+
 
   enable = (e) =>{
     if(e.target.value==="3"){
@@ -119,7 +134,6 @@ class Join1 extends React.PureComponent {
 
   }
 
-
 	render() {
 		return (
 			<div className="JoinUs-div pt0 pt5" id="survey">
@@ -131,7 +145,7 @@ class Join1 extends React.PureComponent {
 
 					<h1 className="JoinUs-header"> Join Us	</h1>
 
-					<form className="JoinUs-form-container" onSubmit={this.handleSubmit}>
+				<form className="JoinUs-form-container" id="registerForm" onSubmit={this.handleSubmit}>
 						<div className="input-div">
 								<label htmlFor="name" className="label">Full Name<span className="red f3">*</span></label>
 								<input
@@ -247,7 +261,7 @@ class Join1 extends React.PureComponent {
 									for="not_to_say" className="label">
 									Prefer Not to Say
 									</label><br />
-									
+
 						</div>
 						<div className="input-div">
 								<label htmlFor="phone" className="label">Phone Number<span className="red f3">*</span></label>
@@ -351,7 +365,7 @@ class Join1 extends React.PureComponent {
                 <input type="checkbox" id="none" name="category" value="marketing"
 								onClick={this.handleCheck}/>
 								<label for="none">Marketing</label><br/>
-								
+
 								<input type="checkbox" id="none" name="category" value="marketing"
 								onClick={this.handleCheck}/>
 								<label for="none">Graphic Designing</label><br/>
@@ -369,9 +383,11 @@ class Join1 extends React.PureComponent {
 							placeholder=""  onChange={this.handleChange}/>
 						</div>
 						<div className="inputBoxJoinUs">
-							<input type="submit" name="" value="Submit"></input>
+							<input  type="Submit" name="" value="Submit"></input>
 						</div>
+
 					</form>
+					<ToastContainer />
 			</div>
 		)
 	}

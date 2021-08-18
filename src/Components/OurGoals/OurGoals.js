@@ -8,22 +8,22 @@ const breakPoints = [
     { width: 1, itemsToShow: 1, itemsToScroll: 1,showArrows:false },
     { width: 550, itemsToShow: 2, itemsToScroll: 1 ,showArrows:false},
     { width: 760, itemsToShow: 3, itemsToScroll: 1,showArrows:true },
-    { width: 1024, itemsToShow: 3, itemsToScroll: 1 },
+    { width: 1024, itemsToShow: 3, itemsToScroll: 1, },
     {pagination:true},
 
 ]
 
 function OurGoals() {
 
-  
+
 
   var percent=5;
   const [goal, setGoal] = useState([]);
   useEffect(() => {
 
-    
-    
-  
+
+
+
 
     fetch("https://thawing-shelf-77571.herokuapp.com/goals").then(response => response.json()).then(res => {
       if (res[0].head) {
@@ -35,8 +35,8 @@ function OurGoals() {
     })
 
   },
-  
-  
+
+
   [])
 
     const [hover1, toggleHover1] = useState(false);
@@ -71,7 +71,8 @@ function OurGoals() {
             <Carousel breakPoints={breakPoints} showArrows={true} >
               {
               goal.map((item, index) => {
-                return (<div className="newcard mv5" >
+                return (
+                  <div key={index} className="newcard mv5" >
                   <div className="cardTop">
                     <img src={item.image} className="cardImg" alt="something"/>
                   </div>
@@ -95,7 +96,7 @@ function OurGoals() {
                        <ScriptTag src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HmatBPsKhfdW45" async></ScriptTag>
                     </form>
                     </div>
-                    
+
                     <div className="lastLine">
                       <div className="supporters">
                         <p>
@@ -113,11 +114,10 @@ function OurGoals() {
               })
             }
             </Carousel>
-             
+
 
         </div>
     )
 }
 
 export default OurGoals;
-
