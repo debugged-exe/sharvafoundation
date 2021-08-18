@@ -40,7 +40,6 @@ class Join1 extends React.PureComponent {
 
 	handleSubmit = (event) =>
 	{
-		console.log(this.state);
 		const {
 			name,
 			email,
@@ -81,7 +80,7 @@ class Join1 extends React.PureComponent {
 		.then(resp => {
 			if(resp==='Success')
 			{
-				toast.success('Your message was recieved successfully.Thank you for your feedback.',{
+				toast.success('Your details have been recieved successfully.Thank you for registering.',{
 					position:toast.POSITION.TOP_CENTER,
 					autoClose:2500
 				});
