@@ -60,7 +60,7 @@ function OurGoals() {
                     </button></Link>
                 </div>
             </div>
-            <div className="ourGoals mt4 pa3">
+            <div className="ourGoals mt4 pa1">
                 <div className="mw7 mw7-m mw7-ns center topText  ">
                     <h2 className="center" style={{ paddingBottom: '10px', textDecoration: 'underline', textDecorationColor: '#e88f0a', textAlign: 'center' }}>Our Recent Causes to Serve Better</h2>
                     <p className="lh-copy " style={{ textAlign: "center" }}>

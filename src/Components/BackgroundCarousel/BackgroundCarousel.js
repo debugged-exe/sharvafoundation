@@ -26,7 +26,7 @@ const BackgroundCarousel = () => {
             {
               bgcarousel.map((item,index)=>{
                   return(
-                    <div key={index} className='slide1 flex justify-center items-center font-size flex-column' style={{background: `rgba(0,0,0,0.5) url(${item.bgimg}) no-repeat center center`,backgroundSize:'cover'}}>
+                    <div key={index} className='slide1 flex justify-center items-center font-size flex-column mt5' style={{background: `rgba(0,0,0,0.5) url(${item.bgimg}) no-repeat center center`,backgroundSize:'cover'}}>
                         <div data-aos="fade-up" data-aos-duration={"1000"} >
                         <h3 className="tagline">लोका: समस्ता: सुखिनो भवन्तु ।</h3>
                         </div>

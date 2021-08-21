@@ -22,9 +22,9 @@ function Aboutus(){
                   We have witnessed growth exponentially and that made it clear that there are people out there who want to provide their aid and we act like a platform. We hope to see tomorrow build out on a foundation laid by love, trust and care. That is what drives our purpose. In times such as these, it is of upmost importance that we need to work together. Any undocumented call of aid can turn out to be the decision that governs someone’s survival. By reaching us is how you prevent this.
                     </p>
 
-                    <a href="https://rzp.io/l/QEare0TAIU" className="inputBox aboutButton">
+                    {/* <a href="https://rzp.io/l/QEare0TAIU" className="inputBox aboutButton">
                       <input type="submit" name="" value="Donate " style={{marginTop:"30px"}}></input>
-                    </a>
+                    </a> */}
                   </div>
             </div>
         </div>
