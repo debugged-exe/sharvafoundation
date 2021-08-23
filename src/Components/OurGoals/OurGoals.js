@@ -1,4 +1,4 @@
-import React, { useState,useEffect} from 'react';
+import React, { useState,useEffect,useLayoutEffect} from 'react';
 import './OurGoals.css';
 import ScriptTag from 'react-script-tag';
 import Carousel from 'react-elastic-carousel';
@@ -15,8 +15,7 @@ const breakPoints = [
 
 function OurGoals() {
 
-
-
+  
   var percent=5;
   const [goal, setGoal] = useState([]);
   useEffect(() => {
@@ -64,7 +63,7 @@ function OurGoals() {
                 <div className="mw7 mw7-m mw7-ns center topText  ">
                     <h2 className="center" style={{ paddingBottom: '10px', textDecoration: 'underline', textDecorationColor: '#e88f0a', textAlign: 'center' }}>Our Recent Causes to Serve Better</h2>
                     <p className="lh-copy " style={{ textAlign: "center" }}>
-                        The optimus goal of Sharva Foundation is to be completely equipped and primed with relief funds so as to be ready with an optimum amount for any event or uncalled situation.
+                    Making society a better place to live in is neither a one-day task nor an individual’s job. Well, it is not impossible too but we, Sharva Foundation, need all the resources that we can garner to continue our constant efforts.<br /> The ongoing projects reflect our commitment towards the causes that need urgent or intense efforts. Give us a helping hand to make a real impact in the real world!
                     </p>
                 </div>
             </div>

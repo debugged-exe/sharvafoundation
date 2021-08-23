@@ -21,7 +21,7 @@ function Footer({setInitiative}){
               <li className="mv3">
                    <h2 className={'h2'}>Quick Links</h2>
                  <ul className=" pointer mt4 ">
-                   <Link to="/ongoingprojects"><li className="mv2 white quickLinks">Ongoing Projects</li></Link>
+                   <Link to="/#ourgoals"><li className="mv2 white quickLinks">Ongoing Projects</li></Link>
                        <a href="https://rzp.io/l/02C64fT"><li className="mv2 white quickLinks">Donate</li></a>
                        <Link to="/joinus"><li className="mv2 white quickLinks">Become a Volunteer</li></Link>
                        <Link to="/termsandcondition/#terms"><li className="mv2 white quickLinks">Terms And Condition</li></Link>

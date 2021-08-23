@@ -16,7 +16,7 @@ function Homepage({setInitiative}){
             <Counter />
             <Aboutus id="#aboutus"/>
 
-            <OurGoals />
+            <OurGoals id="#ourgoals"/>
         <RecentEvents setInitiative={setInitiative} />
             <Footer setInitiative={setInitiative} />
         </div>
