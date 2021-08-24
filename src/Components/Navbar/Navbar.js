@@ -74,7 +74,7 @@ const Navbar = ({ setInitiative }) => {
           <Link to="/contactus">
             <li className="list-style-none mh2 black menu"><span className={` ${location.pathname==='/contactus'?'acName':''}`}  onClick={() => hamburger()}>Contact Us</span></li></Link>
           <div className="pv2  nav-donate">
-            <a className="f5 link dim br2 ph3 pv2 white " href="https://rzp.io/l/QEare0TAIU" style={{ backgroundColor: "#e88f0a" }}  onClick={() => hamburger()}>Donate</a>
+            <Link to="/scanner" className="f5 link dim br2 ph3 pv2 white " href="https://rzp.io/l/QEare0TAIU" style={{ backgroundColor: "#e88f0a" }}  onClick={() => hamburger()}>Donate</Link>
           </div>
           <p className='tc crossNavbar'><a className={`f6 link dim ph3 pv1 mb2 mt2 dib black  flex justify-center items-center`} href='#0'
             onClick={() => hamburger()}

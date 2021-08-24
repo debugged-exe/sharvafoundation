@@ -8,13 +8,13 @@ import EventDisplay from "../Components/Events/EventDisplay.js";
 import Contactpage from '../Pages/Contactpage';
 import Navbar from "../Components/Navbar/Navbar";
 import FooterBottom from "../Components/Footer/FooterBottom";
-import Footer from "../Components/Footer/Footer.js";
 import Joinus from "../Components/JoinUs/JoinUs";
 import Donatepage from "../Pages/Donatepage";
 import Awarenesspage from "../Pages/Awarenesspage";
 import EventsSummary from '../Components/EventsSummary/EventsSummary';
 import TermsAndConditionPage from './../Pages/TermsAndConditionPage.js';
 import PrivacyPage from './../Pages/PrivacyPage.js';
+import PaymentsScanner from '../Components/PaymentsScanner/PaymentsScanner';
 
 function App() {
   const [initiative, setInitiative] = useState("foodforcause");
@@ -53,6 +53,7 @@ function App() {
           <Switch>
             <Route exact path="/events" component={() => <Eventspage setCarousel={setCarousel} initiative={initiative} setInitiative={setInitiative}/>} />
             <Route exact path="/joinus" component={Joinus} />
+            <Route exact path="/scanner" component={PaymentsScanner} />
             <Route path="/termsandcondition" component={TermsAndConditionPage} />
             <Route path="/privacy" component={PrivacyPage} />
             <Route exact path="/contactus" component={()=><Contactpage setInitiative={setInitiative}/>} />
