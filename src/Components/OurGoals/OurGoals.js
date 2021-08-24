@@ -15,7 +15,7 @@ const breakPoints = [
 
 function OurGoals() {
 
-  
+
   var percent=5;
   const [goal, setGoal] = useState([]);
   useEffect(() => {
@@ -50,7 +50,7 @@ function OurGoals() {
         toggleHover2(!hover2)
     }
     return (
-        <div>
+        <div id="ourgoals">
           <div className="join-box mv4 ">
                 <p className="join-head fw6 " style={{ fontSize: '35px' }}>Join Us Now!!</p>
                 <div className="button-div">

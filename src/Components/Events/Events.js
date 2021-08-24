@@ -155,7 +155,37 @@ function Events({initiative,setCarousel}) {
                           <h1>{item.tagline}</h1>
                           <p style={{ textAlign: "left" }}>
                             {item.description}
-                          </p>
+                          </p><br />
+                        <h4 style={{ textAlign: "left" }}>
+                            {item.question}
+                          </h4>
+                          <p style={{ textAlign: "left" }}>
+                            {item.answer}
+                          </p><br />
+                          <p style={{ textAlign: "left" }}>
+                            {item.description2}
+                          </p><br />
+                        {/*  <ul style={{paddingLeft:"20px"}}>
+                          <li style={{ textAlign: "left" }}>
+                              {item.point1}
+                            </li>
+                            <li style={{ textAlign: "left" }}>
+                                {item.point2}
+                              </li>
+                            </ul><br />
+                            <h4 style={{ textAlign: "left" }}>
+                                {item.heading}
+                              </h4>
+
+                            <ul style={{paddingLeft:"20px"}}>
+                              <li style={{ textAlign: "left" }}>
+                                  {item.point3}
+                                </li>
+                                <li style={{ textAlign: "left" }}>
+                                    {item.point4}
+                                  </li>
+                                </ul><br />*/}
+
                       </div>
                       <div id="event-img  w-50-n" >
                           <img alt="" src={item.imgright}  className="image" style={{height:"400px",width:"600px",objectFit:"contain"}} />
