@@ -92,9 +92,12 @@ function OurGoals() {
                     </div>
                     <div className="flex justify-center items-center pt3">
                    <form>
-                       <ScriptTag src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HmatBPsKhfdW45" async></ScriptTag>
-                    </form>
+                       {/* <ScriptTag src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HmatBPsKhfdW45" async></ScriptTag> */}
+                    <div className="pv2  nav-donate">
+                      <Link to="/scanner" className="f5 link dim br2 ph3 pv2 white " style={{ backgroundColor: "#e88f0a" }}>Donate</Link>
                     </div>
+                  </form>
+                  </div>
 
                     <div className="lastLine">
                       <div className="supporters">

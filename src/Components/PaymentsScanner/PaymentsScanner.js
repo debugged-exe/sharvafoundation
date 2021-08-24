@@ -4,7 +4,7 @@ import sharvalogo from './sharva.png';
 
 const PaymentsScanner = () => {
     return (
-        <div className='pt5 tc flex flex-column justify-center items-center'>
+        <div className='pa2 pt5 tc flex flex-column justify-center items-center'>
             <div className="flex justify-center">
                 <img src={sharvalogo}  className="join-logo" alt="logo"/>
             </div>
@@ -12,7 +12,7 @@ const PaymentsScanner = () => {
             <img className='mv3' height='200px' width='200px' src={code} alt="QR Code Scanner"/>
             <p className='f3 b mt3'>(UPI Id/ E-Wallet available)</p>
             <p className='b mt3'>ankitazadoo12345-1@okhdfcbank</p>
-            <p className='b mt3'>7006616995</p>
+            <p className='b mt3 mb2'>7006616995</p>
             <p className='b'></p>
         </div>
     )
