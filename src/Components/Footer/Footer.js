@@ -35,7 +35,7 @@ function Footer({setInitiative}){
               <li className="mv3 ">
                        <h2 className={'h2'}>Contact Us</h2>
                        <p className="mv2"><ImLocation2 className="mh2" size="1.2em" />Sharva Foundation <br/>
-              House no- 163, near PHC Gole Gujral, Ambika Vihar, Talab Tillo, Jammu, Jammu and Kashmir 180002</p>
+                       Hno.163 Ambika Vihar near PHC Gole Gujral, Talab Tillo, Jammu, Jammu and Kashmir 180002</p>
             <span className="flex items-center justify-center mv3"><MdEmail className="mh0-s mh0-m mh2 " size="2em" /> Email: team.sharvafoundation@gmail.com</span>
 
 
