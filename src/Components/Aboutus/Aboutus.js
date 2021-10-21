@@ -12,7 +12,7 @@ function Aboutus(){
                    <h2 className=" f2 tc " style={{color:'#fff'}}>Support Sharva</h2>
                    <p className="tl pt4 white" style={{ fontSize: '1.2rem', lineHeight: '1.2' }}>
 
-We at Sharva Foundation are in collaboration with Boat Premium. You can buy any clothing from them and use the coupon code provided accordingly to avail discount and apart your purchase amount will be utilized by us in the betterment of the society. Happy Shopping.<br/> <br/>
+We at Sharva Foundation are in collaboration with Boat Premium. You can buy any clothing from them and use the coupon code provided accordingly to avail discount. A part of your contribution will be utilized by helping  the society. Happy Shopping.<br/> <br/>
 <div className="shopNowButton">
 <a href="https://www.boatpremium.com/" className="fw6 bg-white black pa2 ph3 f5 grow pointer link">Shop Now</a></div>
                    </p>
