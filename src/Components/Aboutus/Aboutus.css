@@ -72,8 +72,40 @@
 
 }
 
+.coupon-div{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    height: auto;
+     width: 80vw;
+     background-image: linear-gradient(316deg, #ff9100 0%, #ffbe0b 74%);
 
-@media screen and (max-width: 800px) {
+}
+.coupon-left{
+    width:70%;
+}
+.coupon-button{
+    width:20%;
+}
+@media screen and (max-width: 768px) {
+
+    .coupon-div{
+        display: flex;
+        flex-direction: column;
+        width: 95vw;
+    }
+    .coupon-left{
+        width:90%;
+    }
+    .coupon-button{
+        width:50%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1025px) {
     .imgText{
         width:100%;
         padding: 0;
@@ -89,4 +121,30 @@
     text-decoration: none;
 
     }
+      .coupon-button button{
+        font-size: 1em;
+        padding: 0.7em;
+      }
+      .coupon-button{
+        margin-right:20px;
+      }
+
+}
+@media screen and (max-width: 426px){
+  .coupon-button button{
+    font-size: 1em;
+    padding: 0.7em;
+  }
+  .coupon-button{
+    padding: 0;
+  }
+  .coupon-button h3{
+    text-align: center;
+  }
+  .shopNowButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
 }

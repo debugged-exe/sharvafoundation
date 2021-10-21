@@ -6,6 +6,33 @@ import aboutimage from "./aboutimage.jpeg";
 function Aboutus(){
     return(
         <div className="aboutUs mb3" id="aboutus">
+          <div className="flex justify-center items-center  mv4">
+           <div className=" coupon-div shadow-5 br3 pb3">
+               <div className="pa3 coupon-left">
+                   <h2 className=" f2 tc " style={{color:'#fff'}}>Support Sharva</h2>
+                   <p className="tl pt4 white" style={{ fontSize: '1.2rem', lineHeight: '1.2' }}>
+
+We at Sharva Foundation are in collaboration with Boat Premium. You can buy any clothing from them and use the coupon code provided accordingly to avail discount and apart your purchase amount will be utilized by us in the betterment of the society. Happy Shopping.<br/> <br/>
+<div className="shopNowButton">
+<a href="https://www.boatpremium.com/" className="fw6 bg-white black pa2 ph3 f5 grow pointer link">Shop Now</a></div>
+                   </p>
+
+
+               </div>
+               <div className="coupon-button  ">
+               <h3 className="white mt3"> Men's Clothing </h3>
+             <button className=" fw6 bg-white black pa2 mt1  ph3 f4 grow pointer" style={{ border: 'none'}}>
+                    Supportsharva200
+</button>
+<h3 className="white  mt3"> Women's Clothing </h3>
+<button className=" fw6 bg-white black pa2 ph3 f4 mt1 grow pointer" style={{ border: 'none'}}>
+     Supportsharva100</button>
+
+               </div>
+
+
+           </div>
+       </div>
             <div className="mw7 mw7-ns center ">
 
             </div>
