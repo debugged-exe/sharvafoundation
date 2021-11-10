@@ -6,6 +6,8 @@ import {SiYoutube} from "react-icons/si";
 import {AiOutlineTwitter} from "react-icons/ai";
 import {FaWhatsapp} from "react-icons/fa";
 import {FaLinkedinIn} from "react-icons/fa";
+import {BsFacebook} from "react-icons/bs";
+
 function FooterBottom(){
   return(
 
@@ -20,7 +22,8 @@ function FooterBottom(){
         <ul className="listStylingNone flex pointer">
           <li className="mh2"><a style={{outline:'none'}} href='https://wa.me/919596156678' className='  white dimIcon '><FaWhatsapp className="whatsappHover" size="1.3rem" /></a></li>
           <li className="mh2"><a style={{outline:'none'}} href='https://instagram.com/sharvafoundation?igshid=yubeg3h96wn4' className=' white dimIcon '><FiInstagram className="instagramHover" size="1.3rem"/></a></li>
-          <li className="mh2">  <a style={{outline:'none'}} href='https://twitter.com/Sharvacharity' className='  white  dimIcon'><AiOutlineTwitter className="twitterHover" size="1.3rem" /></a></li>
+          <li className="mh2"><a style={{outline:'none'}} href='https://www.facebook.com/Sharva-Foundation-571908020152850/' className='  white dimIcon'><BsFacebook className="fbhover" size="1.3rem" /></a></li>
+          <li className="mh2"><a style={{outline:'none'}} href='https://twitter.com/Sharvacharity' className='  white  dimIcon'><AiOutlineTwitter className="twitterHover" size="1.3rem" /></a></li>
           <li className="mh2"><a style={{outline:'none'}} href='https://www.linkedin.com/company/sharva-foundation' className='  white dimIcon '><FaLinkedinIn className="linkedinHover" size="1.3rem"/></a></li>
           <li className="mh2"><a style={{outline:'none'}} href='mailto:team.foundationsharva@gmail.com?subject=Joining a good cause' className=' white dimIcon'><SiGmail className="gmailHover" size="1.3rem" /></a></li>
           <li className="mh2"><a style={{outline:'none'}} href='https://www.youtube.com/channel/UCZT6olVE-2v_LWqXmrbqPug' className='  white dimIcon'><SiYoutube className="youtubeHover" size="1.3rem" /></a></li>
