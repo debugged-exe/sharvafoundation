@@ -1,0 +1,17 @@
+.merch-text{
+    line-height: 2;
+    text-align: center;
+    
+    
+}
+
+.merch{
+    width:50%;
+}
+
+@media only screen and (max-width:760px){
+    .merch{
+        width:100%;
+        
+    }
+}

@@ -51,14 +51,18 @@ function OurGoals() {
     }
     return (
         <div id="ourgoals">
-          <div className="join-box mv4 ">
-                <p className="join-head fw6 " style={{ fontSize: '35px' }}>Join Us Now!!</p>
+          <div className="flex justify-center "> 
+          <div className=" join-box mv4 mh1 ">
+                <p className="join-head  fw6 " style={{ fontSize: '35px' }}>Join Us Now!!</p>
                 <div className="button-div">
                     <Link to="/joinus/#survey"><button onClick={() => setShow(true)} className=" fw6 bg-white black pa3 ph4 f4 grow pointer " style={{ borderRadius: '8px', border: 'none' }}>
                         Join Us
                     </button></Link>
                 </div>
             </div>
+          </div>
+         
+            
             <div className="ourGoals mt4 pa1">
                 <div className="mw7 mw7-m mw7-ns center topText  ">
                     <h2 className="center" style={{ paddingBottom: '10px', textDecoration: 'underline', textDecorationColor: '#e88f0a', textAlign: 'center' }}>Our Recent Causes to Serve Better</h2>

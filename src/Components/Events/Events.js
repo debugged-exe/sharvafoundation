@@ -116,8 +116,29 @@ function Events({initiative,setCarousel}) {
       }).catch(error => {
         console.log(error);
       })
+    }
 
-
+    else if (initiative==="twenty") {
+      fetch("https://thawing-shelf-77571.herokuapp.com/twenty")
+      .then(response => response.json())
+      .then(res => {
+        if (res[0].tagline) {
+          setDrive(res);
+        }
+      }).catch(error => {
+        console.log(error);
+      })
+    }
+    else if (initiative==="twentyone") {
+      fetch("https://thawing-shelf-77571.herokuapp.com/twentyone")
+      .then(response => response.json())
+      .then(res => {
+        if (res[0].tagline) {
+          setDrive(res);
+        }
+      }).catch(error => {
+        console.log(error);
+      })
     }
   }, [])
 
