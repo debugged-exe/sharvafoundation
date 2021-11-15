@@ -61,8 +61,8 @@ const Navbar = ({ setInitiative }) => {
                 <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => {setInitiative("giveherwingstofly");setCovid(false);hamburger()}} > Give Her Wings to Fly</li></Link>
               <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => {setInitiative("projectgreen");setCovid(false);hamburger()}} >Project Green</li></Link>
               <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => {setInitiative("blooddonation");setCovid(false);hamburger()}} >Blood Donation</li></Link>
-              <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => {setInitiative("twenty");setCovid(false);hamburger()}} >2020</li></Link>
-              <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => {setInitiative("twentyone");setCovid(false);hamburger()}} >2021</li></Link>
+              {/* <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => {setInitiative("twenty");setCovid(false);hamburger()}} >2020</li></Link>
+              <Link to="/events" className="linkInitiatives"><li className="sub-menu-item" onClick={() => {setInitiative("twentyone");setCovid(false);hamburger()}} >2021</li></Link> */}
 
               </ul>
             </li></Link>
