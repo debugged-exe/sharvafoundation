@@ -5,13 +5,11 @@
 
 .event-txt-img {
   display: flex;
-  padding: 1rem;
-
 }
 
 .event-img {
-  padding: 0.5rem;
-
+  padding: 0;
+  background-blend-mode: darken;
 }
 
 .event-txt {
